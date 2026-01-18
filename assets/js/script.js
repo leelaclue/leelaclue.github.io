@@ -113,10 +113,38 @@ async function loadUserGuide(lang) {
             guideContainer.innerHTML = parseMarkdown(text); // Fallback
         }
 
+        // Fix internal anchor links after content is loaded
+        fixInternalLinks(guideContainer);
+
     } catch (error) {
         console.error('Error loading user guide:', error);
         guideContainer.innerHTML = '<p class="loading-text">Failed to load User Guide. Please try again later.</p>';
     }
+}
+
+// Fix internal anchor links to work with marked.js generated IDs
+function fixInternalLinks(container) {
+    const links = container.querySelectorAll('a[href^="#"]');
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            const targetId = link.getAttribute('href').substring(1);
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                // Try to find by heading text if ID doesn't match
+                const headings = container.querySelectorAll('h1, h2, h3, h4, h5, h6');
+                for (const heading of headings) {
+                    if (heading.id === targetId || heading.textContent.toLowerCase().replace(/\s+/g, '-') === targetId) {
+                        heading.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                        break;
+                    }
+                }
+            }
+        });
+    });
 }
 
 // Fetch and display App Descriptions (Short and Long)
