@@ -167,3 +167,86 @@ footer {
 .markdown-content strong {
   color: #fff;
 }
+
+/* Carousel Styling */
+.carousel-container {
+    position: relative;
+    max-width: 100%;
+    /* 16:9 Aspect Ratio approx container or just flexible height */
+    height: 400px; 
+    margin: 0 auto 2rem;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+.carousel-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* changed from cover to contain to see whole screenshot */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    background-color: var(--secondary-bg); /* bg for letterboxing */
+}
+
+.carousel-slide.active {
+    opacity: 1;
+}
+
+/* Markdown User Guide Styling */
+.markdown-body {
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+    padding-bottom: 0.5rem;
+}
+
+.markdown-body p {
+    margin-bottom: 1rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.markdown-body li {
+    margin-bottom: 0.5rem;
+}
+
+.markdown-body a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.markdown-body code {
+    background-color: rgba(255,255,255,0.1);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-family: monospace;
+}
+
+.markdown-body pre {
+    background-color: rgba(0,0,0,0.3);
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.loading-text {
+    text-align: center;
+    color: var(--text-color);
+    font-style: italic;
+    opacity: 0.7;
+}

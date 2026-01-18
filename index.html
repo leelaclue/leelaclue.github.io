@@ -24,10 +24,26 @@
 
     <main>
         <div class="hero">
-            <img src="assets/images/main.png" alt="LeelaClue App" class="hero-img">
+            <!-- Carousel Container -->
+            <div class="carousel-container">
+                <img src="assets/images/ADharma.webp" alt="ADharma" class="carousel-slide active">
+                <img src="assets/images/Antariksha.webp" alt="Antariksha" class="carousel-slide">
+                <img src="assets/images/Irasya.webp" alt="Irasya" class="carousel-slide">
+                <img src="assets/images/KamaLoka.webp" alt="KamaLoka" class="carousel-slide">
+                <img src="assets/images/Lobha.webp" alt="Lobha" class="carousel-slide">
+            </div>
+
             <h1 data-i18n="appTitle">LeelaClue</h1>
             <div class="markdown-content" data-i18n="welcomeMessage"></div>
         </div>
+
+        <section id="user-guide" class="content-card">
+            <h2 data-i18n="userGuideTitle">User Guide</h2>
+            <div id="guide-content" class="markdown-body">
+                <!-- User Guide Content Will Be Loaded Here -->
+                <p class="loading-text">Loading guide...</p>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -39,6 +55,7 @@
         <p style="margin-top: 1rem; color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
