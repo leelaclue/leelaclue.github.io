@@ -53,6 +53,25 @@ document.addEventListener('DOMContentLoaded', () => {
             loadUserGuide(lang); // Reload guide when lang changes
         });
     });
+
+    // Hamburger Menu Toggle
+    const hamburger = document.querySelector('.hamburger');
+    const mainNav = document.querySelector('.main-nav');
+
+    if (hamburger && mainNav) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            mainNav.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        mainNav.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+            });
+        });
+    }
 });
 
 function loadTranslations(lang) {
