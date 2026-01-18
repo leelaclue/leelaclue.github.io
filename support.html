@@ -11,11 +11,19 @@
 
 <body>
     <header>
-        <div class="logo-container">
-            <a href="index.html" class="logo-container" style="text-decoration: none;">
-                <img src="assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
-                <span class="brand-name" data-i18n="appTitle">LeelaClue</span>
-            </a>
+        <div class="header-left">
+            <div class="logo-container">
+                <a href="index.html" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                    <img src="assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
+                    <span class="brand-name" data-i18n="appTitle">LeelaClue</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <a href="privacy.html" data-i18n="disclaimerTitle">Privacy & Terms</a>
+                <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
+                <a href="support.html" data-i18n="contactTitle">Support</a>
+                <a href="user_guide.html" data-i18n="userGuideTitle">User Guide</a>
+            </nav>
         </div>
         <div class="lang-switch">
             <button class="lang-btn active" data-lang="en">EN</button>
@@ -34,11 +42,6 @@
     </main>
 
     <footer>
-        <div class="footer-links">
-            <a href="privacy.html" data-i18n="disclaimerTitle">Privacy & Terms</a>
-            <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
-            <a href="support.html" data-i18n="contactTitle">Support</a>
-        </div>
         <p style="margin-top: 1rem; color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
 

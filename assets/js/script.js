@@ -11,27 +11,33 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLangButtons(currentLang);
     loadTranslations(currentLang);
     loadAppDescriptions(currentLang); // Load main descriptions
-    // User guide is loaded only when requested or if we want to preload it but keep hidden
     loadUserGuide(currentLang);
     startCarousel();
 
-    // User Guide Toggle
-    const toggleBtn = document.getElementById('guide-toggle-btn');
+    // Check if URL has #user-guide hash and show the section
     const guideSection = document.getElementById('user-guide');
+    if (window.location.hash === '#user-guide' && guideSection) {
+        guideSection.classList.remove('hidden');
+        setTimeout(() => {
+            guideSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 300); // Wait for content to load
+    }
 
-    if (toggleBtn && guideSection) {
-        toggleBtn.addEventListener('click', () => {
+    // User Guide Toggle (Nav Link)
+    const guideLink = document.getElementById('nav-guide-link');
+
+    if (guideLink && guideSection) {
+        guideLink.addEventListener('click', (e) => {
+            e.preventDefault();
             const isHidden = guideSection.classList.contains('hidden');
 
             if (isHidden) {
                 guideSection.classList.remove('hidden');
-                // Scroll to guide
-                setTimeout(() => {
-                    guideSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 100);
-            } else {
-                guideSection.classList.add('hidden');
             }
+            // Scroll to guide
+            setTimeout(() => {
+                guideSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }, 100);
         });
     }
 
@@ -115,41 +121,20 @@ async function loadUserGuide(lang) {
 
 // Fetch and display App Descriptions (Short and Long)
 async function loadAppDescriptions(lang) {
-    // 1. Load Short Description (Subtitle)
-    try {
-        const response = await fetch('assets/js/short_descr.json');
-        if (response.ok) {
-            const data = await response.json();
-            const subtitle = document.getElementById('app-subtitle');
-            if (subtitle && data[lang]) {
-                subtitle.textContent = data[lang];
-            }
-        }
-    } catch (error) {
-        console.error('Error loading short description:', error);
+    // 1. Load Short Description (Subtitle) from translations.js
+    const subtitle = document.getElementById('app-subtitle');
+    if (subtitle && translations[lang] && translations[lang].shortDescription) {
+        subtitle.textContent = translations[lang].shortDescription;
     }
 
-    // 2. Load Long Description
+    // 2. Load Long Description from translations.js
     const descContainer = document.getElementById('app-description');
-    if (descContainer) {
-        // descContainer.innerHTML = '<p class="loading-text">Loading...</p>'; 
-        // Don't show loading text to avoid flickering if it's fast or if we want to keep old content momentarily
-
-        try {
-            const response = await fetch(`assets/descr_${lang}.md`);
-            if (response.ok) {
-                const text = await response.text();
-                // Use marked if available
-                if (typeof marked !== 'undefined') {
-                    descContainer.innerHTML = marked.parse(text);
-                } else {
-                    descContainer.innerHTML = parseMarkdown(text);
-                }
-            } else {
-                console.error('Description file not found for lang:', lang);
-            }
-        } catch (error) {
-            console.error('Error loading app description:', error);
+    if (descContainer && translations[lang] && translations[lang].longDescription) {
+        // Use marked if available
+        if (typeof marked !== 'undefined') {
+            descContainer.innerHTML = marked.parse(translations[lang].longDescription);
+        } else {
+            descContainer.innerHTML = parseMarkdown(translations[lang].longDescription);
         }
     }
 }

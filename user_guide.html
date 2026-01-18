@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="impressumTitle">Impressum</title>
+    <title data-i18n="userGuideTitle">User Guide</title>
     <link rel="icon" type="image/png" href="assets/app_icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -34,9 +34,9 @@
 
     <main>
         <div class="content-card">
-            <h2 data-i18n="impressumTitle">Impressum</h2>
-            <div class="markdown-content" data-i18n="impressumContent">
-                Loading...
+            <h2 data-i18n="userGuideTitle">User Guide</h2>
+            <div id="guide-content" class="markdown-body">
+                <p class="loading-text">Loading guide...</p>
             </div>
         </div>
     </main>
@@ -45,6 +45,7 @@
         <p style="margin-top: 1rem; color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
