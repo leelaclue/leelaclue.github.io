@@ -39,7 +39,12 @@
   }
 
   .hamburger {
-    display: flex;
+    display: flex !important;
+    order: 3;
+  }
+
+  .lang-switch {
+    order: 4;
   }
 
   .hero-content {
