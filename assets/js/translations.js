@@ -8,7 +8,9 @@ const translations = {
         "impressumContent": "Information according to § 5 DDG (Digital Services Act)\n\nOperator and Responsible for Content:\nIrene Engelko\nBachstrasse 39\n76669 Bad Schönborn\nGermany\n\nContact:\nE-Mail: leelaclue@gmail.com\n\nVAT Exemption (Small Business Regulation):\nVAT is not shown, as the operator is exempt from VAT as a small business owner according to § 19 UStG (German VAT Act).",
         "contactTitle": "Support",
         "contactMessage": "If you want to dive deeper into the world of Leela – visit us on [Instagram](https://www.instagram.com/ireneengel.co?igsh=MWsxd3M2MHRjNTBjbQ==) or [Telegram](https://t.me/lilagamebeiengel).",
-        "userGuideTitle": "User Guide"
+        "readManualBtn": "Read User Guide",
+        "userGuideTitle": "User Guide",
+        "shortDescription": "LeelaClue – 72 gates to self-reflection. Symbolic cards for mindfulness, inner clarity, and conscious perspectives in everyday life."
     },
     "de": {
         "appTitle": "LeelaClue",
@@ -19,7 +21,9 @@ const translations = {
         "impressumContent": "Angaben gemäß § 5 DDG (Digitale-Dienste-Gesetz)\n\nBetreiber und Verantwortliche für den Inhalt:\nIrene Engelko\nBachstrasse 39\n76669 Bad Schönborn\nDeutschland\n\nKontakt:\nE-Mail: leelaclue@gmail.com\n\nUmsatzsteuerbefreiung (Kleinunternehmerregelung):\nEs erfolgt kein Ausweis der Umsatzsteuer, da die Betreiberin gemäß § 19 UStG (Umsatzsteuergesetz) als Kleinunternehmerin von der Umsatzsteuer befreit ist.",
         "contactTitle": "Support",
         "contactMessage": "Wenn Du tiefer in die Leela-Welt eintauchen möchtest – besuche uns auf [Instagram](https://www.instagram.com/ireneengel.co?igsh=MWsxd3M2MHRjNTBjbQ==) oder [Telegram](https://t.me/lilagamebeiengel).",
-        "userGuideTitle": "Benutzerhandbuch"
+        "userGuideTitle": "Benutzerhandbuch",
+        "readManualBtn": "Handbuch Lesen",
+        "shortDescription": "LeelaClue – 72 Tore zur Selbstreflexion. Symbolische Karten für Achtsamkeit, innere Klarheit und bewusste Perspektiven im Alltag."
     },
     "ru": {
         "appTitle": "LeelaClue",
@@ -30,7 +34,8 @@ const translations = {
         "impressumContent": "Информация согласно § 5 DDG (Закон о цифровых услугах)\n\nОператор и ответственный за контент:\nIrene Engelko\nBachstrasse 39\n76669 Bad Schönborn\nГермания (Germany)\n\nКонтакты:\nE-Mail: leelaclue@gmail.com\n\nОсвобождение от НДС (Правило для малого бизнеса):\nНДС не указывается, так как оператор освобожден от уплаты НДС в соответствии с § 19 UStG (Закон об НДС) как владелец малого бизнеса.",
         "contactTitle": "Поддержка",
         "contactMessage": "Если вы хотите глубже погрузиться в мир Лилы – посетите нас в [Instagram](https://www.instagram.com/ireneengel.co?igsh=MWsxd3M2MHRjNTBjbQ==) или [Telegram](https://t.me/lilagamebeiengel).",
-        "userGuideTitle": "Руководство пользователя"
-
+        "userGuideTitle": "Руководство пользователя",
+        "readManualBtn": "Читать Руководство",
+        "shortDescription": "LeelaClue — 72 врат саморефлексии. Символические карты для осознанности, внутренней ясности и внимательного взгляда на повседневную жизнь."
     }
 };

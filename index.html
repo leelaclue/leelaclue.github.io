@@ -11,9 +11,16 @@
 
 <body>
     <header>
-        <div class="logo-container">
-            <img src="assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
-            <span class="brand-name" data-i18n="appTitle">LeelaClue</span>
+        <div class="header-left">
+            <div class="logo-container">
+                <img src="assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
+                <span class="brand-name" data-i18n="appTitle">LeelaClue</span>
+            </div>
+            <nav class="main-nav">
+                <a href="privacy.html" data-i18n="disclaimerTitle">Privacy & Terms</a>
+                <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
+                <a href="support.html" data-i18n="contactTitle">Support</a>
+            </nav>
         </div>
         <div class="lang-switch">
             <button class="lang-btn active" data-lang="en">EN</button>
@@ -34,10 +41,14 @@
             </div>
 
             <h1 data-i18n="appTitle">LeelaClue</h1>
-            <div class="markdown-content" data-i18n="welcomeMessage"></div>
+            <div id="app-subtitle" class="subtitle"></div>
+
+            <div id="app-description" class="markdown-body content-center"></div>
+
+            <button id="guide-toggle-btn" class="primary-btn" data-i18n="readManualBtn">Read User Guide</button>
         </div>
 
-        <section id="user-guide" class="content-card">
+        <section id="user-guide" class="content-card hidden">
             <h2 data-i18n="userGuideTitle">User Guide</h2>
             <div id="guide-content" class="markdown-body">
                 <!-- User Guide Content Will Be Loaded Here -->
@@ -47,11 +58,6 @@
     </main>
 
     <footer>
-        <div class="footer-links">
-            <a href="privacy.html" data-i18n="disclaimerTitle">Privacy & Terms</a>
-            <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
-            <a href="support.html" data-i18n="contactTitle">Support</a>
-        </div>
         <p style="margin-top: 1rem; color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
 

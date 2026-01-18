@@ -1,6 +1,27 @@
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .header-left {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .main-nav {
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 :root {
-  --primary-color: #d4af37; /* Gold */
-  --bg-color: #0a0a12; /* Deep dark blue/black */
+  --primary-color: #d4af37;
+  /* Gold */
+  --bg-color: #0a0a12;
+  /* Deep dark blue/black */
   --text-color: #e0e0e0;
   --secondary-bg: #151520;
   --font-main: 'Philosopher', sans-serif;
@@ -38,7 +59,12 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-main);
   color: var(--primary-color);
   margin-bottom: 1rem;
@@ -56,8 +82,9 @@ a:hover {
 }
 
 /* Header */
+/* Header */
 header {
-  padding: 1rem 2rem;
+  padding: 0.75rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,6 +93,38 @@ header {
   top: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  backdrop-filter: blur(10px);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.main-nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.main-nav a {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--text-color);
+  opacity: 0.8;
+}
+
+.main-nav a:hover {
+  color: var(--primary-color);
+  opacity: 1;
+  text-decoration: none;
 }
 
 .logo-container {
@@ -102,7 +161,8 @@ header {
   transition: all 0.3s;
 }
 
-.lang-btn:hover, .lang-btn.active {
+.lang-btn:hover,
+.lang-btn.active {
   background-color: var(--primary-color);
   color: var(--bg-color);
 }
@@ -124,7 +184,7 @@ main {
 .hero-img {
   max-width: 100%;
   border-radius: 12px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
   margin-bottom: 2rem;
   border: 1px solid rgba(212, 175, 55, 0.3);
 }
@@ -133,8 +193,52 @@ main {
   background-color: var(--secondary-bg);
   padding: 2rem;
   border-radius: 12px;
-  border: 1px solid rgba(255,255,255,0.05);
+  border: 1px solid rgba(255, 255, 255, 0.05);
   margin-top: 2rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  margin-bottom: 2rem;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.content-center {
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+}
+
+/* Primary Button */
+.primary-btn {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  padding: 0.8rem 2rem;
+  border-radius: 2rem;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.primary-btn:hover {
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+}
+
+.hidden {
+  display: none;
 }
 
 /* Footer */
@@ -143,7 +247,7 @@ footer {
   padding: 2rem;
   text-align: center;
   margin-top: auto;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .footer-links {
@@ -170,83 +274,88 @@ footer {
 
 /* Carousel Styling */
 .carousel-container {
-    position: relative;
-    max-width: 100%;
-    /* 16:9 Aspect Ratio approx container or just flexible height */
-    height: 400px; 
-    margin: 0 auto 2rem;
-    overflow: hidden;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-    border: 1px solid rgba(212, 175, 55, 0.3);
+  position: relative;
+  max-width: 100%;
+  /* 16:9 Aspect Ratio approx container or just flexible height */
+  height: 400px;
+  margin: 0 auto 2rem;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(212, 175, 55, 0.3);
 }
 
 .carousel-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: contain; /* changed from cover to contain to see whole screenshot */
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    background-color: var(--secondary-bg); /* bg for letterboxing */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* changed from cover to contain to see whole screenshot */
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+  background-color: var(--secondary-bg);
+  /* bg for letterboxing */
 }
 
 .carousel-slide.active {
-    opacity: 1;
+  opacity: 1;
 }
 
 /* Markdown User Guide Styling */
 .markdown-body {
-    color: var(--text-color);
-    line-height: 1.6;
+  color: var(--text-color);
+  line-height: 1.6;
 }
 
-.markdown-body h1, .markdown-body h2, .markdown-body h3 {
-    color: var(--primary-color);
-    margin-top: 1.5rem;
-    margin-bottom: 1rem;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-    padding-bottom: 0.5rem;
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3 {
+  color: var(--primary-color);
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+  padding-bottom: 0.5rem;
 }
 
 .markdown-body p {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
-.markdown-body ul, .markdown-body ol {
-    margin-left: 2rem;
-    margin-bottom: 1rem;
+.markdown-body ul,
+.markdown-body ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
 }
 
 .markdown-body li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .markdown-body a {
-    color: var(--primary-color);
-    text-decoration: underline;
+  color: var(--primary-color);
+  text-decoration: underline;
 }
 
 .markdown-body code {
-    background-color: rgba(255,255,255,0.1);
-    padding: 0.2rem 0.4rem;
-    border-radius: 4px;
-    font-family: monospace;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-family: monospace;
 }
 
 .markdown-body pre {
-    background-color: rgba(0,0,0,0.3);
-    padding: 1rem;
-    border-radius: 8px;
-    overflow-x: auto;
-    margin-bottom: 1rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
 }
 
 .loading-text {
-    text-align: center;
-    color: var(--text-color);
-    font-style: italic;
-    opacity: 0.7;
+  text-align: center;
+  color: var(--text-color);
+  font-style: italic;
+  opacity: 0.7;
 }

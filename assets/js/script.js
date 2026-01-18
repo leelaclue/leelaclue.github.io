@@ -10,8 +10,30 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize UI
     updateLangButtons(currentLang);
     loadTranslations(currentLang);
-    loadUserGuide(currentLang); // Initial load of user guide
-    startCarousel(); // Start image slider
+    loadAppDescriptions(currentLang); // Load main descriptions
+    // User guide is loaded only when requested or if we want to preload it but keep hidden
+    loadUserGuide(currentLang);
+    startCarousel();
+
+    // User Guide Toggle
+    const toggleBtn = document.getElementById('guide-toggle-btn');
+    const guideSection = document.getElementById('user-guide');
+
+    if (toggleBtn && guideSection) {
+        toggleBtn.addEventListener('click', () => {
+            const isHidden = guideSection.classList.contains('hidden');
+
+            if (isHidden) {
+                guideSection.classList.remove('hidden');
+                // Scroll to guide
+                setTimeout(() => {
+                    guideSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 100);
+            } else {
+                guideSection.classList.add('hidden');
+            }
+        });
+    }
 
     // Event Listeners for Language Buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
@@ -21,6 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('lang', lang);
             updateLangButtons(lang);
             loadTranslations(lang);
+            loadAppDescriptions(lang); // Reload descriptions
             loadUserGuide(lang); // Reload guide when lang changes
         });
     });
@@ -87,6 +110,47 @@ async function loadUserGuide(lang) {
     } catch (error) {
         console.error('Error loading user guide:', error);
         guideContainer.innerHTML = '<p class="loading-text">Failed to load User Guide. Please try again later.</p>';
+    }
+}
+
+// Fetch and display App Descriptions (Short and Long)
+async function loadAppDescriptions(lang) {
+    // 1. Load Short Description (Subtitle)
+    try {
+        const response = await fetch('assets/js/short_descr.json');
+        if (response.ok) {
+            const data = await response.json();
+            const subtitle = document.getElementById('app-subtitle');
+            if (subtitle && data[lang]) {
+                subtitle.textContent = data[lang];
+            }
+        }
+    } catch (error) {
+        console.error('Error loading short description:', error);
+    }
+
+    // 2. Load Long Description
+    const descContainer = document.getElementById('app-description');
+    if (descContainer) {
+        // descContainer.innerHTML = '<p class="loading-text">Loading...</p>'; 
+        // Don't show loading text to avoid flickering if it's fast or if we want to keep old content momentarily
+
+        try {
+            const response = await fetch(`assets/descr_${lang}.md`);
+            if (response.ok) {
+                const text = await response.text();
+                // Use marked if available
+                if (typeof marked !== 'undefined') {
+                    descContainer.innerHTML = marked.parse(text);
+                } else {
+                    descContainer.innerHTML = parseMarkdown(text);
+                }
+            } else {
+                console.error('Description file not found for lang:', lang);
+            }
+        } catch (error) {
+            console.error('Error loading app description:', error);
+        }
     }
 }
 
