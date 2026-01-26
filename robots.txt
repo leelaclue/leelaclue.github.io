@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://leelaclue.com/sitemap.xml
+Sitemap: https://leelaclue.github.io/sitemap.xml
