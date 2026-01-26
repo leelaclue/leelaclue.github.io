@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://leelaclue.com/sitemap.xml

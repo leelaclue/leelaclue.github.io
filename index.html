@@ -4,9 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LeelaClue</title>
+    <title>LeelaClue - Ancient Snake & Arrow Game for Mindfulness</title>
+    <meta name="description"
+        content="Discover LeelaClue, the digital adaptation of the ancient Leela game. Use this mindfulness tool for self-discovery, clarity, and guidance via snake & arrow mechanics.">
+    <meta name="keywords"
+        content="Leela, Leela Game, Snake and Arrow, Mindfulness, Self-Discovery, Maya, Yoga, Vedic Game, Spirituality, Meditation App">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="LeelaClue - Find Clarity with the Ancient Game">
+    <meta property="og:description"
+        content="Explore your life's path with LeelaClue. A modern take on the ancient Indian game of self-knowledge.">
+    <meta property="og:image" content="https://leelaclue.github.io/assets/images/ADharma.webp">
+    <meta property="og:url" content="https://leelaclue.github.io">
+    <meta property="og:type" content="website">
+
+    <!-- Hreflang Tags -->
+    <link rel="alternate" hreflang="en" href="https://leelaclue.github.io/?lang=en" />
+    <link rel="alternate" hreflang="de" href="https://leelaclue.github.io/?lang=de" />
+    <link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/?lang=ru" />
+    <link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/?lang=en" />
+
     <link rel="icon" type="image/png" href="assets/app_icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Structured Data (SoftwareApplication) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "LeelaClue",
+      "operatingSystem": "iOS, Android, Web",
+      "applicationCategory": "LifestyleApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "description": "LeelaClue is a mindfulness application based on the ancient Vedic game of Leela (Snakes and Ladders). It serves as a tool for self-reflection and spiritual guidance."
+    }
+    </script>
 </head>
 
 <body>
@@ -32,9 +68,12 @@
             <span></span>
         </button>
         <div class="lang-switch">
-            <button class="lang-btn active" data-lang="en">EN</button>
-            <button class="lang-btn" data-lang="de">DE</button>
-            <button class="lang-btn" data-lang="ru">RU</button>
+            <a href="?lang=en" class="lang-btn active" data-lang="en"
+                style="text-decoration: none; display: inline-block; text-align: center;">EN</a>
+            <a href="?lang=de" class="lang-btn" data-lang="de"
+                style="text-decoration: none; display: inline-block; text-align: center;">DE</a>
+            <a href="?lang=ru" class="lang-btn" data-lang="ru"
+                style="text-decoration: none; display: inline-block; text-align: center;">RU</a>
         </div>
     </header>
 
@@ -58,11 +97,11 @@
                         </a>
                     </div>
                     <div class="carousel-container">
-                        <img src="assets/images/ADharma.webp" alt="ADharma" class="carousel-slide active">
-                        <img src="assets/images/Antariksha.webp" alt="Antariksha" class="carousel-slide">
-                        <img src="assets/images/Irasya.webp" alt="Irasya" class="carousel-slide">
-                        <img src="assets/images/KamaLoka.webp" alt="KamaLoka" class="carousel-slide">
-                        <img src="assets/images/Lobha.webp" alt="Lobha" class="carousel-slide">
+                        <img src="assets/images/ADharma.webp" alt="Leela Card - ADharma" class="carousel-slide active">
+                        <img src="assets/images/Antariksha.webp" alt="Leela Card - Antariksha" class="carousel-slide">
+                        <img src="assets/images/Irasya.webp" alt="Leela Card - Irasya" class="carousel-slide">
+                        <img src="assets/images/KamaLoka.webp" alt="Leela Card - KamaLoka" class="carousel-slide">
+                        <img src="assets/images/Lobha.webp" alt="Leela Card - Lobha" class="carousel-slide">
                     </div>
 
 
@@ -71,8 +110,14 @@
                 <!-- Right Column: Description -->
                 <div class="hero-right">
                     <h1 data-i18n="appTitle">LeelaClue</h1>
-                    <div id="app-subtitle" class="subtitle"></div>
-                    <div id="app-description" class="markdown-body"></div>
+                    <div id="app-subtitle" class="subtitle">The Ancient Game of Self-Knowledge</div>
+                    <div id="app-description" class="markdown-body">
+                        <p>LeelaClue is a tool for self-discovery and mindfulness, based on the ancient Indian game of
+                            Leela. It helps you navigate life's challenges by offering clarity through the symbolism of
+                            snakes and arrows.</p>
+                        <p>Explore your inner world, understand your patterns, and find guidance in this digital
+                            adaptation of the Vedic tradition.</p>
+                    </div>
                 </div>
             </div>
         </div>

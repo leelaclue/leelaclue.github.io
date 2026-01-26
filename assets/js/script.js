@@ -1,10 +1,25 @@
 document.addEventListener('DOMContentLoaded', () => {
     const defaultLang = 'en';
-    let currentLang = localStorage.getItem('lang') || navigator.language.split('-')[0] || defaultLang;
+    
+    // 1. Get Language from URL first (SEO friendly)
+    function getLanguageFromUrl() {
+        const params = new URLSearchParams(window.location.search);
+        return params.get('lang');
+    }
 
-    // Supported languages
+    const urlLang = getLanguageFromUrl();
+    
+    // 2. Fallback to localStorage or Browser, but URL takes precedence
+    let currentLang = urlLang || localStorage.getItem('lang') || navigator.language.split('-')[0] || defaultLang;
+
+    // Supported languages verification
     if (!['en', 'de', 'ru'].includes(currentLang)) {
         currentLang = defaultLang;
+    }
+
+    // Persist to localStorage if it came from URL
+    if (urlLang && ['en', 'de', 'ru'].includes(urlLang)) {
+        localStorage.setItem('lang', urlLang);
     }
 
     // Initialize UI
@@ -41,18 +56,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Event Listeners for Language Buttons
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', () => {
-            const lang = btn.getAttribute('data-lang');
-            currentLang = lang;
-            localStorage.setItem('lang', lang);
-            updateLangButtons(lang);
-            loadTranslations(lang);
-            loadAppDescriptions(lang); // Reload descriptions
-            loadUserGuide(lang); // Reload guide when lang changes
-        });
-    });
+    // Note: We removed the click event listeners for .lang-btn
+    // because they are now direct <a> links that reload the page
+    // with ?lang=..., which is better for consistent SEO.
+
 
     // Hamburger Menu Toggle
     const hamburger = document.querySelector('.hamburger');
