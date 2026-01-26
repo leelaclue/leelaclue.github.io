@@ -448,3 +448,104 @@ footer {
 .markdown-content strong {
   color: #fff;
 }
+
+/* Blog Layout */
+.blog-container {
+  display: flex;
+  gap: 3rem;
+  align-items: flex-start;
+  margin-top: 4rem;
+}
+
+.blog-sidebar {
+  flex: 0 0 250px;
+  background-color: var(--secondary-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid rgba(212, 175, 55, 0.1);
+  position: sticky;
+  top: 100px;
+  /* Below header */
+}
+
+.blog-sidebar h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.blog-sidebar ul {
+  list-style: none;
+}
+
+.blog-sidebar li {
+  margin-bottom: 0.75rem;
+}
+
+.blog-sidebar a {
+  color: var(--text-color);
+  opacity: 0.7;
+  font-size: 0.95rem;
+  display: block;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.blog-sidebar a:hover,
+.blog-sidebar a.active {
+  color: var(--primary-color);
+  opacity: 1;
+}
+
+.blog-sidebar a.active {
+  font-weight: bold;
+  border-left: 2px solid var(--primary-color);
+  padding-left: 0.5rem;
+}
+
+.blog-content {
+  flex: 1;
+  background-color: transparent;
+  /* Or secondary-bg */
+  /* Reusing markdown-body styles for the content */
+}
+
+.blog-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  padding-bottom: 1rem;
+}
+
+.blog-date {
+  display: block;
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+}
+
+/* Highlight Menu Item (if needed specific stress beyond standard gold) */
+/* Currently links turn gold on hover or if active class. 
+   We will ensure the Blog link stands out if requested. */
+/* If user wants it 'stressed', maybe always gold even if not active? 
+   Or bold. Let's make it gold text by default? */
+/* The existing nav links are opacity 0.8 and white-ish until hover. */
+
+.main-nav a.highlight-menu {
+  color: var(--primary-color);
+  /* Always Gold */
+  opacity: 1;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .blog-container {
+    flex-direction: column;
+  }
+
+  .blog-sidebar {
+    width: 100%;
+    position: static;
+    margin-bottom: 2rem;
+  }
+}

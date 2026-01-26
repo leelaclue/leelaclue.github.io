@@ -61,4 +61,23 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/support.html?lang=de"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/support.html?lang=ru"/>
   </url>
+  <url>
+    <loc>https://leelaclue.github.io/blog.html</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/blog.html?lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/blog.html?lang=de"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/blog.html?lang=ru"/>
+  </url>
+  <!-- Blog Post: The Psychology of Choice -->
+  <url>
+    <loc>https://leelaclue.github.io/blog.html?id=psychology-of-choice</loc>
+    <lastmod>2026-01-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/blog.html?id=psychology-of-choice&amp;lang=en"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/blog.html?id=psychology-of-choice&amp;lang=de"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/blog.html?id=psychology-of-choice&amp;lang=ru"/>
+  </url>
 </urlset>

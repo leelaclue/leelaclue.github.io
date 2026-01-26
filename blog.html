@@ -4,7 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="privacyPolicyTitle">Privacy Policy</title>
+    <title data-i18n="blogTitle">LeelaClue Blog</title>
+    <meta name="description" content="Read the latest insights and articles from LeelaClue.">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="LeelaClue Blog">
+    <meta property="og:description" content="Read the latest insights and articles from LeelaClue.">
+    <meta property="og:url" content="https://leelaclue.github.io/blog.html">
+    <meta property="og:type" content="website">
+
     <link rel="icon" type="image/png" href="assets/app_icon.png">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -43,11 +51,26 @@
     </header>
 
     <main>
-        <div class="content-card">
-            <h2 data-i18n="privacyPolicyTitle">Privacy Policy</h2>
-            <div class="markdown-content" data-i18n="privacyPolicyContent">
-                Loading...
-            </div>
+        <div class="blog-container">
+            <!-- Sidebar -->
+            <aside class="blog-sidebar">
+                <h3 data-i18n="blogTitle">Blog</h3>
+                <ul id="blog-sidebar-list">
+                    <!-- Links will be injected by blog.js -->
+                    <li><a href="#">Loading...</a></li>
+                </ul>
+            </aside>
+
+            <!-- Main Content -->
+            <article class="blog-content">
+                <div class="blog-header">
+                    <h1 id="blog-post-title">Loading...</h1>
+                    <span id="blog-post-date" class="blog-date"></span>
+                </div>
+                <div id="blog-post-content" class="markdown-body">
+                    <!-- Content will be injected by blog.js / translations.js -->
+                </div>
+            </article>
         </div>
     </main>
 
@@ -58,6 +81,7 @@
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/blog.js"></script>
 </body>
 
 </html>
