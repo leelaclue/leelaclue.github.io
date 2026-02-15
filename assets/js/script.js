@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize UI
     updateLangButtons(currentLang);
     loadTranslations(currentLang);
-    loadAppDescriptions(currentLang); // Load main descriptions
     loadUserGuide(currentLang);
     startCarousel();
 
@@ -184,25 +183,6 @@ function fixInternalLinks(container) {
     });
 }
 
-// Fetch and display App Descriptions (Short and Long)
-async function loadAppDescriptions(lang) {
-    // 1. Load Short Description (Subtitle) from translations.js
-    const subtitle = document.getElementById('app-subtitle');
-    if (subtitle && translations[lang] && translations[lang].shortDescription) {
-        subtitle.textContent = translations[lang].shortDescription;
-    }
-
-    // 2. Load Long Description from translations.js
-    const descContainer = document.getElementById('app-description');
-    if (descContainer && translations[lang] && translations[lang].longDescription) {
-        // Use marked if available
-        if (typeof marked !== 'undefined') {
-            descContainer.innerHTML = marked.parse(translations[lang].longDescription);
-        } else {
-            descContainer.innerHTML = parseMarkdown(translations[lang].longDescription);
-        }
-    }
-}
 
 function updateLangButtons(activeLang) {
     const supportedLangs = ['en', 'de', 'ru'];
