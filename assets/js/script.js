@@ -86,6 +86,14 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Configure Marked options globally
+if (typeof marked !== 'undefined') {
+    marked.setOptions({
+        breaks: true,
+        gfm: true
+    });
+}
+
 function loadTranslations(lang) {
     try {
         const langData = translations[lang];

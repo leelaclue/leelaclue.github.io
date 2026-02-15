@@ -7,25 +7,6 @@
     <title>FAQ - LeelaClue</title>
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=2">
-    <style>
-        .faq-section {
-            max-width: 800px;
-            margin: 4rem auto;
-        }
-
-        .faq-item {
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-        }
-
-        .faq-question {
-            font-family: var(--font-main);
-            color: var(--primary-color);
-            font-size: 1.4rem;
-            margin-bottom: 0.75rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -39,7 +20,7 @@
             </div>
             <nav class="main-nav">
                 <div class="nav-item has-dropdown">
-                    <a href="user_guide.html" class="active">Инфо</a>
+                    <a href="user_guide.html">Инфо</a>
                     <div class="dropdown-menu">
                         <a href="user_guide.html">Руководство</a>
                         <a href="faq.html" class="active">FAQ</a>
@@ -65,26 +46,36 @@
         </div>
     </header>
     <main>
-        <div class="faq-section">
-            <h1>Часто задаваемые вопросы</h1>
-            <div class="faq-item">
-                <div class="faq-question">Что такое Лила?</div>
-                <div class="markdown-body">
-                    <p>Лила — это древняя индийская игра самопознания, также известная как «Игра Жизни». Она веками
-                        использовалась как инструмент для саморефлексии.</p>
-                </div>
-            </div>
+        <h1>Часто задаваемые вопросы (FAQ)</h1>
+        <div class="content-card markdown-body">
+            <h3>Является ли LeelaClue бесплатным?</h3>
+            <p>Да, приложение предоставляет функции дневной Мудрости и Наставления бесплатно. Никаких скрытых подписок.
+            </p>
+
+            <h3>Как часто я могу тянуть карту?</h3>
+            <p>Вы можете использовать "Мудрость дня" (Daily Wisdom) и "Наставление дня" (Daily Guidance) один раз в
+                день.
+            </p>
+
+            <h3>Сохраняются ли мои данные?</h3>
+            <p>Нет. LeelaClue не собирает личные данные. Все остается локально на вашем устройстве.</p>
+
+            <h3>Что такое "Оффлайн-игра"?</h3>
+            <p>Это физическая версия Лилы, в которую можно играть с настоящими картами и игровым полем. Мы предлагаем
+                инструкции по ней в приложении.</p>
         </div>
     </main>
     <footer>
         <div class="footer-links" style="margin-bottom: 1rem;">
-            <a href="privacy.html">Отказ от ответственности</a>
-            <a href="privacy_policy.html">Конфиденциальность</a>
-            <a href="impressum.html">Импрессум</a>
-            <a href="support.html">Поддержка</a>
+            <a href="privacy.html" data-i18n="disclaimerTitle">Отказ от ответственности</a>
+            <a href="privacy_policy.html" data-i18n="privacyPolicyTitle">Конфиденциальность</a>
+            <a href="impressum.html" data-i18n="impressumTitle">Импрессум</a>
+            <a href="support.html" data-i18n="contactTitle">Поддержка</a>
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
 
