@@ -7,25 +7,6 @@
     <title>FAQ - LeelaClue</title>
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=2">
-    <style>
-        .faq-section {
-            max-width: 800px;
-            margin: 4rem auto;
-        }
-
-        .faq-item {
-            margin-bottom: 2rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
-        }
-
-        .faq-question {
-            font-family: var(--font-main);
-            color: var(--primary-color);
-            font-size: 1.4rem;
-            margin-bottom: 0.75rem;
-        }
-    </style>
 </head>
 
 <body>
@@ -39,7 +20,7 @@
             </div>
             <nav class="main-nav">
                 <div class="nav-item has-dropdown">
-                    <a href="user_guide.html" class="active">Handbuch</a>
+                    <a href="user_guide.html">Handbuch</a>
                     <div class="dropdown-menu">
                         <a href="user_guide.html">Benutzerhandbuch</a>
                         <a href="faq.html" class="active">FAQ</a>
@@ -65,26 +46,36 @@
         </div>
     </header>
     <main>
-        <div class="faq-section">
-            <h1>Häufig gestellte Fragen</h1>
-            <div class="faq-item">
-                <div class="faq-question">Was ist Leela?</div>
-                <div class="markdown-body">
-                    <p>Leela ist ein uraltes indisches Spiel der Selbsterkenntnis, auch bekannt als das „Spiel des
-                        Lebens“. Es wird seit Jahrhunderten als Instrument zur Selbstreflexion genutzt.</p>
-                </div>
-            </div>
+        <h1>Fragen & Antworten (FAQ)</h1>
+        <div class="content-card markdown-body">
+            <h3>Ist LeelaClue kostenlos?</h3>
+            <p>Ja, die App bietet tägliche Wisdom- und Guidance-Funktionen kostenlos an. Es gibt keine versteckten Abos.
+            </p>
+
+            <h3>Wie oft kann ich eine Karte ziehen?</h3>
+            <p>Du kannst einmal am Tag die "Tagesweisheit" (Daily Wisdom) und einmal am Tag den "Tageshinweis" (Daily
+                Guidance) nutzen.</p>
+
+            <h3>Werden meine Daten gespeichert?</h3>
+            <p>Nein. LeelaClue sammelt keine persönlichen Daten. Alles bleibt lokal auf deinem Gerät.</p>
+
+            <h3>Was ist das "Offline Spiel"?</h3>
+            <p>Es ist eine physische Version von Leela, die du mit echten Karten und einem Spielbrett spielen kannst.
+                Wir
+                bieten eine Anleitung dazu in der App an.</p>
         </div>
     </main>
     <footer>
         <div class="footer-links" style="margin-bottom: 1rem;">
-            <a href="privacy.html">Haftungsausschluss</a>
-            <a href="privacy_policy.html">Datenschutz</a>
-            <a href="impressum.html">Impressum</a>
-            <a href="support.html">Support</a>
+            <a href="privacy.html" data-i18n="disclaimerTitle">Haftungsausschluss</a>
+            <a href="privacy_policy.html" data-i18n="privacyPolicyTitle">Datenschutz</a>
+            <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
+            <a href="support.html" data-i18n="contactTitle">Support</a>
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/script.js"></script>
 </body>
 
