@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - LeelaClue</title>
+    <title data-i18n="contactTitle">Support</title>
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=2">
 </head>
@@ -38,7 +38,7 @@
             </nav>
             <div class="header-right">
                 <div class="lang-switch">
-                    <a href="../en/support.html" class="lang-btn active">EN</a>
+                    <a href="../en/support.html" class="lang-btn active" data-lang="en">EN</a>
                     <a href="../de/support.html" class="lang-btn">DE</a>
                     <a href="../ru/support.html" class="lang-btn">RU</a>
                 </div>
@@ -46,14 +46,9 @@
         </div>
     </header>
     <main>
-        <h1>Support</h1>
-        <div class="content-card markdown-body">
-            <p>If you want to dive deeper into the world of Leela – visit us on <a
-                    href="https://www.instagram.com/ireneengel.co">Instagram</a> or <a
-                    href="https://t.me/lilagamebeiengel">Telegram</a>.</p>
-            <p>For technical support or inquiries, please email us at <a
-                    href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a> or <a
-                    href="mailto:ikaengel@icloud.com">ikaengel@icloud.com</a>.</p>
+        <h1 data-i18n="contactTitle">Support</h1>
+        <div class="content-card markdown-body" data-i18n="contactMessage">
+            <!-- Content will be injected from translations.js -->
         </div>
     </main>
     <footer>
@@ -65,7 +60,16 @@
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof loadTranslations === 'function') {
+                loadTranslations('en');
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - LeelaClue</title>
+    <title data-i18n="privacyPolicyTitle">Privacy Policy</title>
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=2">
 </head>
@@ -38,47 +38,17 @@
             </nav>
             <div class="header-right">
                 <div class="lang-switch">
-                    <a href="../en/privacy_policy.html" class="lang-btn active">EN</a>
-                    <a href="../de/privacy_policy.html" class="lang-btn">DE</a>
-                    <a href="../ru/privacy_policy.html" class="lang-btn">RU</a>
+                    <a href="../en/privacy_policy.html" class="lang-btn active" data-lang="en">EN</a>
+                    <a href="../de/privacy_policy.html" class="lang-btn" data-lang="de">DE</a>
+                    <a href="../ru/privacy_policy.html" class="lang-btn" data-lang="ru">RU</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <h1>Privacy Policy</h1>
-        <div class="content-card markdown-body">
-            <p><strong>Effective Date:</strong> December 11, 2025</p>
-            <p>This Privacy Policy informs you about the processing of personal data in connection with the LeelaClue
-                mobile application. The protection of your personal data is important to the developer. Below you will
-                find all relevant information about data collection, processing, and your rights.</p>
-            <h2>Responsible Party</h2>
-            <p><strong>Responsible:</strong> Irene Engelko<br><strong>Address:</strong> Bad Schönborn,
-                Germany<br><strong>Email:</strong> leelaclue@gmail.com</p>
-            <h2>Brief Description of the App</h2>
-            <p>LeelaClue is an entertainment app that makes the knowledge of the Leela map accessible. "The 72 fields of
-                the Leela map are the keys to the states of your consciousness. But the map itself is often too complex.
-                LeelaClue distills this ancient knowledge and transforms each state into a clear, intuitive message for
-                your here and now."</p>
-            <h2>What Data is Collected?</h2>
-            <p><strong>None.</strong> The app does not collect, gather, store, or transmit any personal data from users.
-                In particular, no names, email addresses, usage data, location data, contacts, photos, audio recordings,
-                or other personal information is transmitted to the developer or third parties.</p>
-            <h2>Permissions and Access</h2>
-            <p>The app does not require any special system permissions (e.g., camera, microphone, location, or
-                contacts).</p>
-            <h2>Third Parties and Third-Party Services</h2>
-            <p>Currently, LeelaClue does not use any third-party SDKs, analytics tools, advertising networks, crash
-                reporting services, or cloud services that collect or transmit user data.</p>
-            <h2>Storage and Transmission</h2>
-            <p>Since no data is collected, there is also no storage on remote servers and no transmission to third
-                parties.</p>
-            <h2>Children</h2>
-            <p>The app is not intended for children under 13 years of age. No personal data from children is collected.
-            </p>
-            <h2>Contact</h2>
-            <p>For questions about the Privacy Policy or data handling, you can reach the developer at:
-                leelaclue@gmail.com</p>
+        <h1 data-i18n="privacyPolicyTitle">Privacy Policy</h1>
+        <div class="content-card markdown-body" data-i18n="privacyPolicyContent">
+            <!-- Content will be injected from translations.js -->
         </div>
     </main>
     <footer>
@@ -90,7 +60,16 @@
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof loadTranslations === 'function') {
+                loadTranslations('en');
+            }
+        });
+    </script>
 </body>
 
 </html>

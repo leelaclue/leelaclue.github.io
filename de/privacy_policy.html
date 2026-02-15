@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Datenschutzerklärung - LeelaClue</title>
+    <title data-i18n="privacyPolicyTitle">Datenschutzerklärung</title>
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=2">
 </head>
@@ -38,32 +38,17 @@
             </nav>
             <div class="header-right">
                 <div class="lang-switch">
-                    <a href="../en/privacy_policy.html" class="lang-btn">EN</a>
-                    <a href="../de/privacy_policy.html" class="lang-btn active">DE</a>
-                    <a href="../ru/privacy_policy.html" class="lang-btn">RU</a>
+                    <a href="../en/privacy_policy.html" class="lang-btn" data-lang="en">EN</a>
+                    <a href="../de/privacy_policy.html" class="lang-btn active" data-lang="de">DE</a>
+                    <a href="../ru/privacy_policy.html" class="lang-btn" data-lang="ru">RU</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <h1>Datenschutzerklärung</h1>
-        <div class="content-card markdown-body">
-            <p><strong>Gültig ab:</strong> 11. Dezember 2025</p>
-            <p>Diese Datenschutzerklärung informiert über die Verarbeitung personenbezogener Daten im Zusammenhang mit
-                der mobilen Anwendung LeelaClue. Der Schutz Ihrer persönlichen Daten ist der Entwicklerin wichtig.</p>
-            <h2>Verantwortliche Stelle</h2>
-            <p><strong>Verantwortlich:</strong> Irene Engelko<br><strong>Anschrift:</strong> Bad Schönborn,
-                Deutschland<br><strong>E-Mail:</strong> leelaclue@gmail.com</p>
-            <h2>Kurzbeschreibung der App</h2>
-            <p>LeelaClue ist eine Unterhaltungs-App, die das Wissen der Leela-Karte zugänglich macht.</p>
-            <h2>Welche Daten werden erhoben?</h2>
-            <p><strong>Keine.</strong> Die App erhebt, sammelt, speichert oder übermittelt keine personenbezogenen Daten
-                von Nutzerinnen oder Nutzern.</p>
-            <h2>Berechtigungen und Zugriffe</h2>
-            <p>Die App benötigt keine speziellen Systemberechtigungen (z. B. Kamera, Mikrofon, Standort oder Kontakte).
-            </p>
-            <h2>Kontakt</h2>
-            <p>Bei Fragen zur Datenschutzerklärung erreichen Sie die Entwicklerin unter: leelaclue@gmail.com</p>
+        <h1 data-i18n="privacyPolicyTitle">Datenschutzerklärung</h1>
+        <div class="content-card markdown-body" data-i18n="privacyPolicyContent">
+            <!-- Content will be injected from translations.js -->
         </div>
     </main>
     <footer>
@@ -75,7 +60,16 @@
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof loadTranslations === 'function') {
+                loadTranslations('de');
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Отказ от ответственности - LeelaClue</title>
+    <title data-i18n="disclaimerTitle">Отказ от ответственности</title>
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=2">
 </head>
@@ -38,24 +38,17 @@
             </nav>
             <div class="header-right">
                 <div class="lang-switch">
-                    <a href="../en/privacy.html" class="lang-btn">EN</a>
-                    <a href="../de/privacy.html" class="lang-btn">DE</a>
-                    <a href="../ru/privacy.html" class="lang-btn active">RU</a>
+                    <a href="../en/privacy.html" class="lang-btn" data-lang="en">EN</a>
+                    <a href="../de/privacy.html" class="lang-btn" data-lang="de">DE</a>
+                    <a href="../ru/privacy.html" class="lang-btn active" data-lang="ru">RU</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <h1>Отказ от ответственности и условия использования</h1>
-        <div class="content-card markdown-body">
-            <h2>1. Цель приложения</h2>
-            <p>Приложение LeelaClue предназначено исключительно для развлекательных и вдохновляющих целей.</p>
-            <h2>2. Не является консультацией</h2>
-            <p>Материалы приложения не заменяют профессиональную консультацию или лечение.</p>
-            <h2>3. Уведомление об ИИ</h2>
-            <p>Часть контента создается системой ИИ и может содержать ошибки.</p>
-            <h2>4. Ответственность пользователя</h2>
-            <p>Интерпретация контента и использование приложения осуществляются под вашу ответственность.</p>
+        <h1 data-i18n="disclaimerTitle">Отказ от ответственности</h1>
+        <div class="content-card markdown-body" data-i18n="disclaimerContent">
+            <!-- Content will be injected from translations.js -->
         </div>
     </main>
     <footer>
@@ -67,7 +60,16 @@
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof loadTranslations === 'function') {
+                loadTranslations('ru');
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Импрессум - LeelaClue</title>
+    <title data-i18n="impressumTitle">Импрессум</title>
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=2">
 </head>
@@ -38,23 +38,17 @@
             </nav>
             <div class="header-right">
                 <div class="lang-switch">
-                    <a href="../en/impressum.html" class="lang-btn">EN</a>
-                    <a href="../de/impressum.html" class="lang-btn">DE</a>
-                    <a href="../ru/impressum.html" class="lang-btn active">RU</a>
+                    <a href="../en/impressum.html" class="lang-btn" data-lang="en">EN</a>
+                    <a href="../de/impressum.html" class="lang-btn" data-lang="de">DE</a>
+                    <a href="../ru/impressum.html" class="lang-btn active" data-lang="ru">RU</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <h1>Импрессум</h1>
-        <div class="content-card markdown-body">
-            <p>Информация согласно § 5 DDG (Закон о цифровых услугах)</p>
-            <p><strong>Оператор и ответственный за контент:</strong><br>Irene Engelko<br>Bachstrasse 39<br>76669 Bad
-                Schönborn<br>Германия (Germany)</p>
-            <p><strong>Контакты:</strong><br>E-Mail: <a href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a></p>
-            <p><strong>Освобождение от НДС (Правило для малого бизнеса):</strong><br>НДС не указывается, так как
-                оператор освобожден от уплаты НДС в соответствии с § 19 UStG (Закон об НДС) как владелец малого бизнеса.
-            </p>
+        <h1 data-i18n="impressumTitle">Импрессум</h1>
+        <div class="content-card markdown-body" data-i18n="impressumContent">
+            <!-- Content will be injected from translations.js -->
         </div>
     </main>
     <footer>
@@ -66,7 +60,16 @@
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof loadTranslations === 'function') {
+                loadTranslations('ru');
+            }
+        });
+    </script>
 </body>
 
 </html>

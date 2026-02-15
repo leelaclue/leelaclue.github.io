@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Disclaimer & Terms - LeelaClue</title>
+    <title data-i18n="disclaimerTitle">Disclaimer</title>
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=2">
 </head>
@@ -38,26 +38,17 @@
             </nav>
             <div class="header-right">
                 <div class="lang-switch">
-                    <a href="../en/privacy.html" class="lang-btn active">EN</a>
-                    <a href="../de/privacy.html" class="lang-btn">DE</a>
-                    <a href="../ru/privacy.html" class="lang-btn">RU</a>
+                    <a href="../en/privacy.html" class="lang-btn active" data-lang="en">EN</a>
+                    <a href="../de/privacy.html" class="lang-btn" data-lang="de">DE</a>
+                    <a href="../ru/privacy.html" class="lang-btn" data-lang="ru">RU</a>
                 </div>
             </div>
         </div>
     </header>
     <main>
-        <h1>Disclaimer & Terms of Use</h1>
-        <div class="content-card markdown-body">
-            <h2>1. Purpose of the Application</h2>
-            <p>The LeelaClue application is intended solely for entertainment, reflection, and inspirational purposes.
-            </p>
-            <h2>2. Not Professional Advice or Diagnosis</h2>
-            <p>The materials provided by the application do not replace professional advice or treatment.</p>
-            <h2>3. AI Notice</h2>
-            <p>Part of the content of this application is created by a generative AI system. The output may be erroneous
-                or inappropriate.</p>
-            <h2>4. User Responsibility</h2>
-            <p>The interpretation of all content and the use of the application are at your own responsibility.</p>
+        <h1 data-i18n="disclaimerTitle">Disclaimer</h1>
+        <div class="content-card markdown-body" data-i18n="disclaimerContent">
+            <!-- Content will be injected from translations.js -->
         </div>
     </main>
     <footer>
@@ -69,7 +60,16 @@
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/translations.js"></script>
     <script src="../assets/js/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            if (typeof loadTranslations === 'function') {
+                loadTranslations('en');
+            }
+        });
+    </script>
 </body>
 
 </html>
