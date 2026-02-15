@@ -129,7 +129,6 @@ async function loadUserGuide(lang) {
         'de': 'USER_GUIDE_DE.md',
         'ru': 'USER_GUIDE_RU.md'
     };
-
     const fileName = langMap[lang] || 'USER_GUIDE_EN.md';
     const url = `https://raw.githubusercontent.com/leelaclue/helps/main/${fileName}`;
 
@@ -141,10 +140,9 @@ async function loadUserGuide(lang) {
         if (typeof marked !== 'undefined') {
             guideContainer.innerHTML = marked.parse(text);
         } else {
-            guideContainer.innerHTML = parseMarkdown(text); // Fallback
+            guideContainer.innerHTML = parseMarkdown(text);
         }
 
-        // Fix internal anchor links after content is loaded
         fixInternalLinks(guideContainer);
 
     } catch (error) {
@@ -199,26 +197,46 @@ async function loadAppDescriptions(lang) {
 }
 
 function updateLangButtons(activeLang) {
+    const supportedLangs = ['en', 'de', 'ru'];
     const path = window.location.pathname;
-    const isSubPath = path.match(/\/([a-z]{2})\//);
-    const currentPage = path.split('/').pop() || 'index.html';
 
+    // 1. Detect if we are in a language subfolder (e.g., /de/index.html)
+    let currentPathLang = null;
+    for (const l of supportedLangs) {
+        if (path.indexOf(`/${l}/`) !== -1) {
+            currentPathLang = l;
+            break;
+        }
+    }
+
+    // 2. Get current page name (e.g., privacy.html)
+    const pathParts = path.split(/[/\\]/);
+    const currentPage = pathParts.pop() || 'index.html';
+
+    // 3. Update all language buttons
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        const lang = btn.getAttribute('data-lang');
-        if (lang === activeLang) {
+        const targetLang = btn.getAttribute('data-lang');
+        if (!targetLang) return;
+
+        if (targetLang === activeLang) {
             btn.classList.add('active');
         } else {
             btn.classList.remove('active');
         }
 
-        // Update the link to use path-based structure
-        // If we are already in a subfolder (e.g. /de/), go up one level then into the new lang folder
-        if (isSubPath) {
-            btn.href = `../${lang}/${currentPage}${window.location.search}${window.location.hash}`;
+        // 4. Build the correct relative URL
+        let newHref = "";
+        if (currentPathLang) {
+            // In a subfolder: go up then into new lang folder
+            newHref = `../${targetLang}/${currentPage}`;
+        } else if (supportedLangs.includes(targetLang)) {
+            // At root: go into the lang folder
+            newHref = `${targetLang}/${currentPage}`;
         } else {
-            // If at root, go into the lang folder
-            btn.href = `${lang}/${currentPage}${window.location.search}${window.location.hash}`;
+            return; // Fallback
         }
+
+        btn.href = newHref + window.location.search + window.location.hash;
     });
 }
 

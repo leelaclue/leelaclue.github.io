@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голосование за новые функции - LeelaClue</title>
+    <meta name="description"
+        content="Голосуйте за новые функции, которые вы хотите увидеть в LeelaClue. Помогите нам сформировать будущее приложения.">
+    <link rel="icon" type="image/png" href="../assets/app_icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css?v=2">
+    <style>
+        .votes-container {
+            max-width: 900px;
+            margin: 4rem auto;
+            text-align: center;
+        }
+
+        .voting-card {
+            background: var(--secondary-bg);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 16px;
+            padding: 2rem;
+            margin-top: 3rem;
+            text-align: left;
+        }
+
+        .vote-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1.5rem 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .vote-item:last-child {
+            border-bottom: none;
+        }
+
+        .vote-info h3 {
+            margin-bottom: 0.25rem;
+        }
+
+        .vote-info p {
+            color: #888;
+            font-size: 0.95rem;
+        }
+
+        .vote-btn {
+            background: rgba(212, 175, 55, 0.1);
+            border: 1px solid var(--primary-color);
+            color: var(--primary-color);
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-family: var(--font-body);
+        }
+
+        .vote-btn:hover {
+            background: var(--primary-color);
+            color: var(--bg-color);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="../assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
+                    <span class="brand-name">LeelaClue</span>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <div class="nav-item has-dropdown">
+                    <a href="user_guide.html">Инфо</a>
+                    <div class="dropdown-menu">
+                        <a href="user_guide.html">Руководство</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+                <div class="nav-item has-dropdown">
+                    <a href="blog.html" class="active">Сообщество</a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html">Блог</a>
+                        <a href="blog.html?category=news">Новости</a>
+                        <a href="votes.html" class="active">Голосование</a>
+                    </div>
+                </div>
+                <a href="offline-game.html" class="nav-item highlight-btn">Оффлайн-игра</a>
+            </nav>
+
+            <div class="header-right">
+                <div class="lang-switch">
+                    <a href="../en/votes.html" class="lang-btn" data-lang="en">EN</a>
+                    <a href="../de/votes.html" class="lang-btn" data-lang="de">DE</a>
+                    <a href="../ru/votes.html" class="lang-btn active" data-lang="ru">RU</a>
+                </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="votes-container">
+            <h1>Голосование за функции</h1>
+            <p class="subtitle">Ваш голос помогает нам выбирать путь развития LeelaClue. Что нам создать следующим?</p>
+
+            <div class="voting-card">
+                <div class="vote-item">
+                    <div class="vote-info">
+                        <h3>Медитативная музыка</h3>
+                        <p>Фоновые звуковые ландшафты, адаптированные для каждого поля Лилы.</p>
+                    </div>
+                    <button class="vote-btn">Голосовать</button>
+                </div>
+                <div class="vote-item">
+                    <div class="vote-info">
+                        <h3>Общие дневники</h3>
+                        <p>Делитесь своими размышлениями анонимно и просматривайте пути других.</p>
+                    </div>
+                    <button class="vote-btn">Голосовать</button>
+                </div>
+                <div class="vote-item">
+                    <div class="vote-info">
+                        <h3>Продвинутое отслеживание прогресса</h3>
+                        <p>Визуальные карты вашего состояния сознания с течением времени.</p>
+                    </div>
+                    <button class="vote-btn">Голосовать</button>
+                </div>
+                <div class="vote-item">
+                    <div class="vote-info">
+                        <h3>Аудио-рефлексии</h3>
+                        <p>Слушайте описания полей вместо чтения.</p>
+                    </div>
+                    <button class="vote-btn">Голосовать</button>
+                </div>
+            </div>
+            <p style="margin-top: 2rem; color: #666; font-style: italic;">* Голосование носит рекомендательный характер.
+                Окончательный выбор зависит от технической возможности и основной концепции.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links" style="margin-bottom: 1rem;">
+            <a href="privacy.html">Отказ от ответственности</a>
+            <a href="privacy_policy.html">Конфиденциальность</a>
+            <a href="impressum.html">Импрессум</a>
+            <a href="support.html">Поддержка</a>
+        </div>
+        <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

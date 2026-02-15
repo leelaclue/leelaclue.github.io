@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline Leela-Spiel - LeelaClue</title>
+    <meta name="description"
+        content="Fordern Sie eine Offline-Leela-Spielsitzung für eine tiefgehende, persönliche Erfahrung an.">
+    <link rel="icon" type="image/png" href="../assets/app_icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css?v=2">
+    <style>
+        .offline-hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+        }
+
+        .offline-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        .offline-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        @media (max-width: 900px) {
+            .offline-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="../assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
+                    <span class="brand-name">LeelaClue</span>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <div class="nav-item has-dropdown">
+                    <a href="user_guide.html">Handbuch</a>
+                    <div class="dropdown-menu">
+                        <a href="user_guide.html">Benutzerhandbuch</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+                <div class="nav-item has-dropdown">
+                    <a href="blog.html">Community</a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html">Blog</a>
+                        <a href="blog.html?category=news">Releases</a>
+                        <a href="votes.html">Features Voten</a>
+                    </div>
+                </div>
+                <a href="offline-game.html" class="nav-item highlight-btn active">Offline Spiel</a>
+            </nav>
+
+            <div class="header-right">
+                <div class="lang-switch">
+                    <a href="../en/offline-game.html" class="lang-btn" data-lang="en">EN</a>
+                    <a href="../de/offline-game.html" class="lang-btn active" data-lang="de">DE</a>
+                    <a href="../ru/offline-game.html" class="lang-btn" data-lang="ru">RU</a>
+                </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="offline-hero">
+            <h1>Offline Leela-Spiel</h1>
+            <p class="subtitle">Erlebe das antike Spiel persönlich, geführt von Weisheit und Präsenz.</p>
+        </div>
+
+        <div class="offline-grid">
+            <div class="offline-content">
+                <h2>Vertiefe deine Entdeckungen</h2>
+                <div class="markdown-body">
+                    <p>Während die LeelaClue-App tägliche Führung und Reflexion bietet, ist nichts mit der Energie und
+                        Tiefe einer physischen Leela-Sitzung vergleichbar.</p>
+                    <p>Lade das antike vedische Spiel durch eine Offline-Sitzung in dein Leben ein. Egal, ob du in
+                        Deutschland bist oder ein ferngesteuertes Erlebnis suchst, wir bieten personalisierte Spiele für
+                        Einzelpersonen und kleine Gruppen an.</p>
+                    <h3>Was dich erwartet:</h3>
+                    <ul>
+                        <li>Vollständiges Spielerlebnis auf dem 72-Felder-Board</li>
+                        <li>Geführte Meditation und Setzen von Intentionen</li>
+                        <li>Tiefer Einblick in die Symbolik jedes Feldes</li>
+                        <li>Professionelle Begleitung durch die Schlangen und Pfeile deines Lebens</li>
+                    </ul>
+                    <p>Interessiert daran, ein Spiel auszurichten oder daran teilzunehmen? Kontaktiere uns, um deine
+                        Reise zu planen.</p>
+                    <a href="support.html" class="highlight-btn"
+                        style="display: inline-block; margin-top: 1rem;">Kontakt für Anfragen</a>
+                </div>
+            </div>
+            <div class="offline-media">
+                <img src="../assets/images/ADharma.webp" alt="Leela Board Game" class="offline-image">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links" style="margin-bottom: 1rem;">
+            <a href="privacy.html">Haftungsausschluss</a>
+            <a href="privacy_policy.html">Datenschutz</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="support.html">Support</a>
+        </div>
+        <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>
