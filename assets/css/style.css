@@ -137,6 +137,71 @@ body {
   min-height: 100vh;
 }
 
+/* Version & Badge Styles */
+.version-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color) !important;
+  background: transparent;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  font-size: 0.35em;
+  /* Scales with the H1 size */
+  font-weight: 500;
+  vertical-align: middle;
+  margin-left: 0.8rem;
+  text-transform: none;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.new-version-banner {
+  background: rgba(212, 175, 55, 0.1);
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.new-version-banner p {
+  margin: 0;
+  font-weight: 500;
+}
+
+.new-version-banner .banner-cta {
+  background: var(--primary-color);
+  color: var(--bg-color);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.new-version-banner .banner-cta:hover {
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 /* Typography */
 h1,
 h2,
@@ -366,7 +431,7 @@ main {
 
 .hero-content {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 4rem;
   max-width: 1300px;
   margin: 0 auto;
