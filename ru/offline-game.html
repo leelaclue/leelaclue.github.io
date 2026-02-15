@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оффлайн игра Лила - LeelaClue</title>
+    <meta name="description" content="Запросите сессию оффлайн игры Лила для глубокого личного опыта.">
+    <link rel="icon" type="image/png" href="../assets/app_icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css?v=2">
+    <style>
+        .offline-hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+        }
+
+        .offline-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 4rem;
+        }
+
+        .offline-image {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+        }
+
+        @media (max-width: 900px) {
+            .offline-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="../assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
+                    <span class="brand-name">LeelaClue</span>
+                </a>
+            </div>
+
+            <nav class="main-nav">
+                <div class="nav-item has-dropdown">
+                    <a href="user_guide.html">Инфо</a>
+                    <div class="dropdown-menu">
+                        <a href="user_guide.html">Руководство</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+                <div class="nav-item has-dropdown">
+                    <a href="blog.html">Сообщество</a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html">Блог</a>
+                        <a href="blog.html?category=news">Новости</a>
+                        <a href="votes.html">Голосование</a>
+                    </div>
+                </div>
+                <a href="offline-game.html" class="nav-item highlight-btn active">Оффлайн-игра</a>
+            </nav>
+
+            <div class="header-right">
+                <div class="lang-switch">
+                    <a href="../en/offline-game.html" class="lang-btn" data-lang="en">EN</a>
+                    <a href="../de/offline-game.html" class="lang-btn" data-lang="de">DE</a>
+                    <a href="../ru/offline-game.html" class="lang-btn active" data-lang="ru">RU</a>
+                </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="offline-hero">
+            <h1>Оффлайн игра Лила</h1>
+            <p class="subtitle">Почувствуйте древнюю игру лично, под руководством мудрости и присутствия.</p>
+        </div>
+
+        <div class="offline-grid">
+            <div class="offline-content">
+                <h2>Углубите свои открытия</h2>
+                <div class="markdown-body">
+                    <p>Хотя приложение LeelaClue дает ежедневные подсказки и рефлексию, ничто не сравнится с энергией и
+                        глубиной физической сессии Лилы.</p>
+                    <p>Пригласите древнюю ведическую игру в свою жизнь через оффлайн сессию. Находитесь ли вы в Германии
+                        или ищете удаленный опыт с проводником, мы предлагаем индивидуальные игры для отдельных лиц и
+                        небольших групп.</p>
+                    <h3>Что вас ждет:</h3>
+                    <ul>
+                        <li>Полный опыт игры на поле из 72 клеток</li>
+                        <li>Направляемая медитация и установка намерения</li>
+                        <li>Глубокое погружение в символику каждого поля</li>
+                        <li>Профессиональное сопровождение через "змей" и "стрелы" вашей жизни</li>
+                    </ul>
+                    <p>Интересует проведение или участие в игре? Свяжитесь с нами, чтобы запланировать свое путешествие.
+                    </p>
+                    <a href="support.html" class="highlight-btn"
+                        style="display: inline-block; margin-top: 1rem;">Связаться для запроса</a>
+                </div>
+            </div>
+            <div class="offline-media">
+                <img src="../assets/images/ADharma.webp" alt="Leela Board Game" class="offline-image">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-links" style="margin-bottom: 1rem;">
+            <a href="privacy.html">Отказ от ответственности</a>
+            <a href="privacy_policy.html">Конфиденциальность</a>
+            <a href="impressum.html">Импрессум</a>
+            <a href="support.html">Поддержка</a>
+        </div>
+        <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,8 +1,17 @@
-
 document.addEventListener('DOMContentLoaded', () => {
-    // 1. Get current params
+    // 0. Detect Language from Path or Search
+    function detectCurrentLang() {
+        const path = window.location.pathname;
+        if (path.includes('/de/')) return 'de';
+        if (path.includes('/ru/')) return 'ru';
+        if (path.includes('/en/')) return 'en';
+
+        const params = new URLSearchParams(window.location.search);
+        return params.get('lang') || localStorage.getItem('lang') || 'en';
+    }
+
+    const lang = detectCurrentLang();
     const params = new URLSearchParams(window.location.search);
-    const lang = params.get('lang') || localStorage.getItem('lang') || 'en';
     const postId = params.get('id') || 'psychology-of-choice';
 
     // 2. Define Blog Posts Metadata
@@ -99,17 +108,18 @@ async function loadBlogContent(postId, lang) {
         contentEl.innerHTML = '<p class="loading-text">Loading...</p>';
         contentEl.removeAttribute('data-i18n');
 
-        // Ensure global container exists
-        if (!window.blogContent) window.blogContent = {};
+        // Determine base path for assets based on folder depth
+        const path = window.location.pathname;
+        const assetBase = (path.includes('/en/') || path.includes('/de/') || path.includes('/ru/')) ? '../' : '';
 
         // 1. Try to load specific language file
         // Format: assets/posts/[id]_[lang].js
-        let loaded = await loadScript(`assets/posts/${postId}_${lang}.js`);
+        let loaded = await loadScript(`${assetBase}assets/posts/${postId}_${lang}.js`);
 
         // 2. Fallback to English if failing and we weren't already trying English
         if (!loaded && lang !== 'en') {
             console.log(`Blog post script for ${lang} not found, falling back to English.`);
-            loaded = await loadScript(`assets/posts/${postId}_en.js`);
+            loaded = await loadScript(`${assetBase}assets/posts/${postId}_en.js`);
         }
 
         if (loaded && window.blogContent[postId]) {
