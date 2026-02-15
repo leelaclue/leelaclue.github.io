@@ -113,10 +113,12 @@ The User Guide pages currently link to external GitHub-hosted guides. **Do not c
 - "Is LeelaClue for You?" targeting section.
 - Internal links to Blog, User Guide, and Offline Game within body text.
 
-### Pending (Task 2)
-- Sitemap overhaul with hreflang alternates.
-- FAQPage JSON-LD schema on FAQ pages.
-- Hreflang tag verification across all pages.
+### Implemented (Task 2 ✅)
+- Sitemap overhauled: 33 canonical URLs across `/en/`, `/de/`, `/ru/` with full hreflang alternates. Root-level redirectors removed.
+- FAQPage JSON-LD schema on all 3 FAQ pages (7 questions each: Platforms, Cost, Privacy, Languages, Rituals, What is Leela, Offline Game).
+- SoftwareApplication JSON-LD verified on all 3 homepages.
+- Hreflang tags added to all 33 HTML pages.
+- Meta descriptions added to FAQ pages.
 - See: `.agent/tasks/seo_2_technical_schema.md`
 
 ### Pending (Task 3)
