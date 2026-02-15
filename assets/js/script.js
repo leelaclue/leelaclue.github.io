@@ -1,14 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
     const defaultLang = 'en';
-    
-    // 1. Get Language from URL first (SEO friendly)
+
+    // 1. Get Language from Path or URL (SEO friendly)
     function getLanguageFromUrl() {
+        const path = window.location.pathname;
+        if (path.includes('/de/')) return 'de';
+        if (path.includes('/ru/')) return 'ru';
+        if (path.includes('/en/')) return 'en';
+
         const params = new URLSearchParams(window.location.search);
         return params.get('lang');
     }
 
     const urlLang = getLanguageFromUrl();
-    
+
     // 2. Fallback to localStorage or Browser, but URL takes precedence
     let currentLang = urlLang || localStorage.getItem('lang') || navigator.language.split('-')[0] || defaultLang;
 
@@ -194,11 +199,25 @@ async function loadAppDescriptions(lang) {
 }
 
 function updateLangButtons(activeLang) {
+    const path = window.location.pathname;
+    const isSubPath = path.match(/\/([a-z]{2})\//);
+    const currentPage = path.split('/').pop() || 'index.html';
+
     document.querySelectorAll('.lang-btn').forEach(btn => {
-        if (btn.getAttribute('data-lang') === activeLang) {
+        const lang = btn.getAttribute('data-lang');
+        if (lang === activeLang) {
             btn.classList.add('active');
         } else {
             btn.classList.remove('active');
+        }
+
+        // Update the link to use path-based structure
+        // If we are already in a subfolder (e.g. /de/), go up one level then into the new lang folder
+        if (isSubPath) {
+            btn.href = `../${lang}/${currentPage}${window.location.search}${window.location.hash}`;
+        } else {
+            // If at root, go into the lang folder
+            btn.href = `${lang}/${currentPage}${window.location.search}${window.location.hash}`;
         }
     });
 }

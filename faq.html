@@ -4,20 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="privacyPolicyTitle">Privacy Policy</title>
+    <title data-i18n="navFAQ">FAQ - LeelaClue</title>
+    <meta name="description" content="Frequently Asked Questions about LeelaClue and the ancient Leela game.">
     <link rel="icon" type="image/png" href="assets/app_icon.png">
     <link rel="stylesheet" href="assets/css/style.css?v=1">
-    <script>
-        (function () {
-            const userLang = navigator.language || navigator.userLanguage;
-            const storedLang = localStorage.getItem('lang');
-            let lang = storedLang || userLang.split('-')[0];
-            if (!['en', 'de', 'ru'].includes(lang)) lang = 'en';
-            if (lang !== 'en') {
-                window.location.href = lang + '/privacy_policy.html' + window.location.search + window.location.hash;
-            }
-        })();
-    </script>
+    <style>
+        .faq-section {
+            max-width: 800px;
+            margin: 4rem auto;
+        }
+
+        .faq-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(212, 175, 55, 0.1);
+        }
+
+        .faq-question {
+            font-family: var(--font-main);
+            color: var(--primary-color);
+            font-size: 1.4rem;
+            margin-bottom: 0.75rem;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,7 +44,7 @@
                     <a href="user_guide.html" data-i18n="navGuide">Guide</a>
                     <div class="dropdown-menu">
                         <a href="user_guide.html" data-i18n="userGuideTitle">User Guide</a>
-                        <a href="faq.html" data-i18n="navFAQ">FAQ</a>
+                        <a href="faq.html" data-i18n="navFAQ" class="active">FAQ</a>
                     </div>
                 </div>
                 <div class="nav-item has-dropdown">
@@ -51,7 +60,7 @@
 
             <div class="header-right">
                 <div class="lang-switch">
-                    <a href="?lang=en" class="lang-btn active" data-lang="en">EN</a>
+                    <a href="?lang=en" class="lang-btn" data-lang="en">EN</a>
                     <a href="?lang=de" class="lang-btn" data-lang="de">DE</a>
                     <a href="?lang=ru" class="lang-btn" data-lang="ru">RU</a>
                 </div>
@@ -65,16 +74,49 @@
     </header>
 
     <main>
-        <h1 data-i18n="privacyPolicyTitle">Privacy Policy</h1>
-        <div id="privacy-content" class="content-card markdown-body" data-i18n="privacyPolicyContent">
-            <!-- Content will be injected from translations.js -->
+        <div class="faq-section">
+            <h1 data-i18n="navFAQ">Frequently Asked Questions</h1>
+
+            <div class="faq-item">
+                <div class="faq-question">What is Leela?</div>
+                <div class="markdown-body">
+                    <p>Leela is an ancient Indian game of self-knowledge, also known as the "Game of Life". It has been
+                        used for centuries as a toolkit for self-reflection, helping players understand their inner
+                        states and life paths.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">How does the LeelaClue app work?</div>
+                <div class="markdown-body">
+                    <p>The app simplifies the complex Leela map into intuitive reflection rituals. You can draw cards
+                        that represent different states of consciousness, helping you find clarity and focus in your
+                        daily life.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Is the app free?</div>
+                <div class="markdown-body">
+                    <p>Yes, LeelaClue is free to download and use for your daily reflections. We believe in making this
+                        ancient wisdom accessible to everyone.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">Who is behind LeelaClue?</div>
+                <div class="markdown-body">
+                    <p>LeelaClue is developed with passion and respect for the Vedic tradition, aiming to bridge ancient
+                        wisdom with modern digital mindfulness needs.</p>
+                </div>
+            </div>
         </div>
     </main>
 
     <footer>
         <div class="footer-links" style="margin-bottom: 1rem;">
             <a href="privacy.html" data-i18n="disclaimerTitle">Privacy & Terms</a>
-            <a href="privacy_policy.html" data-i18n="privacyPolicyTitle" class="active">Privacy Policy</a>
+            <a href="privacy_policy.html" data-i18n="privacyPolicyTitle">Privacy Policy</a>
             <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
             <a href="support.html" data-i18n="contactTitle">Support</a>
         </div>

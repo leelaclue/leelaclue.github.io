@@ -7,54 +7,80 @@
     <title data-i18n="disclaimerTitle">Privacy Policy</title>
     <link rel="icon" type="image/png" href="assets/app_icon.png">
     <link rel="stylesheet" href="assets/css/style.css?v=1">
+    <script>
+        (function () {
+            const userLang = navigator.language || navigator.userLanguage;
+            const storedLang = localStorage.getItem('lang');
+            let lang = storedLang || userLang.split('-')[0];
+            if (!['en', 'de', 'ru'].includes(lang)) lang = 'en';
+            if (lang !== 'en') {
+                window.location.href = lang + '/privacy.html' + window.location.search + window.location.hash;
+            }
+        })();
+    </script>
 </head>
 
 <body>
     <header>
-        <div class="header-left">
+        <div class="header-container">
             <div class="logo-container">
-                <a href="index.html" style="display: flex; align-items: center; gap: 1rem; text-decoration: none;">
+                <a href="index.html" class="logo-link">
                     <img src="assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
                     <span class="brand-name" data-i18n="appTitle">LeelaClue</span>
                 </a>
             </div>
+
             <nav class="main-nav">
-                <a href="privacy.html" data-i18n="disclaimerTitle">Privacy & Terms</a>
-                <a href="privacy_policy.html" data-i18n="privacyPolicyTitle">Privacy Policy</a>
-                <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
-                <a href="support.html" data-i18n="contactTitle">Support</a>
-                <a href="user_guide.html" data-i18n="userGuideTitle">User Guide</a>
-                <a href="blog.html" data-i18n="blogTitle" class="highlight-menu">Blog</a>
+                <div class="nav-item has-dropdown">
+                    <a href="user_guide.html" data-i18n="navGuide">Guide</a>
+                    <div class="dropdown-menu">
+                        <a href="user_guide.html" data-i18n="userGuideTitle">User Guide</a>
+                        <a href="faq.html" data-i18n="navFAQ">FAQ</a>
+                    </div>
+                </div>
+                <div class="nav-item has-dropdown">
+                    <a href="blog.html" data-i18n="navCommunity">Community</a>
+                    <div class="dropdown-menu">
+                        <a href="blog.html?category=news" data-i18n="navNews">Release News</a>
+                        <a href="votes.html" data-i18n="navVotes">Feature Votes</a>
+                    </div>
+                </div>
+                <a href="offline-game.html" class="nav-item highlight-btn" data-i18n="navOfflineGame">Offline Game</a>
             </nav>
-        </div>
-        <button class="hamburger" aria-label="Menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <div class="lang-switch">
-            <a href="?lang=en" class="lang-btn active" data-lang="en"
-                style="text-decoration: none; display: inline-block; text-align: center;">EN</a>
-            <a href="?lang=de" class="lang-btn" data-lang="de"
-                style="text-decoration: none; display: inline-block; text-align: center;">DE</a>
-            <a href="?lang=ru" class="lang-btn" data-lang="ru"
-                style="text-decoration: none; display: inline-block; text-align: center;">RU</a>
+
+            <div class="header-right">
+                <div class="lang-switch">
+                    <a href="?lang=en" class="lang-btn active" data-lang="en">EN</a>
+                    <a href="?lang=de" class="lang-btn" data-lang="de">DE</a>
+                    <a href="?lang=ru" class="lang-btn" data-lang="ru">RU</a>
+                </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
         </div>
     </header>
 
     <main>
-        <div class="content-card">
-            <h2 data-i18n="disclaimerTitle">Disclaimer</h2>
-            <div class="markdown-content" data-i18n="disclaimerContent">
-                Loading...
-            </div>
+        <h1 data-i18n="disclaimerTitle">Disclaimer</h1>
+        <div id="disclaimer-content" class="content-card markdown-body" data-i18n="disclaimerContent">
+            <!-- Content will be injected from translations.js -->
         </div>
     </main>
 
     <footer>
-        <p style="margin-top: 1rem; color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
+        <div class="footer-links" style="margin-bottom: 1rem;">
+            <a href="privacy.html" data-i18n="disclaimerTitle" class="active">Privacy & Terms</a>
+            <a href="privacy_policy.html" data-i18n="privacyPolicyTitle">Privacy Policy</a>
+            <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
+            <a href="support.html" data-i18n="contactTitle">Support</a>
+        </div>
+        <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
     <script src="assets/js/translations.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
