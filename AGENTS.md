@@ -121,9 +121,9 @@ The User Guide pages currently link to external GitHub-hosted guides. **Do not c
 - Meta descriptions added to FAQ pages.
 - See: `.agent/tasks/seo_2_technical_schema.md`
 
-### Pending (Task 3)
-- robots.txt optimization.
-- Image alt tag audit.
+### Implemented (Task 3 ✅)
+- robots.txt optimization (blocked .agent, tools, new_features).
+- Image alt tag audit (100% coverage verified).
 - Final SEO polish and validation.
 - See: `.agent/tasks/seo_3_navigation_linking.md`
 
