@@ -1,0 +1,5 @@
+# Internal feature docs
+new_features/
+
+# Agent workspace
+.agent/
