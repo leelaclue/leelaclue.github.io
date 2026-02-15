@@ -15,19 +15,19 @@
     <meta property="og:description"
         content="Explore your life's path with LeelaClue. A modern take on the ancient Indian game of self-knowledge.">
     <meta property="og:image" content="https://leelaclue.github.io/assets/images/ADharma.webp">
-    <meta property="og:url" content="https://leelaclue.github.io">
+    <meta property="og:url" content="https://leelaclue.github.io/en/">
     <meta property="og:type" content="website">
 
     <!-- Hreflang Tags -->
     <link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/" />
     <link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/" />
     <link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/" />
-    <link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/" />
+    <link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/" />
 
-    <link rel="icon" type="image/png" href="assets/app_icon.png">
-    <link rel="stylesheet" href="assets/css/style.css?v=1">
+    <link rel="icon" type="image/png" href="../assets/app_icon.png">
+    <link rel="stylesheet" href="../assets/css/style.css?v=2">
 
-    <!-- Structured Data (SoftwareApplication) -->
+    <!-- Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -39,24 +39,8 @@
         "@type": "Offer",
         "price": "0",
         "priceCurrency": "USD"
-      },
-      "description": "LeelaClue is a mindfulness application based on the ancient Vedic game of Leela (Snakes and Ladders). It serves as a tool for self-reflection and spiritual guidance."
+      }
     }
-    </script>
-
-    <!-- Language Redirection -->
-    <script>
-        (function () {
-            const userLang = navigator.language || navigator.userLanguage;
-            const storedLang = localStorage.getItem('lang');
-            let lang = storedLang || userLang.split('-')[0];
-            if (!['en', 'de', 'ru'].includes(lang)) lang = 'en';
-
-            // Redirect only if at root exactly
-            if (window.location.pathname === '/' || window.location.pathname === '/index.html') {
-                window.location.href = lang + '/index.html' + window.location.search + window.location.hash;
-            }
-        })();
     </script>
 </head>
 
@@ -65,35 +49,35 @@
         <div class="header-container">
             <div class="logo-container">
                 <a href="index.html" class="logo-link">
-                    <img src="assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
-                    <span class="brand-name" data-i18n="appTitle">LeelaClue</span>
+                    <img src="../assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
+                    <span class="brand-name">LeelaClue</span>
                 </a>
             </div>
 
             <nav class="main-nav">
                 <div class="nav-item has-dropdown">
-                    <a href="user_guide.html" data-i18n="navGuide">Guide</a>
+                    <a href="user_guide.html">Guide</a>
                     <div class="dropdown-menu">
-                        <a href="user_guide.html" data-i18n="userGuideTitle">User Guide</a>
-                        <a href="faq.html" data-i18n="navFAQ">FAQ</a>
+                        <a href="user_guide.html">User Guide</a>
+                        <a href="faq.html">FAQ</a>
                     </div>
                 </div>
                 <div class="nav-item has-dropdown">
-                    <a href="blog.html" data-i18n="navCommunity">Community</a>
+                    <a href="blog.html">Community</a>
                     <div class="dropdown-menu">
-                        <a href="blog.html" data-i18n="blogTitle">Blog</a>
-                        <a href="blog.html?category=news" data-i18n="navNews">Release News</a>
-                        <a href="votes.html" data-i18n="navVotes">Feature Votes</a>
+                        <a href="blog.html">Blog</a>
+                        <a href="blog.html?category=news">Release News</a>
+                        <a href="votes.html">Feature Votes</a>
                     </div>
                 </div>
-                <a href="offline-game.html" class="nav-item highlight-btn" data-i18n="navOfflineGame">Offline Game</a>
+                <a href="offline-game.html" class="nav-item highlight-btn">Offline Game</a>
             </nav>
 
             <div class="header-right">
                 <div class="lang-switch">
-                    <a href="?lang=en" class="lang-btn active" data-lang="en">EN</a>
-                    <a href="?lang=de" class="lang-btn" data-lang="de">DE</a>
-                    <a href="?lang=ru" class="lang-btn" data-lang="ru">RU</a>
+                    <a href="../en/index.html" class="lang-btn active" data-lang="en">EN</a>
+                    <a href="../de/index.html" class="lang-btn" data-lang="de">DE</a>
+                    <a href="../ru/index.html" class="lang-btn" data-lang="ru">RU</a>
                 </div>
                 <button class="hamburger" aria-label="Menu">
                     <span></span>
@@ -107,7 +91,6 @@
     <main>
         <div class="hero">
             <div class="hero-content">
-                <!-- Left Column: Carousel -->
                 <div class="hero-left">
                     <div class="store-section">
                         <a href="https://apps.apple.com/us/app/leelaclue-mindfulness/id6757707003" target="_blank"
@@ -124,47 +107,53 @@
                         </a>
                     </div>
                     <div class="carousel-container">
-                        <img src="assets/images/ADharma.webp" alt="Leela Card - ADharma" class="carousel-slide active">
-                        <img src="assets/images/Antariksha.webp" alt="Leela Card - Antariksha" class="carousel-slide">
-                        <img src="assets/images/Irasya.webp" alt="Leela Card - Irasya" class="carousel-slide">
-                        <img src="assets/images/KamaLoka.webp" alt="Leela Card - KamaLoka" class="carousel-slide">
-                        <img src="assets/images/Lobha.webp" alt="Leela Card - Lobha" class="carousel-slide">
+                        <img src="../assets/images/ADharma.webp" alt="Leela Card - ADharma"
+                            class="carousel-slide active">
+                        <img src="../assets/images/Antariksha.webp" alt="Leela Card - Antariksha"
+                            class="carousel-slide">
+                        <img src="../assets/images/Irasya.webp" alt="Leela Card - Irasya" class="carousel-slide">
+                        <img src="../assets/images/KamaLoka.webp" alt="Leela Card - KamaLoka" class="carousel-slide">
+                        <img src="../assets/images/Lobha.webp" alt="Leela Card - Lobha" class="carousel-slide">
                     </div>
-
-
                 </div>
 
-                <!-- Right Column: Description -->
                 <div class="hero-right">
-                    <h1 data-i18n="appTitle">LeelaClue</h1>
-                    <div id="app-subtitle" class="subtitle">The Ancient Game of Self-Knowledge</div>
-                    <div id="app-description" class="markdown-body">
-                        <p>LeelaClue is a tool for self-discovery and mindfulness, based on the ancient Indian game of
-                            Leela. It helps you navigate life's challenges by offering clarity through the symbolism of
-                            snakes and arrows.</p>
-                        <p>Explore your inner world, understand your patterns, and find guidance in this digital
-                            adaptation of the Vedic tradition.</p>
+                    <h1>LeelaClue</h1>
+                    <div class="subtitle">LeelaClue – 72 gates to self-reflection. Symbolic cards for mindfulness, inner
+                        clarity, and conscious perspectives in everyday life.</div>
+                    <div class="markdown-body">
+                        <h3>Clarity begins in stillness — LeelaClue supports mindful reflection.</h3>
+                        <p>In everyday life, it's easy to lose perspective when thoughts circle or emotions feel
+                            blocked. LeelaClue is a calm digital space for self-reflection and mindfulness. The app uses
+                            the symbolic imagery of the ancient game of Leela to invite new perspectives and deepen
+                            personal awareness.</p>
+                        <h4>Your personal reflection ritual:</h4>
+                        <ul>
+                            <li><strong>Find your focus</strong> – Formulate a question or intention that currently
+                                occupies your thoughts.</li>
+                            <li><strong>The 3-card reflection</strong> – Draw three cards intuitively, each offering a
+                                different perspective.</li>
+                        </ul>
+                        <p>LeelaClue helps you organize thoughts and experience your own inner perception more
+                            consciously.</p>
                     </div>
                 </div>
             </div>
         </div>
-
-
     </main>
 
     <footer>
         <div class="footer-links" style="margin-bottom: 1rem;">
-            <a href="privacy.html" data-i18n="disclaimerTitle">Privacy & Terms</a>
-            <a href="privacy_policy.html" data-i18n="privacyPolicyTitle">Privacy Policy</a>
-            <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
-            <a href="support.html" data-i18n="contactTitle">Support</a>
+            <a href="privacy.html">Privacy & Terms</a>
+            <a href="privacy_policy.html">Privacy Policy</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="support.html">Support</a>
         </div>
         <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="assets/js/translations.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="../assets/js/script.js"></script>
 </body>
 
 </html>
