@@ -1,8 +1,6 @@
 
 if (!window.blogContent) window.blogContent = {};
 window.blogContent['psychology-of-choice'] = `
-<h3>Die Psychologie der Entscheidung: So funktioniert LeelaClue</h3>
-
 <p>Unser Leben ist im Grunde eine endlose Kette von Entscheidungen. Vom Aufwachen bis zum Schlafengehen wählen wir Pfade.</p>
 
 <p>Manche dieser Entscheidungen sind einfach. Sie sind reine Mathematik. Du kannst eine Tabelle öffnen, Pro und Contra auflisten und Werte zuweisen.</p>
