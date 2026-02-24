@@ -353,6 +353,9 @@ function handleVoting(currentLang) {
 
 // Minimal Privacy/Cookie Banner Logic
 function initPrivacyBanner(lang) {
+    if (window.location.search.includes('reset=1')) {
+        localStorage.removeItem('privacy_accepted');
+    }
     if (localStorage.getItem('privacy_accepted')) return;
 
     const langData = translations[lang] || translations['en'];
