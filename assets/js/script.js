@@ -31,6 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLangButtons(currentLang);
     loadTranslations(currentLang);
     loadUserGuide(currentLang);
+    handleVoting(currentLang);
     startCarousel();
 
     // Check if URL has #user-guide hash and show the section
@@ -258,4 +259,76 @@ function parseMarkdown(text) {
         return `<p>${para.replace(/\n/g, '<br>')}</p>`;
     }).join('');
     return text;
+}
+
+// Feature Voting Logic (Google Forms Integration)
+function handleVoting(currentLang) {
+    const voteButtons = document.querySelectorAll('.vote-btn');
+    if (voteButtons.length === 0) return;
+
+    const votedTexts = {
+        'en': 'Voted!',
+        'de': 'Abgestimmt!',
+        'ru': 'Голос принят!'
+    };
+
+    voteButtons.forEach(btn => {
+        const featureId = btn.getAttribute('data-vote-id');
+
+        // Check if already voted
+        if (localStorage.getItem(`voted_${featureId}`)) {
+            btn.innerText = votedTexts[currentLang] || votedTexts['en'];
+            btn.disabled = true;
+            btn.classList.add('voted');
+            btn.style.opacity = '0.6';
+            btn.style.cursor = 'default';
+        }
+
+        btn.addEventListener('click', async function () {
+            if (this.disabled) return;
+
+            const featureId = this.getAttribute('data-vote-id');
+            const originalText = this.innerText;
+
+            // UI Feedback: Immediate change
+            this.innerText = '...';
+            this.disabled = true;
+
+            // Google Form Config (Silent Submission)
+            const formId = "1FAIpQLSer-_ZoIftgOUJOXVJ8fnfmu81pIGE0wCDIipRHdYYcDdCRsw";
+            const entryId = "entry.342078219";
+            const submissionUrl = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
+
+            // Append data
+            const formData = new URLSearchParams();
+            formData.append(entryId, featureId);
+            formData.append('submit', 'Submit');
+
+            try {
+                // Send in background (no-cors mode is the only way to avoid redirect/error with Google forms)
+                fetch(submissionUrl, {
+                    method: 'POST',
+                    mode: 'no-cors',
+                    header: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: formData.toString()
+                });
+
+                // Positive UI state
+                this.innerText = votedTexts[currentLang] || votedTexts['en'];
+                this.classList.add('voted');
+                this.style.opacity = '0.6';
+                this.style.cursor = 'default';
+
+                // Prevent double voting in session
+                localStorage.setItem(`voted_${featureId}`, 'true');
+
+            } catch (error) {
+                console.error('Voting submission error:', error);
+                this.innerText = originalText;
+                this.disabled = false;
+            }
+        });
+    });
 }
