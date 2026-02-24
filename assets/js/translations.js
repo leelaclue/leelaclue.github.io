@@ -18,7 +18,9 @@ const translations = {
         "navVotes": "Feature Votes",
         "navOfflineGame": "Offline Game",
         "navLegal": "Legal",
-        "navSupport": "Support"
+        "navSupport": "Support",
+        "privacyNotice": "We use minimal local storage to ensure you have the best experience (e.g., language settings and voting features). No tracking or personal data is collected.",
+        "privacyAccept": "Got it"
     },
     "de": {
         "appTitle": "LeelaClue",
@@ -39,7 +41,9 @@ const translations = {
         "navVotes": "Features Voten",
         "navOfflineGame": "Offline Spiel",
         "navLegal": "Rechtliches",
-        "navSupport": "Support"
+        "navSupport": "Support",
+        "privacyNotice": "Wir verwenden minimalen lokalen Speicher, um die bestmögliche Erfahrung zu bieten (z. B. Spracheinstellungen und Voting-Funktionen). Es werden keine Tracking- oder persönlichen Daten gesammelt.",
+        "privacyAccept": "Verstanden"
     },
     "ru": {
         "appTitle": "LeelaClue",
@@ -60,6 +64,8 @@ const translations = {
         "navVotes": "Голосование",
         "navOfflineGame": "Оффлайн-игра",
         "navLegal": "Юр. инфо",
-        "navSupport": "Поддержка"
+        "navSupport": "Поддержка",
+        "privacyNotice": "Мы используем минимум локального хранилища для обеспечения наилучшего опыта (например, настройки языка и функции голосования). Мы не используем отслеживание и не собираем личные данные.",
+        "privacyAccept": "Понятно"
     }
 };

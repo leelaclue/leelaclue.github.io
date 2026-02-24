@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
     loadTranslations(currentLang);
     loadUserGuide(currentLang);
     handleVoting(currentLang);
+    initPrivacyBanner(currentLang);
     startCarousel();
 
     // Check if URL has #user-guide hash and show the section
@@ -300,7 +301,7 @@ function handleVoting(currentLang) {
             const submissionUrl = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
 
             try {
-                // Create a hidden iframe to handle the response without redirecting the user
+                // Create a hidden iframe to handle the response
                 let iframe = document.getElementById('voted_iframe');
                 if (!iframe) {
                     iframe = document.createElement('iframe');
@@ -337,7 +338,7 @@ function handleVoting(currentLang) {
                 this.style.opacity = '0.6';
                 this.style.cursor = 'default';
 
-                // Prevent double voting in session
+                // Prevent double voting
                 localStorage.setItem(`voted_${featureId}`, 'true');
 
             } catch (error) {
@@ -348,3 +349,33 @@ function handleVoting(currentLang) {
         });
     });
 }
+
+// Minimal Privacy/Cookie Banner Logic
+function initPrivacyBanner(lang) {
+    if (localStorage.getItem('privacy_accepted')) return;
+
+    const langData = translations[lang] || translations['en'];
+
+    const banner = document.createElement('div');
+    banner.className = 'privacy-banner';
+    banner.innerHTML = `
+        <p>${langData.privacyNotice}</p>
+        <button class="privacy-btn">${langData.privacyAccept}</button>
+    `;
+
+    document.body.appendChild(banner);
+
+    // Show with slight delay
+    setTimeout(() => {
+        banner.classList.add('show');
+    }, 1000);
+
+    banner.querySelector('.privacy-btn').addEventListener('click', () => {
+        banner.classList.remove('show');
+        localStorage.setItem('privacy_accepted', 'true');
+        setTimeout(() => {
+            document.body.removeChild(banner);
+        }, 600);
+    });
+}
+
