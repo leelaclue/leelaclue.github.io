@@ -1,8 +1,6 @@
 
 if (!window.blogContent) window.blogContent = {};
 window.blogContent['psychology-of-choice'] = `
-<h3>The Psychology of Choice: How LeelaClue Works</h3>
-
 <p>Our lives are essentially an endless chain of decisions. From the moment we wake up to the moment we sleep, we are choosing paths.</p>
 
 <p>Some of these decisions are simple. They are mathematical. You can open a spreadsheet, list the pros and cons, and assign values.</p>
