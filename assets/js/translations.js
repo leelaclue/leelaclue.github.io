@@ -20,7 +20,8 @@ const translations = {
         "navLegal": "Legal",
         "navSupport": "Support",
         "privacyNotice": "We use cookies and local storage to provide functional features like language preferences and voting. We do not use tracking or collect personal data.",
-        "privacyAccept": "Got it"
+        "privacyAccept": "Got it",
+        "webPrivacyTitle": "Website Privacy"
     },
     "de": {
         "appTitle": "LeelaClue",
@@ -43,7 +44,8 @@ const translations = {
         "navLegal": "Rechtliches",
         "navSupport": "Support",
         "privacyNotice": "Wir verwenden Cookies und lokalen Speicher für funktionale Zwecke, wie Spracheinstellungen und Abstimmungen. Wir verwenden kein Tracking und sammeln keine persönlichen Daten.",
-        "privacyAccept": "Verstanden"
+        "privacyAccept": "Verstanden",
+        "webPrivacyTitle": "Website-Datenschutz"
     },
     "ru": {
         "appTitle": "LeelaClue",
@@ -66,6 +68,7 @@ const translations = {
         "navLegal": "Юр. инфо",
         "navSupport": "Поддержка",
         "privacyNotice": "Мы используем файлы cookie и локальное хранилище для обеспечения работы таких функций, как языковые настройки и голосование. Мы не используем отслеживание и не собираем личные данные.",
-        "privacyAccept": "Понятно"
+        "privacyAccept": "Понятно",
+        "webPrivacyTitle": "Конфиденциальность сайта"
     }
 };
