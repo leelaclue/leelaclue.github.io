@@ -294,23 +294,42 @@ function handleVoting(currentLang) {
             this.innerText = '...';
             this.disabled = true;
 
-            // Google Form Config (Silent Submission)
+            // Google Form Config (Silent Submission using Iframe Method)
             const formId = "1FAIpQLSer-_ZoIftgOUJOXVJ8fnfmu81pIGE0wCDIipRHdYYcDdCRsw";
             const entryId = "entry.342078219";
             const submissionUrl = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
 
-            // Append data
-            const formData = new URLSearchParams();
-            formData.append(entryId, featureId);
-
             try {
-                // Send in background (no-cors mode)
-                // Note: Using URLSearchParams object directly as body sets the correct Content-Type automatically
-                fetch(submissionUrl, {
-                    method: 'POST',
-                    mode: 'no-cors',
-                    body: formData
-                });
+                // Create a hidden iframe to handle the response without redirecting the user
+                let iframe = document.getElementById('voted_iframe');
+                if (!iframe) {
+                    iframe = document.createElement('iframe');
+                    iframe.id = 'voted_iframe';
+                    iframe.name = 'voted_iframe';
+                    iframe.style.display = 'none';
+                    document.body.appendChild(iframe);
+                }
+
+                // Create a temporary form to submit the data
+                const form = document.createElement('form');
+                form.action = submissionUrl;
+                form.method = 'POST';
+                form.target = 'voted_iframe';
+
+                const input = document.createElement('input');
+                input.type = 'hidden';
+                input.name = entryId;
+                input.value = featureId;
+                form.appendChild(input);
+
+                // Submit the form
+                document.body.appendChild(form);
+                form.submit();
+
+                // Cleanup
+                setTimeout(() => {
+                    document.body.removeChild(form);
+                }, 500);
 
                 // Positive UI state
                 this.innerText = votedTexts[currentLang] || votedTexts['en'];
