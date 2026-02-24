@@ -302,17 +302,14 @@ function handleVoting(currentLang) {
             // Append data
             const formData = new URLSearchParams();
             formData.append(entryId, featureId);
-            formData.append('submit', 'Submit');
 
             try {
-                // Send in background (no-cors mode is the only way to avoid redirect/error with Google forms)
+                // Send in background (no-cors mode)
+                // Note: Using URLSearchParams object directly as body sets the correct Content-Type automatically
                 fetch(submissionUrl, {
                     method: 'POST',
                     mode: 'no-cors',
-                    header: {
-                        'Content-Type': 'application/x-www-form-urlencoded'
-                    },
-                    body: formData.toString()
+                    body: formData
                 });
 
                 // Positive UI state
