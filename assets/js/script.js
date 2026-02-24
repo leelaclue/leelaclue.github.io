@@ -108,11 +108,12 @@ function loadTranslations(lang) {
                 if (element.tagName === 'TITLE') {
                     element.innerText = `LeelaClue - ${langData[key]}`;
                 } else {
-                    // Use marked if available, else simple fallback (but we added marked lib)
-                    if (typeof marked !== 'undefined') {
-                        element.innerHTML = marked.parse(langData[key]);
+                    const text = langData[key];
+                    // Skip marked for simple strings to avoid wrapping in <p> labels
+                    if (typeof marked !== 'undefined' && (text.includes('\n') || text.length > 50)) {
+                        element.innerHTML = marked.parse(text);
                     } else {
-                        element.innerHTML = parseMarkdown(langData[key]);
+                        element.innerText = text;
                     }
                 }
             }
