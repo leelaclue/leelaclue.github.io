@@ -84,6 +84,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 mainNav.classList.remove('active');
             });
         });
+
+        // Close menu automatically if user resizes back to desktop
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 950) {
+                hamburger.classList.remove('active');
+                mainNav.classList.remove('active');
+            }
+        });
     }
 });
 
