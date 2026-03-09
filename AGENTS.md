@@ -166,5 +166,4 @@ const root = 'c:/GitHub/leelaclue.github.io';
 
 ## 6. Important Notes
 - The **root-level HTML files** (`/index.html`, `/blog.html`, etc.) are simple JavaScript redirectors that detect the user's browser language and redirect to the appropriate `/en/`, `/de/`, or `/ru/` subfolder. Do not add content to these files.
-- The branch is `feature_redesign`.
 - The `.agent/` and `new_features/` folders are gitignored.

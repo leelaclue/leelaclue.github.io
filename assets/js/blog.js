@@ -12,10 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const lang = detectCurrentLang();
     const params = new URLSearchParams(window.location.search);
-    const postId = params.get('id') || 'psychology-of-choice';
+    const postId = params.get('id') || 'why-i-facilitate-leela';
 
     // 2. Define Blog Posts Metadata
     const blogPosts = [
+        {
+            id: 'why-i-facilitate-leela',
+            titleKey: 'blog_post_2_title',
+            date: '2026-03-09'
+        },
         {
             id: 'psychology-of-choice',
             titleKey: 'blog_post_1_title',
@@ -78,6 +83,11 @@ async function loadBlogContent(postId, lang) {
     const dateEl = document.getElementById('blog-post-date');
 
     const blogPosts = [
+        {
+            id: 'why-i-facilitate-leela',
+            titleKey: 'blog_post_2_title',
+            date: '2026-03-09'
+        },
         {
             id: 'psychology-of-choice',
             titleKey: 'blog_post_1_title',
