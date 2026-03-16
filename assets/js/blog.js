@@ -12,10 +12,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const lang = detectCurrentLang();
     const params = new URLSearchParams(window.location.search);
-    const postId = params.get('id') || 'why-i-facilitate-leela';
+    const postId = params.get('id') || 'the-soul-map';
 
     // 2. Define Blog Posts Metadata
     const blogPosts = [
+        {
+            id: 'the-soul-map',
+            titleKey: 'blog_post_3_title',
+            date: '2026-03-16'
+        },
         {
             id: 'why-i-facilitate-leela',
             titleKey: 'blog_post_2_title',
@@ -83,6 +88,11 @@ async function loadBlogContent(postId, lang) {
     const dateEl = document.getElementById('blog-post-date');
 
     const blogPosts = [
+        {
+            id: 'the-soul-map',
+            titleKey: 'blog_post_3_title',
+            date: '2026-03-16'
+        },
         {
             id: 'why-i-facilitate-leela',
             titleKey: 'blog_post_2_title',
