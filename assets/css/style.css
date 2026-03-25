@@ -59,6 +59,19 @@ body {
   line-height: 1;
 }
 
+.coming-soon {
+  font-size: 0.3em;
+  background: rgba(212, 175, 55, 0.2);
+  color: var(--primary-color);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+  margin-left: 0.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+
 .new-version-banner {
   background: rgba(212, 175, 55, 0.1);
   border: 1px solid rgba(212, 175, 55, 0.3);
