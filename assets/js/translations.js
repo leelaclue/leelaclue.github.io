@@ -24,7 +24,10 @@ const translations = {
         "navSupport": "Support",
         "privacyNotice": "We use cookies and local storage to provide functional features like language preferences and voting. We do not use tracking or collect personal data.",
         "privacyAccept": "Got it",
-        "webPrivacyTitle": "Website Privacy"
+        "webPrivacyTitle": "Website Privacy",
+        "newBadge": "NEW",
+        "latestBlogPrefix": "Latest:",
+        "newBlogLabel": "New Blog"
     },
     "de": {
         "appTitle": "LeelaClue",
@@ -51,7 +54,10 @@ const translations = {
         "navSupport": "Support",
         "privacyNotice": "Wir verwenden Cookies und lokalen Speicher für funktionale Zwecke, wie Spracheinstellungen und Abstimmungen. Wir verwenden kein Tracking und sammeln keine persönlichen Daten.",
         "privacyAccept": "Verstanden",
-        "webPrivacyTitle": "Website-Datenschutz"
+        "webPrivacyTitle": "Website-Datenschutz",
+        "newBadge": "NEU",
+        "latestBlogPrefix": "Neu:",
+        "newBlogLabel": "Neuer Blog"
     },
     "ru": {
         "appTitle": "LeelaClue",
@@ -78,6 +84,9 @@ const translations = {
         "navSupport": "Поддержка",
         "privacyNotice": "Мы используем файлы cookie и локальное хранилище для обеспечения работы таких функций, как языковые настройки и голосование. Мы не используем отслеживание и не собираем личные данные.",
         "privacyAccept": "Понятно",
-        "webPrivacyTitle": "Конфиденциальность сайта"
+        "webPrivacyTitle": "Конфиденциальность сайта",
+        "newBadge": "НОВОЕ",
+        "latestBlogPrefix": "Новое:",
+        "newBlogLabel": "Новый блог"
     }
 };

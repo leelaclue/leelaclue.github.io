@@ -132,6 +132,13 @@ The User Guide pages currently link to external GitHub-hosted guides. **Do not c
 - Integrated these terms into meta keywords, structured data (JSON-LD), and homepage body content across EN, DE, and RU.
 - Bulk updated all 33 HTML files to include these terms in meta keywords for trilingual consistency.
 
+### Implemented (Task 5 ✅)
+- New Blog Post: "From Intuition to Algorithm: How LeelaClue Was Born".
+- Automated selection of the latest blog post in `blog.js`.
+- Red-Gold "New" indicators:
+    - Pulsing dot (`.dot-new`) next to "Community" in the global navigation.
+    - Premium teaser card (`.blog-teaser`) on all homepages with a Red-Gold gradient badge.
+
 ---
 
 ## 5. Common Patterns
@@ -166,6 +173,13 @@ const root = 'c:/GitHub/leelaclue.github.io';
 - Use descriptive commit messages: `feat:`, `fix:`, `chore:`.
 - Always `git add -A` before committing.
 - Use `;` not `&&` to chain commands in PowerShell.
+
+### Announcing new content
+When adding a new blog post or significant feature:
+1. Update `assets/js/blog.js` and `assets/js/translations.js`.
+2. Add the pulsing dot `<span class="dot-new"></span>` to the relevant navigation item in all 33 HTML files.
+3. Add/Update a `.blog-teaser` card on the homepages (`/en/index.html`, etc.) for direct access.
+4. Use the Red-Gold theme (`#e25822`) for "New" indicators to distinguish them from standard gold.
 
 ---
 

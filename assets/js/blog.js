@@ -1,3 +1,27 @@
+// Blog Posts Metadata (Shared)
+const blogPosts = [
+    {
+        id: 'how-leelaclue-was-born',
+        titleKey: 'blog_post_4_title',
+        date: '2026-03-25'
+    },
+    {
+        id: 'the-soul-map',
+        titleKey: 'blog_post_3_title',
+        date: '2026-03-16'
+    },
+    {
+        id: 'why-i-facilitate-leela',
+        titleKey: 'blog_post_2_title',
+        date: '2026-03-09'
+    },
+    {
+        id: 'psychology-of-choice',
+        titleKey: 'blog_post_1_title',
+        date: '2026-01-26'
+    }
+];
+
 document.addEventListener('DOMContentLoaded', () => {
     // 0. Detect Language from Path or Search
     function detectCurrentLang() {
@@ -12,32 +36,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const lang = detectCurrentLang();
     const params = new URLSearchParams(window.location.search);
-    const postId = params.get('id') || 'the-soul-map';
-
-    // 2. Define Blog Posts Metadata
-    const blogPosts = [
-        {
-            id: 'how-leelaclue-was-born',
-            titleKey: 'blog_post_4_title',
-            date: '2026-03-25'
-        },
-        {
-            id: 'the-soul-map',
-            titleKey: 'blog_post_3_title',
-            date: '2026-03-16'
-        },
-        {
-            id: 'why-i-facilitate-leela',
-            titleKey: 'blog_post_2_title',
-            date: '2026-03-09'
-        },
-        {
-            id: 'psychology-of-choice',
-            titleKey: 'blog_post_1_title',
-            date: '2026-01-26'
-        }
-        // Add more posts here in the future
-    ];
+    
+    // 1. Get postId from URL or default to the LATEST post in the list
+    const postId = params.get('id') || (blogPosts.length > 0 ? blogPosts[0].id : null);
 
     // 3. Render Sidebar
     const sidebarList = document.getElementById('blog-sidebar-list');
@@ -51,18 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const postUrl = `blog.html?id=${post.id}&lang=${lang}`;
             a.href = postUrl;
 
-            // Get title from translations (fallback to ID if missing)
-            // Note: We need to access translations object which is loaded in translations.js
-            // However, translations might not be ready if script order issues. 
-            // We assume translations.js is loaded before this script or we access it safely.
-
             // Check if active
             if (post.id === postId) {
                 a.classList.add('active');
             }
 
-            // We will set the text content later after translations are ensured to be available
-            // or we just use a placeholder for now and update in loadBlogContent
             a.setAttribute('data-i18n', post.titleKey);
             // Default text while loading
             a.textContent = post.id;
@@ -73,7 +67,9 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // 4. Load Content for the Active Post
-    loadBlogContent(postId, lang);
+    if (postId) {
+        loadBlogContent(postId, lang);
+    }
 });
 
 // Helper to load external scripts dynamically
@@ -91,29 +87,6 @@ async function loadBlogContent(postId, lang) {
     const titleEl = document.getElementById('blog-post-title');
     const contentEl = document.getElementById('blog-post-content');
     const dateEl = document.getElementById('blog-post-date');
-
-    const blogPosts = [
-        {
-            id: 'how-leelaclue-was-born',
-            titleKey: 'blog_post_4_title',
-            date: '2026-03-25'
-        },
-        {
-            id: 'the-soul-map',
-            titleKey: 'blog_post_3_title',
-            date: '2026-03-16'
-        },
-        {
-            id: 'why-i-facilitate-leela',
-            titleKey: 'blog_post_2_title',
-            date: '2026-03-09'
-        },
-        {
-            id: 'psychology-of-choice',
-            titleKey: 'blog_post_1_title',
-            date: '2026-01-26'
-        }
-    ];
 
     const post = blogPosts.find(p => p.id === postId);
 
