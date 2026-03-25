@@ -127,6 +127,11 @@ The User Guide pages currently link to external GitHub-hosted guides. **Do not c
 - Final SEO polish and validation.
 - See: `.agent/tasks/seo_3_navigation_linking.md`
 
+### Implemented (Task 4 ✅)
+- Keyword optimization for: "Leela Clue" (two words), "Game of Life" / "Spiel des Lebens", "Game of Knowledge" / "Spiel des Wissens", and "Transformation Game".
+- Integrated these terms into meta keywords, structured data (JSON-LD), and homepage body content across EN, DE, and RU.
+- Bulk updated all 33 HTML files to include these terms in meta keywords for trilingual consistency.
+
 ---
 
 ## 5. Common Patterns
