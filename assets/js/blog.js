@@ -17,6 +17,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. Define Blog Posts Metadata
     const blogPosts = [
         {
+            id: 'how-leelaclue-was-born',
+            titleKey: 'blog_post_4_title',
+            date: '2026-03-25'
+        },
+        {
             id: 'the-soul-map',
             titleKey: 'blog_post_3_title',
             date: '2026-03-16'
@@ -88,6 +93,11 @@ async function loadBlogContent(postId, lang) {
     const dateEl = document.getElementById('blog-post-date');
 
     const blogPosts = [
+        {
+            id: 'how-leelaclue-was-born',
+            titleKey: 'blog_post_4_title',
+            date: '2026-03-25'
+        },
         {
             id: 'the-soul-map',
             titleKey: 'blog_post_3_title',
