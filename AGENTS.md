@@ -11,7 +11,7 @@ LeelaClue is a **mindfulness and self-discovery mobile app** inspired by the anc
 
 The website is a **static site** (no build step, no framework). It is served directly by GitHub Pages.
 
-**Current App Version**: v1.7.3 (Coming Soon)
+**Current App Version**: v1.7.3
 
 ---
 
@@ -109,7 +109,7 @@ The User Guide pages currently link to external GitHub-hosted guides. **Do not c
 - Updated meta titles, descriptions, keywords, Open Graph tags.
 - `SoftwareApplication` JSON-LD structured data on homepages.
 - Dedicated `whats_new.html` changelog pages in all languages.
-- Version banner announcing v1.6.8.
+- Version banner announcing v1.7.3.
 - "Is LeelaClue for You?" targeting section.
 - Internal links to Blog, User Guide, and Offline Game within body text.
 
