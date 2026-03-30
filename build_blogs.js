@@ -36,16 +36,16 @@ function processHtml(lang, postId, postTitleKey, postDate, contentHtml, htmlTemp
     // Replace title tag
     html = html.replace(/<title>.*?<\/title>/, `<title>${postTitle} - LeelaClue Blog</title>`);
     
-    // Set canonical link for indexing (especially useful for blog.html)
+    // Replace old canonical links
+    html = html.replace(/<link rel="canonical" href="https:\/\/leelaclue\.github\.io\/(en|de|ru)\/[^"]+" \/>/g, '');
+    
+    // Set canonical link for indexing
     const canonicalHtml = `<link rel="canonical" href="https://leelaclue.github.io/${lang}/${postId}.html" />`;
     html = html.replace(/<\/title>/, `</title>\n    ${canonicalHtml}`);
 
-    // Replace URL in hreflang links
-    html = html.replace(/href="https:\/\/leelaclue\.github\.io\/(en|de|ru)\/blog\.html"/g, (match, p1) => {
-        // If it's the index page (blog.html), the hreflangs should technically still point to blog.html.
-        // Wait, if it has a canonical link pointing to postId.html, hreflang usually should also point to postId.html...
-        // But let's just use postId.html since the content is identical. That's safer for SEO.
-        return `href="https://leelaclue.github.io/${p1}/${postId}.html"`;
+    // Replace URL in hreflang alternate links
+    html = html.replace(/hreflang="(en|de|ru|x-default)" href="https:\/\/leelaclue\.github\.io\/(en|de|ru)\/[^"]+\.html"/g, (match, hlang, urlLang) => {
+        return `hreflang="${hlang}" href="https://leelaclue.github.io/${urlLang}/${postId}.html"`;
     });
 
     // We can pre-render the sidebar
@@ -70,13 +70,13 @@ ${contentHtml}
         </article>`;
     html = html.replace(articleMatch, newArticle);
 
-    // Remove the script tag for blog.js
+    // Ensure the blog.js script is removed if it exists (it handles dynamic loading which we don't want on static pages)
     html = html.replace(/<script src="\.\.\/assets\/js\/blog\.js"><\/script>/, '');
 
-    // Update Language switcher links to point to the specific post instead of blog.html
-    html = html.replace(/href="\.\.\/en\/blog\.html"/g, `href="../en/${postId}.html"`);
-    html = html.replace(/href="\.\.\/de\/blog\.html"/g, `href="../de/${postId}.html"`);
-    html = html.replace(/href="\.\.\/ru\/blog\.html"/g, `href="../ru/${postId}.html"`);
+    // Update Language switcher links to point to the specific post
+    html = html.replace(/href="\.\.\/(en|de|ru)\/[^"]+\.html" class="lang-btn/g, (match, l) => {
+        return `href="../${l}/${postId}.html" class="lang-btn`;
+    });
 
     return html;
 }

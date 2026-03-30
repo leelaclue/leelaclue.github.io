@@ -1,78 +1,5 @@
-﻿<!DOCTYPE html>
-<html lang="ru">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Язык Поля: Размышление об истине, тишине и новом начале. - LeelaClue Blog</title>
-    <link rel="canonical" href="https://leelaclue.github.io/ru/language-of-the-field.html" />
-    
-    
-    <meta name="keywords"
-        content="LeelaClue, приложение LeelaClue, Лила, Игра Лила, Змеи и Стрелы, Приложение для осознанности, Приложение для самопознания, Майя, Йога, Ведическая игра, Духовность, Приложение для медитации, Духовный дневник, Ежедневная мудрость, Ежедневное наставление, Чакра Лила, Leela Clue, Игра Жизни, Игра Знания, Трансформационная Игра">
-    <link rel="icon" type="image/png" href="../assets/app_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=2">
-    
-
-    <!-- Hreflang Tags -->
-    <link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/language-of-the-field.html" />
-    <link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/language-of-the-field.html" />
-    <link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/language-of-the-field.html" />
-    <link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/language-of-the-field.html" />
-</head>
-
-<body>
-    <header>
-        <div class="header-container">
-            <div class="logo-container">
-                <a href="index.html" class="logo-link">
-                    <img src="../assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
-                    <span class="brand-name">LeelaClue</span>
-                </a>
-            </div>
-            <nav class="main-nav">
-                <a href="offline-game.html" class="nav-item highlight-btn">Оффлайн-игра</a>
-                <div class="nav-item has-dropdown">
-                    <a href="blog.html">Сообщество <span class="dot-new"></span></a>
-                    <div class="dropdown-menu">
-                        <a href="blog.html">Блог</a>
-                        <a href="whats_new.html">Новости</a>
-                        <a href="votes.html">Голосование</a>
-                    </div>
-                </div>
-                <div class="nav-item has-dropdown">
-                    <a href="user_guide.html">Инфо</a>
-                    <div class="dropdown-menu">
-                        <a href="user_guide.html">Руководство</a>
-                        <a href="faq.html">FAQ</a>
-                    </div>
-                </div>
-            </nav>
-            <div class="header-right">
-                <div class="lang-switch">
-                    <a href="../en/language-of-the-field.html" class="lang-btn">EN</a>
-                    <a href="../de/language-of-the-field.html" class="lang-btn">DE</a>
-                    <a href="../ru/language-of-the-field.html" class="lang-btn active">RU</a>
-                </div>
-            </div>
-        </div>
-    </header>
-    <main class="blog-container">
-        <aside class="blog-sidebar">
-            <h2>Блог</h2>
-            <ul id="blog-sidebar-list">
-<li><a href="language-of-the-field.html" class="active">Язык Поля: Размышление об истине, тишине и новом начале.</a></li>
-<li><a href="how-leelaclue-was-born.html">От интуиции к алгоритму: как родилась LeelaClue</a></li>
-<li><a href="the-soul-map.html">Карта твоей души: Как работает Лила</a></li>
-<li><a href="why-i-facilitate-leela.html">Лила: Почему я провожу эту игру — и почему она может изменить твою жизнь.</a></li>
-<li><a href="psychology-of-choice.html">Психология выбора: Как работает LeelaClue</a></li>
-</ul>
-        </aside>
-        <article class="blog-post content-card">
-            <h1 id="blog-post-title">Язык Поля: Размышление об истине, тишине и новом начале.</h1>
-            <div id="blog-post-date" class="blog-date">2026-03-30</div>
-            <div id="blog-post-content" class="markdown-body">
-
+if (!window.blogContent) window.blogContent = {};
+window.blogContent['language-of-the-field'] = `
 <p>Как ведущую игры, меня часто спрашивают: «Что именно ты имеешь в виду, когда говоришь, что Поле говорит с нами?» Сегодня я хочу ответить не теоретически, а пригласить тебя прямо в один из моих собственных разборов.</p>
 
 <p>Я спросила LeelaClue: «Какое послание мне передать моим подписчикам прямо сейчас?»</p>
@@ -118,24 +45,4 @@
 </ul>
 
 <p>Пиши мне или присылай свой разбор из приложения. Я буду рада вместе с тобой расшифровать послания твоего личного Поля.</p>
-
-            </div>
-        </article>
-    </main>
-    <footer>
-        <div class="footer-links" style="margin-bottom: 1rem;">
-            <a href="privacy.html" data-i18n="disclaimerTitle">Отказ от ответственности</a>
-            <a href="privacy_policy.html" data-i18n="privacyPolicyTitle">Конфиденциальность</a>
-            <a href="privacy_web.html" data-i18n="webPrivacyTitle">Конфиденциальность сайта</a>
-            <a href="impressum.html" data-i18n="impressumTitle">Импрессум</a>
-            <a href="support.html" data-i18n="contactTitle">Поддержка</a>
-        </div>
-        <p style="color: #666; font-size: 0.8rem;">&copy; 2026 LeelaClue</p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script src="../assets/js/translations.js"></script>
-    <script src="../assets/js/script.js"></script>
-    
-</body>
-
-</html>
+`;

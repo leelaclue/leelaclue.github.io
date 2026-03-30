@@ -1,6 +1,11 @@
 // Blog Posts Metadata (Shared)
 const blogPosts = [
     {
+        id: 'language-of-the-field',
+        titleKey: 'blog_post_5_title',
+        date: '2026-03-30'
+    },
+    {
         id: 'how-leelaclue-was-born',
         titleKey: 'blog_post_4_title',
         date: '2026-03-25'

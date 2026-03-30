@@ -174,12 +174,19 @@ const root = 'c:/GitHub/leelaclue.github.io';
 - Always `git add -A` before committing.
 - Use `;` not `&&` to chain commands in PowerShell.
 
-### Announcing new content
-When adding a new blog post or significant feature:
-1. Update `assets/js/blog.js` and `assets/js/translations.js`.
-2. Add the pulsing dot `<span class="dot-new"></span>` to the relevant navigation item in all 33 HTML files.
-3. Add/Update a `.blog-teaser` card on the homepages (`/en/index.html`, etc.) for direct access.
-4. Use the Red-Gold theme (`#e25822`) for "New" indicators to distinguish them from standard gold.
+### Announcing new blog posts
+When adding a new blog post:
+1. Create the content files in `assets/posts/` (e.g., `new-post_en.js`, `new-post_de.js`, `new-post_ru.js`).
+2. Update `assets/js/blog.js` and `assets/js/translations.js` with the new post metadata.
+3. **Important**: Run `node build_blogs.js` to automatically generate the static HTML pages for the new blog post and update the `blog.html` index pages.
+4. Run `node update_sitemap.js` to append the new blog post URLs to `sitemap.xml`.
+5. Add the pulsing dot `<span class="dot-new"></span>` to the relevant navigation item in all 33 HTML files.
+6. Add/Update a `.blog-teaser` card on the homepages (`/en/index.html`, etc.) for direct access.
+7. Use the Red-Gold theme (`#e25822`) for "New" indicators to distinguish them from standard gold.
+
+### Announcing other significant features
+1. Add the pulsing dot `<span class="dot-new"></span>` to the relevant navigation item in all 33 HTML files.
+2. Update the `whats_new.html` pages and any `.blog-teaser` cards if applicable.
 
 ---
 
