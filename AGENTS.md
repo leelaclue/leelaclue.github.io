@@ -100,6 +100,13 @@ This is a **vanilla HTML/CSS/JS** static site. Do NOT introduce any build tools,
 ### 3.6 Preserve User Guide Links
 The User Guide pages currently link to external GitHub-hosted guides. **Do not change these links** until the user explicitly requests it.
 
+### 3.7 Sitemap Integrity — Line Endings
+**`sitemap.xml` must always use LF-only (`\n`) line endings.** Mixed CRLF+LF endings caused Google Search Console to report "couldn't fetch / couldn't read" for weeks (confirmed April 2026). This happens when content is appended to the file by a script that uses different line endings than the original.
+
+- When writing or appending to `sitemap.xml` via Node.js scripts (e.g. `update_sitemap.js`), always write with `\n` explicitly and open the file in `'utf8'` mode with normalized endings.
+- After any script modifies `sitemap.xml`, verify with: `python -c "open('sitemap.xml','rb').read().count(b'\r')"` — result must be `0`.
+- After fixing, always remove the sitemap from Google Search Console and resubmit it.
+
 ---
 
 ## 4. SEO Requirements
@@ -179,7 +186,7 @@ When adding a new blog post:
 1. Create the content files in `assets/posts/` (e.g., `new-post_en.js`, `new-post_de.js`, `new-post_ru.js`).
 2. Update `assets/js/blog.js` and `assets/js/translations.js` with the new post metadata.
 3. **Important**: Run `node build_blogs.js` to automatically generate the static HTML pages for the new blog post and update the `blog.html` index pages.
-4. Run `node update_sitemap.js` to append the new blog post URLs to `sitemap.xml`.
+4. Run `node update_sitemap.js` to append the new blog post URLs to `sitemap.xml`. **⚠️ Critical**: ensure `update_sitemap.js` writes with LF-only line endings (use `content.replace(/\r\n/g, '\n')` before writing). Mixed CRLF+LF in `sitemap.xml` causes Google Search Console to fail parsing the sitemap silently.
 5. Add the pulsing dot `<span class="dot-new"></span>` to the relevant navigation item in all 33 HTML files.
 6. Add/Update a `.blog-teaser` card on the homepages (`/en/index.html`, etc.) for direct access.
 7. Use the Red-Gold theme (`#e25822`) for "New" indicators to distinguish them from standard gold.
