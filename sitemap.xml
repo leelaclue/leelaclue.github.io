@@ -1,392 +1,221 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- Homepage -->
   <url>
     <loc>https://leelaclue.github.io/en/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/de/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/ru/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/"/>
   </url>
-
-  <!-- Blog -->
   <url>
     <loc>https://leelaclue.github.io/en/blog.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/blog.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/de/blog.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/blog.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/ru/blog.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/blog.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/blog.html"/>
   </url>
-
-  <!-- FAQ -->
   <url>
     <loc>https://leelaclue.github.io/en/faq.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/faq.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/de/faq.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/faq.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/ru/faq.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/faq.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/faq.html"/>
   </url>
-
-  <!-- Offline Game -->
   <url>
     <loc>https://leelaclue.github.io/en/offline-game.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/offline-game.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/de/offline-game.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/offline-game.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/ru/offline-game.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/offline-game.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/offline-game.html"/>
   </url>
-
-  <!-- What's New -->
   <url>
     <loc>https://leelaclue.github.io/en/whats_new.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/whats_new.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/de/whats_new.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/whats_new.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/ru/whats_new.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/whats_new.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/whats_new.html"/>
   </url>
-
-  <!-- Feature Votes -->
   <url>
     <loc>https://leelaclue.github.io/en/votes.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/votes.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/de/votes.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/votes.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/ru/votes.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/votes.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/votes.html"/>
   </url>
-
-  <!-- User Guide -->
   <url>
     <loc>https://leelaclue.github.io/en/user_guide.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/user_guide.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/de/user_guide.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/user_guide.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/ru/user_guide.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/user_guide.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/user_guide.html"/>
   </url>
-
-  <!-- Support -->
   <url>
     <loc>https://leelaclue.github.io/en/support.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/support.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/support.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/support.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/support.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/de/support.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/support.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/support.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/support.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/support.html"/>
   </url>
   <url>
     <loc>https://leelaclue.github.io/ru/support.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/support.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/support.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/support.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/support.html"/>
   </url>
-
-  <!-- how-leelaclue-was-born.html -->
   <url>
     <loc>https://leelaclue.github.io/en/how-leelaclue-was-born.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/how-leelaclue-was-born.html"/>
   </url>
-  <!-- how-leelaclue-was-born.html -->
   <url>
     <loc>https://leelaclue.github.io/de/how-leelaclue-was-born.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/how-leelaclue-was-born.html"/>
   </url>
-  <!-- how-leelaclue-was-born.html -->
   <url>
     <loc>https://leelaclue.github.io/ru/how-leelaclue-was-born.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/how-leelaclue-was-born.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/how-leelaclue-was-born.html"/>
   </url>
-  <!-- the-soul-map.html -->
   <url>
     <loc>https://leelaclue.github.io/en/the-soul-map.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/the-soul-map.html"/>
   </url>
-  <!-- the-soul-map.html -->
   <url>
     <loc>https://leelaclue.github.io/de/the-soul-map.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/the-soul-map.html"/>
   </url>
-  <!-- the-soul-map.html -->
   <url>
     <loc>https://leelaclue.github.io/ru/the-soul-map.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/the-soul-map.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/the-soul-map.html"/>
   </url>
-  <!-- why-i-facilitate-leela.html -->
   <url>
     <loc>https://leelaclue.github.io/en/why-i-facilitate-leela.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/why-i-facilitate-leela.html"/>
   </url>
-  <!-- why-i-facilitate-leela.html -->
   <url>
     <loc>https://leelaclue.github.io/de/why-i-facilitate-leela.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/why-i-facilitate-leela.html"/>
   </url>
-  <!-- why-i-facilitate-leela.html -->
   <url>
     <loc>https://leelaclue.github.io/ru/why-i-facilitate-leela.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/why-i-facilitate-leela.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/why-i-facilitate-leela.html"/>
   </url>
-  <!-- psychology-of-choice.html -->
   <url>
     <loc>https://leelaclue.github.io/en/psychology-of-choice.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/psychology-of-choice.html"/>
   </url>
-  <!-- psychology-of-choice.html -->
   <url>
     <loc>https://leelaclue.github.io/de/psychology-of-choice.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/psychology-of-choice.html"/>
   </url>
-  <!-- psychology-of-choice.html -->
   <url>
     <loc>https://leelaclue.github.io/ru/psychology-of-choice.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/psychology-of-choice.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/psychology-of-choice.html"/>
   </url>
+
 </urlset>
