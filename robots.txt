@@ -4,4 +4,4 @@ Disallow: /.agent/
 Disallow: /.claude/
 Disallow: /new_features/
 Disallow: /tools/
-Sitemap: https://www.leelaclue.com/sitemap.xml
+Sitemap: https://leelaclue.com/sitemap.xml
