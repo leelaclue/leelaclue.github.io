@@ -3,4 +3,4 @@ Allow: /
 Disallow: /.agent/
 Disallow: /new_features/
 Disallow: /tools/
-Sitemap: https://leelaclue.github.io/sitemap.xml
+Sitemap: https://www.leelaclue.com/sitemap.xml
