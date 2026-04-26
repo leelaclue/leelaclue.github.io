@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.leelaclue.com)",
+      "Read(//c/Users/andre/.claude/plugins/cache/agricidaniel-seo/claude-seo/1.9.0/**)",
+      "Bash(python scripts/google_auth.py --check)",
+      "Bash(git *)",
+      "Bash(node seo_fix.js)",
+      "Bash(node *)"
+    ]
+  }
+}
