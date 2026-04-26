@@ -2,220 +2,239 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://leelaclue.github.io/en/</loc>
+    <loc>https://www.leelaclue.com/en/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/</loc>
+    <loc>https://www.leelaclue.com/de/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/</loc>
+    <loc>https://www.leelaclue.com/ru/</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/blog.html</loc>
+    <loc>https://www.leelaclue.com/en/blog.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/blog.html</loc>
+    <loc>https://www.leelaclue.com/de/blog.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/blog.html</loc>
+    <loc>https://www.leelaclue.com/ru/blog.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/faq.html</loc>
+    <loc>https://www.leelaclue.com/en/faq.html</loc>
     <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/faq.html</loc>
+    <loc>https://www.leelaclue.com/de/faq.html</loc>
     <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/faq.html</loc>
+    <loc>https://www.leelaclue.com/ru/faq.html</loc>
     <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/offline-game.html</loc>
+    <loc>https://www.leelaclue.com/en/offline-game.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/offline-game.html</loc>
+    <loc>https://www.leelaclue.com/de/offline-game.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/offline-game.html</loc>
+    <loc>https://www.leelaclue.com/ru/offline-game.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/whats_new.html</loc>
+    <loc>https://www.leelaclue.com/en/whats_new.html</loc>
     <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/whats_new.html</loc>
+    <loc>https://www.leelaclue.com/de/whats_new.html</loc>
     <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/whats_new.html</loc>
+    <loc>https://www.leelaclue.com/ru/whats_new.html</loc>
     <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/votes.html</loc>
+    <loc>https://www.leelaclue.com/en/votes.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/votes.html</loc>
+    <loc>https://www.leelaclue.com/de/votes.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/votes.html</loc>
+    <loc>https://www.leelaclue.com/ru/votes.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/user_guide.html</loc>
+    <loc>https://www.leelaclue.com/en/user_guide.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/user_guide.html</loc>
+    <loc>https://www.leelaclue.com/de/user_guide.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/user_guide.html</loc>
+    <loc>https://www.leelaclue.com/ru/user_guide.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/support.html</loc>
+    <loc>https://www.leelaclue.com/en/support.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/support.html</loc>
+    <loc>https://www.leelaclue.com/de/support.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/support.html</loc>
+    <loc>https://www.leelaclue.com/ru/support.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/how-leelaclue-was-born.html</loc>
+    <loc>https://www.leelaclue.com/en/how-leelaclue-was-born.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/how-leelaclue-was-born.html</loc>
+    <loc>https://www.leelaclue.com/de/how-leelaclue-was-born.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/how-leelaclue-was-born.html</loc>
+    <loc>https://www.leelaclue.com/ru/how-leelaclue-was-born.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/the-soul-map.html</loc>
+    <loc>https://www.leelaclue.com/en/the-soul-map.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/the-soul-map.html</loc>
+    <loc>https://www.leelaclue.com/de/the-soul-map.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/the-soul-map.html</loc>
+    <loc>https://www.leelaclue.com/ru/the-soul-map.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/why-i-facilitate-leela.html</loc>
+    <loc>https://www.leelaclue.com/en/why-i-facilitate-leela.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/why-i-facilitate-leela.html</loc>
+    <loc>https://www.leelaclue.com/de/why-i-facilitate-leela.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/why-i-facilitate-leela.html</loc>
+    <loc>https://www.leelaclue.com/ru/why-i-facilitate-leela.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/en/psychology-of-choice.html</loc>
+    <loc>https://www.leelaclue.com/en/psychology-of-choice.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/de/psychology-of-choice.html</loc>
+    <loc>https://www.leelaclue.com/de/psychology-of-choice.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.github.io/ru/psychology-of-choice.html</loc>
+    <loc>https://www.leelaclue.com/ru/psychology-of-choice.html</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
+
+  <url>
+    <loc>https://www.leelaclue.com/en/language-of-the-field.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.leelaclue.com/de/language-of-the-field.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.leelaclue.com/ru/language-of-the-field.html</loc>
+    <lastmod>2026-03-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 </urlset>
