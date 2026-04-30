@@ -90,13 +90,15 @@ To change landing page text:
 3. Commit both the MD source and the generated HTML
 
 Sections and their MD files:
-| Section | File pattern |
-|---|---|
-| Hero / About | `landing_hero_[lang].md` |
-| S·O·R Framework | `landing_sor_[lang].md` |
-| Six Steps / Practice | `landing_practice_[lang].md` |
-| Case Study: Anna | `landing_anna_[lang].md` |
-| Daily Card / App | `landing_daily_[lang].md` |
+| Section | Text file | Carousel images directory |
+|---|---|---|
+| Hero / About | `landing_hero_[lang].md` | `assets/images/carousel/hero/` |
+| S·O·R Framework | `landing_sor_[lang].md` | `assets/images/carousel/sor/` |
+| Six Steps / Practice | `landing_practice_[lang].md` | `assets/images/carousel/practice/` |
+| Case Study: Anna | `landing_anna_[lang].md` | `assets/images/carousel/anna/` |
+| Daily Card / App | `landing_daily_[lang].md` | `assets/images/carousel/daily/` |
+
+**To change carousel images:** drop `.webp` files into the corresponding directory and run `node build_html.js`. The build script reads all `.webp` files from the directory, sorted alphabetically. No code changes needed.
 
 ### 3.3 Build Script (`build_html.js`)
 
