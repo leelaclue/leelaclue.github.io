@@ -182,7 +182,7 @@ function leftPanel(lang) {
     const labels = {
         en: ['About',      'S·O·R',  'Practice', 'Case Study', 'App'],
         de: ['Über',       'S·O·R',  'Praxis',   'Fallstudie', 'App'],
-        ru: ['О нас',      'С·П·Р',  'Практика', 'Кейс',       'Приложение'],
+        ru: ['О нас',      'С·П·Р',  'Практика', 'Пример',     'Приложение'],
     }[lang] || ['About', 'S·O·R', 'Practice', 'Case Study', 'App'];
 
     const versionLabel = { en: 'New in v1.7.3', de: 'Neu in v1.7.3', ru: 'Новое в v1.7.3' };
