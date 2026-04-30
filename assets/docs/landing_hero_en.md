@@ -1,9 +1,9 @@
-# It Looks Like a Phone App. It Works Like a Mirror.
+# When you can't think your way out...
 
-*Ancient Wisdom · Modern Practice*
+We often get caught in endless mental loops—replaying "what-ifs," over-analyzing choices until they lose meaning, or feeling a deep resistance we can't quite name. When a situation keeps you awake at night, it usually isn't a lack of facts holding you back; it’s that your intuition is buried under mental noise. Without a way to see clearly, we end up running on autopilot and making daily choices blindly.
 
-A 2,000-year-old Vedic system, run on a phone, designed for a Tuesday morning when your anxiety gets there before you do.
+## Our Mission
+LeelaClue is a unique bridge between **psychological shadow work** and the ancient **Game of Leela**. Our mission is to help you stop the noise and start crystallizing your true internal feelings. We provide a structure for deep self-reflection that frees your intuition, allowing you to understand your honest wishes and turn them into a path for genuine self-improvement.
 
-LeelaClue is for the person who wants intentional choices over fear-driven reactions — seekers of self-knowledge, dedicated journalers, and anyone who has flipped a coin and realised the magic is in your reaction, not the outcome.
-
-You don't need a fortune teller. **You need a mirror.**
+## Who is this for?
+This is for anyone standing at a crossroads—whether you are questioning your career, navigating a change in a relationship, or feeling a gap between who you are and who you want to be. It is for the person who is tired of looking for answers in the opinions of others and is ready to take real responsibility by looking inward.

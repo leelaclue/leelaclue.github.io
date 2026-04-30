@@ -1,15 +1,15 @@
-## Das S·O·R-Modell
+## Das St·O·R-Modell
 
-Drei Karten. Eine klare Frage. Eine bewährte Struktur, die das Rauschen der Unentschlossenheit in ein klares Signal verwandelt. S·O·R sagt dir nicht, was du tun sollst — es zeigt dir, was du bereits weißt.
+Das Herzstück von LeelaClue ist das **St·O·R-Modell** — ein Werkzeug für **Schattenarbeit**, mit dem du jede Situation aus drei verschiedenen psychologischen Blickwinkeln analysieren kannst. Um die vorhersehbaren Muster deines Egos zu umgehen, nutzen wir [**Synchronizität**](blog.html?post=psychology-of-choice), um zufällige Sichtweisen für jede Perspektive auszuwählen. Diese unvorhersehbare Variable zwingt dich zu einem frischen, ehrlichen Blick aus Winkeln, die du bewusst niemals wählen würdest.
 
-### S — Status: Wo stehe ich gerade?
+### St — Status: Wo stehe ich gerade?
 
-Die erste Karte spiegelt deinen aktuellen inneren Zustand — was wirklich unter der Oberfläche passiert, bevor dein Ego die Geschichte redigieren kann.
+Die erste Karte spiegelt deinen aktuellen inneren Ausgangspunkt wider — was wirklich unter der Oberfläche passiert, bevor dein Ego die Chance hat, die Geschichte zu manipulieren.
 
 ### O — Obstacle (Hindernis): Was übersehe ich?
 
-Die zweite Karte benennt den verborgenen Einfluss — das Schattenmuster oder den blinden Fleck, der dich immer wieder an denselben Scheideweg zieht.
+Die zweite Karte identifiziert deinen verborgenen Schatten oder blinden Fleck. Dies ist der am schwierigsten zu konfrontierende Schritt, da unser natürlicher Instinkt dazu neigt, der unangenehmen Ehrlichkeit auszuweichen, die nötig ist, um zu sehen, was uns wirklich zurückhält.
 
 ### R — Ressource: Was wird helfen?
 
-Die dritte Karte zeigt auf eine Qualität oder Energie, die bereits in dir verfügbar ist. Kein Ratschlag von außen — dein eigener innerer Kompass, lesbar gemacht.
+Die dritte Karte zeigt auf die eine Qualität oder Handlung, der du tatsächlich vertraust. Es ist kein Rat von außen, sondern dein eigener innerer Kompass, der lesbar gemacht wurde und einen klaren Weg nach vorne weist.

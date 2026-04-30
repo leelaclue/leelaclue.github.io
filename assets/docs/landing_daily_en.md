@@ -1,14 +1,15 @@
-## Your Daily Card
+## Meet LeelaClue
 
-Around your fourth or fifth spread, the symbolic language clicks. Your phone stops being a source of distraction and becomes a reliable anchor.
+LeelaClue converts the theoretical St·O·R framework into a practical tool for your daily shadow work. Instead of relying solely on expensive visits to a psychologist, the app provides a structured methodology to confront your hidden patterns and find clarity independently.
 
-### What the App Offers
+### The Core: Daily Guidance
 
-- **Daily Guidance Ritual** — A guided 3-card S·O·R spread — one reading per day. Deliberate, not addictive.
-- **Reflection Diary** — Past spreads saved and reviewable. Watch the patterns in your psyche become visible over weeks.
-- **72 Leela States** — Each card is one of 72 states of consciousness from the ancient Vedic system — not fortune telling, but forced clarity.
-- **Slow Tech Philosophy** — One ritual per day. No endless feeds. Deep integration before the next insight arrives.
+The implementation of the St·O·R framework and the reflection practice is called **Daily Guidance**. Accessible directly from the main screen, this feature walks you through the 3-card spread - State, Obstacle, and Resource - making the full six-step cycle easy to follow.
 
-> *"Half ancient divination system, half morning ritual — a 2,000-year-old Vedic system, run on a phone, designed for a Tuesday morning when your anxiety gets there before you do."*
+### Additional Instruments
 
-*LeelaClue is a tool for self-discovery and introspection. It does not predict the future or provide professional medical advice. The application provides the mirror; you provide the courage to look.*
+*   **Daily Wisdom** - Receive a single card from the 72 Leela states to set your intention for the day, including a specific mindfulness exercise.
+*   **Reflection Diary** - A dedicated space to write down and analyze your reflections. Your past spreads are saved and reviewable, allowing you to track recurring patterns in your psyche.
+*   **The Leela Field** - Explore all 72 states of consciousness from the ancient Vedic system. It provides the full map of self-knowledge, helping you see the "whole story" of your inner journey.
+*   **Slow Tech Philosophy** - One guidance spread and one wisdom card per day. No endless feeds. Deep integration before the next insight arrives.
+

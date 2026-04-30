@@ -20,29 +20,35 @@ The website is a **static site served by GitHub Pages**. The landing pages (`ind
 ```
 leelaclue.github.io/
 ├── assets/
-│   ├── css/style.css            # Single global stylesheet (CSS v10)
-│   ├── docs/                    # ★ SOURCE OF TRUTH for landing page text
-│   │   ├── landing_hero_en.md   # Section 1 — Hero (EN)
-│   │   ├── landing_sor_en.md    # Section 2 — S·O·R Framework (EN)
-│   │   ├── landing_practice_en.md
-│   │   ├── landing_anna_en.md
-│   │   ├── landing_daily_en.md
-│   │   ├── landing_*_de.md      # German versions (same 5 files)
-│   │   └── landing_*_ru.md      # Russian versions (same 5 files)
-│   ├── fonts/                   # Philosopher font (Regular + Bold)
-│   ├── images/                  # Card images (WebP/PNG)
-│   │   └── carousel/            # Per-section carousel image dirs
+│   ├── css/style.css                  # Single global stylesheet (CSS v11)
+│   ├── docs/                          # ★ SOURCE OF TRUTH for landing page text
+│   │   ├── landing_hero_en.md         # Section 1 — Hero (EN)
+│   │   ├── landing_sor_en.md          # Section 2 — S·O·R Framework (EN)
+│   │   ├── landing_practice_en.md     # Section 3 — Six Steps (EN)
+│   │   ├── landing_anna_en.md         # Section 4 — Case Study: Anna (EN)
+│   │   ├── landing_daily_en.md        # Section 5 — Daily Card (EN)
+│   │   ├── landing_*_de.md            # German versions (same 5 files)
+│   │   └── landing_*_ru.md            # Russian versions (same 5 files)
+│   ├── fonts/                         # Philosopher font (Regular + Bold)
+│   ├── images/
+│   │   ├── *.webp / *.png             # Shared card images and app icon
+│   │   └── carousel/                  # ★ Per-section carousel images
+│   │       ├── hero/                  # Section 1 — drop .webp files here
+│   │       ├── sor/                   # Section 2
+│   │       ├── practice/              # Section 3
+│   │       ├── anna/                  # Section 4
+│   │       └── daily/                 # Section 5
 │   ├── js/
-│   │   ├── script.js            # Main site JS (carousel, scroll-spy, animations, hamburger)
-│   │   ├── blog.js              # Blog post loading logic
-│   │   ├── translations.js      # UI string translations (EN/DE/RU)
+│   │   ├── script.js                  # Main JS: carousels, scroll-spy, animations, hamburger
+│   │   ├── blog.js                    # Blog post loading logic
+│   │   ├── translations.js            # UI string translations (EN/DE/RU)
 │   │   └── short_descr.json
-│   └── posts/                   # Blog posts (Markdown per language)
+│   └── posts/                         # Blog posts (Markdown per language)
 │       ├── en/
 │       ├── de/
 │       └── ru/
-├── en/                          # English pages (canonical)
-│   ├── index.html               # ★ GENERATED — do not edit directly
+├── en/                                # English pages (canonical)
+│   ├── index.html                     # ★ GENERATED — do not edit directly
 │   ├── blog.html
 │   ├── faq.html
 │   ├── whats_new.html
@@ -54,17 +60,17 @@ leelaclue.github.io/
 │   ├── privacy_policy.html
 │   ├── privacy_web.html
 │   └── impressum.html
-├── de/                          # German pages (same structure)
-├── ru/                          # Russian pages (same structure)
-├── build_html.js                # ★ Build script — generates index.html for EN/DE/RU
-├── package.json                 # marked + marked-gfm-heading-id
-├── node_modules/                # (gitignored)
-├── llms.txt                     # AI/LLM context file (linked from every page <head>)
-├── llms-full.txt                # ★ GENERATED — aggregated EN content for AI agents
-├── index.html                   # Root redirect (browser language → /en/ /de/ /ru/)
+├── de/                                # German pages (same structure as /en/)
+├── ru/                                # Russian pages (same structure as /en/)
+├── build_html.js                      # ★ Build script — generates index.html for EN/DE/RU
+├── package.json                       # marked + marked-gfm-heading-id
+├── node_modules/                      # (gitignored)
+├── llms.txt                           # AI/LLM context file (linked from every page <head>)
+├── llms-full.txt                      # ★ GENERATED — aggregated EN content for AI agents
+├── index.html                         # Root redirect (browser language → /en/ /de/ /ru/)
 ├── sitemap.xml
 ├── robots.txt
-└── new_features/                # Internal feature docs (gitignored)
+└── new_features/                      # Internal feature docs (gitignored)
     ├── USER_GUIDE_EN.md
     ├── USER_GUIDE_DE.md
     └── USER_GUIDE_RU.md
@@ -84,31 +90,28 @@ leelaclue.github.io/
 
 **The `en/index.html`, `de/index.html`, and `ru/index.html` are generated files — never edit them directly.**
 
-To change landing page text:
-1. Edit the relevant `assets/docs/landing_[section]_[lang].md` file(s)
-2. Run `node build_html.js` (or `npm run build`)
-3. Commit both the MD source and the generated HTML
-
-Sections and their MD files:
-| Section | Text file | Carousel images directory |
+| Section | Text source | Carousel images |
 |---|---|---|
-| Hero / About | `landing_hero_[lang].md` | `assets/images/carousel/hero/` |
-| S·O·R Framework | `landing_sor_[lang].md` | `assets/images/carousel/sor/` |
-| Six Steps / Practice | `landing_practice_[lang].md` | `assets/images/carousel/practice/` |
-| Case Study: Anna | `landing_anna_[lang].md` | `assets/images/carousel/anna/` |
-| Daily Card / App | `landing_daily_[lang].md` | `assets/images/carousel/daily/` |
+| 1 — Hero / About | `assets/docs/landing_hero_[lang].md` | `assets/images/carousel/hero/` |
+| 2 — S·O·R Framework | `assets/docs/landing_sor_[lang].md` | `assets/images/carousel/sor/` |
+| 3 — Six Steps / Practice | `assets/docs/landing_practice_[lang].md` | `assets/images/carousel/practice/` |
+| 4 — Case Study: Anna | `assets/docs/landing_anna_[lang].md` | `assets/images/carousel/anna/` |
+| 5 — Daily Card / App | `assets/docs/landing_daily_[lang].md` | `assets/images/carousel/daily/` |
 
-**To change carousel images:** drop `.webp` files into the corresponding directory and run `node build_html.js`. The build script reads all `.webp` files from the directory, sorted alphabetically. No code changes needed.
+**To change text:** edit the relevant `.md` file(s), then `node build_html.js`.
+
+**To change carousel images:** drop `.webp` files into the corresponding directory, then `node build_html.js`. The build script reads **all `.webp` files from the directory, sorted alphabetically** — no code changes needed. Name files `01_name.webp`, `02_name.webp`, etc. to control order. If a directory is empty the build shows a placeholder and prints a warning.
 
 ### 3.3 Build Script (`build_html.js`)
 
 The build script:
 - Reads 5 MD files per language → converts with `marked` → injects into the full HTML template
+- Scans each `assets/images/carousel/[section]/` directory for `.webp` files
 - Generates the left-panel section navigation with localized dot labels
 - Generates `llms-full.txt` aggregating all EN content for AI discovery
 - Outputs `en/index.html`, `de/index.html`, `ru/index.html`
 
-When changing the build script, also update the **CSS version query string** (e.g. `?v=10`) to bust browser caches, then rebuild.
+When changing the build script, also update the **CSS version query string** (currently `?v=11`) to bust browser caches, then rebuild.
 
 ```bash
 node build_html.js
@@ -116,7 +119,7 @@ node build_html.js
 
 ### 3.4 Navigation Order
 Navigation bar order: **Offline Game | Community | Guide** (left to right).
-When updating navigation, update the `getTemplate()` function in `build_html.js` (for the landing pages) AND all hand-crafted HTML files across all 3 languages.
+When updating navigation, update the `getTemplate()` function in `build_html.js` (for landing pages) AND all hand-crafted HTML files across all 3 languages.
 
 ### 3.5 Shared Assets
 - **One CSS file**: `assets/css/style.css` — all styling is here.
@@ -145,20 +148,22 @@ Each of the 5 landing sections uses a two-column layout (desktop) that stacks ve
 
 ```
 section-container (flex row → flex column on mobile)
-├── carousel-wrapper (flex column, fixed width: 520px → 300px → 260px)
-│   ├── carousel-cta        ← Download badges ABOVE the carousel
-│   └── section-carousel    ← Image slider with dot indicators
-└── section-text.markdown-body  ← Rendered from MD file
+├── animate-on-scroll wrapper
+│   └── carousel-wrapper (flex column)
+│       ├── carousel-cta        ← Download badges ABOVE the carousel card
+│       └── section-carousel    ← Image slider with dot indicators
+└── section-text.markdown-body.animate-on-scroll  ← Rendered from MD file
 ```
 
-### Left panel (fixed, desktop only >1200px)
+### Left panel (fixed, desktop only ≥1200px)
 ```
-aside.left-panel (position: fixed, left, vertically centered)
+aside.left-panel (position: fixed, left side, vertically centered)
 ├── panel-badges
-│   ├── ann-version   ← "New in v1.7.3" → links to whats_new.html
-│   └── ann-tag       ← "New Blog Post" → links to latest blog post
+│   ├── ann-version   ← "New in v1.7.3"  → links to whats_new.html
+│   └── ann-tag       ← "New Blog Post"  → links to latest blog post
 └── section-nav
-    └── 5× section-nav-item (dot + label, scroll-spy updates active state)
+    └── 5× section-nav-item (dot + label)
+        — scroll-spy (IntersectionObserver) highlights the active section
 ```
 
 Dot labels per language:
@@ -171,36 +176,32 @@ Dot labels per language:
 | Daily Card | Tageskarte | Карта дня |
 
 ### SEO-safe scroll animations
-- **Before JS runs**: all content fully visible (`opacity: 1`) → Google and LLMs read everything
-- **After JS runs**: `body.js-anim` class is added → `.animate-on-scroll` elements fade in on scroll
-- This ensures text is always indexable, animations are progressive enhancement only
+- **Before JS runs**: all content fully visible (`opacity: 1`) — Google and LLMs read everything.
+- **After JS runs**: `body.js-anim` class is added → `.animate-on-scroll` elements fade up on scroll.
+- Text content is always indexable; animations are progressive enhancement only.
 
 ### Carousel responsive sizes
-| Breakpoint | Width | Height |
-|---|---|---|
-| Desktop (>1200px) | 520px | 600px |
-| 1200px | 440px | 520px |
-| 1100px | 380px | 460px |
-| 950px (stacked) | **300px fixed** | 430px |
-| 600px (phone) | **260px fixed** | 370px |
+| Breakpoint | Width | Height | Notes |
+|---|---|---|---|
+| >1200px | 520px | 600px | Desktop two-column |
+| ≤1200px | 440px | 520px | |
+| ≤1100px | 380px | 460px | |
+| ≤950px | 85vw, max 440px | 460px | Sections stack vertically |
+| ≤600px | 88vw, max 380px | 420px | Badges stack vertically |
 
-Fixed-width approach (copied from relimie pattern) prevents carousels from stretching full-width and looking distorted on mobile.
+Viewport-relative widths (`vw`) keep the carousel proportional to the text below it on any screen size.
 
 ---
 
 ## 5. SEO & AI Discoverability
 
-### Implemented
-- All landing page text is baked into static HTML at build time — no `opacity:0` blocking, no JS-dependent rendering for content
-- `llms.txt` at site root — linked from every page `<head>` with `<link rel="alternate" type="text/plain" title="LLM Context">`
-- `llms-full.txt` — aggregated EN landing content + user guide, regenerated on every build
-- `SoftwareApplication` + `WebSite` JSON-LD on all landing pages
-- Canonical URLs and hreflang on all pages
-- LCP preload for hero carousel first image
-
-### GSC Indexability
-- Use **GSC → URL Inspection → View Rendered Page** to confirm all 5 sections render with visible text
-- The build system ensures text is always in the DOM regardless of JS execution
+- All landing page text is baked into static HTML at build time — no `opacity:0` blocking, no JS-dependent content rendering.
+- `llms.txt` at site root — linked from every page `<head>` with `<link rel="alternate" type="text/plain" title="LLM Context">`.
+- `llms-full.txt` — aggregated EN landing content + user guide, regenerated on every build.
+- `SoftwareApplication` + `WebSite` JSON-LD schema on all landing pages.
+- Canonical URLs and hreflang on all pages.
+- LCP preload for the first hero carousel image.
+- Use **GSC → URL Inspection → View Rendered Page** to verify all 5 sections render with visible text.
 
 ---
 
@@ -208,8 +209,8 @@ Fixed-width approach (copied from relimie pattern) prevents carousels from stret
 
 ### Update landing page text (all languages)
 ```bash
-# 1. Edit the MD files
-# assets/docs/landing_hero_en.md, landing_hero_de.md, landing_hero_ru.md ...
+# 1. Edit MD files
+#    assets/docs/landing_hero_en.md (and _de.md, _ru.md)
 
 # 2. Rebuild
 node build_html.js
@@ -219,10 +220,29 @@ git add assets/docs/ en/index.html de/index.html ru/index.html llms-full.txt
 git commit -m "content: update hero section text"
 ```
 
-### Update announcement badges (version / blog post)
-Edit the `leftPanel()` function in `build_html.js` — update `versionLabel`, `postTag`, and the `href` values. Then rebuild.
+### Update carousel images for a section
+```bash
+# 1. Drop .webp files into the directory (name as 01_x.webp, 02_x.webp for ordering)
+#    assets/images/carousel/anna/
 
-### Batch-editing hand-crafted HTML pages
+# 2. Rebuild
+node build_html.js
+
+# 3. Commit
+git add assets/images/carousel/ en/index.html de/index.html ru/index.html
+git commit -m "assets: update anna carousel images"
+```
+
+### Update announcement badges (version / blog post)
+Edit the `leftPanel()` function in `build_html.js` — update `versionLabel`, `postTag`, and `href` values. Then rebuild.
+
+### Bump app version
+1. Update `versionLabel` strings in `leftPanel()` in `build_html.js`
+2. Update `softwareVersion` in `getSchemaOrg()` in `build_html.js`
+3. Update the version string in hand-crafted HTML files as needed
+4. Rebuild: `node build_html.js`
+
+### Batch-edit hand-crafted HTML pages
 ```js
 const fs = require('fs');
 const path = require('path');
@@ -230,7 +250,7 @@ const root = 'c:/GitHub/leelaclue.github.io';
 ['en','de','ru'].forEach(lang => {
     const dir = path.join(root, lang);
     fs.readdirSync(dir)
-      .filter(f => f.endsWith('.html') && f !== 'index.html')
+      .filter(f => f.endsWith('.html') && f !== 'index.html') // index.html is generated
       .forEach(file => {
         const fp = path.join(dir, file);
         let c = fs.readFileSync(fp, 'utf8');
@@ -239,33 +259,26 @@ const root = 'c:/GitHub/leelaclue.github.io';
     });
 });
 ```
-**Note**: `index.html` is excluded above — it's a generated file, edit via `build_html.js` instead.
-**Note**: PowerShell on this machine does not support `&&` chaining. Use `;` or Node.js scripts.
+**Note**: PowerShell on this machine does not support `&&` chaining — use `;` or Node.js scripts.
 
-### Adding a new hand-crafted page
-1. Create in `/en/`, `/de/`, `/ru/`
-2. Include standard header (logo, nav, lang-switch, hamburger) and footer
+### Add a new hand-crafted page
+1. Create the page in `/en/`, `/de/`, `/ru/`
+2. Include the standard header (logo, nav, lang-switch, hamburger) and footer
 3. Add to `sitemap.xml` with hreflang alternates
-4. Update nav if needed (edit `getTemplate()` in `build_html.js` + all hand-crafted HTML files)
+4. Update nav if needed: edit `getTemplate()` in `build_html.js` + all hand-crafted HTML files
 
-### Announcing a new blog post
+### Announce a new blog post
 1. Create content in `assets/posts/` per language
 2. Update `assets/js/blog.js` and `assets/js/translations.js`
-3. Run `node build_blogs.js` to generate static HTML blog pages
-4. Update `leftPanel()` in `build_html.js`: change `postTag` hrefs and labels, then rebuild
+3. Run `node build_blogs.js` to generate static blog HTML pages
+4. Update `leftPanel()` in `build_html.js` — new `postTag` href and labels — then rebuild
 5. Run `node update_sitemap.js` — ensure LF-only line endings (**critical**, see §3.7)
-6. Add pulsing dot `<span class="dot-new"></span>` to "Community" in nav across all files
-
-### Bumping app version
-1. Update `versionLabel` strings in `leftPanel()` in `build_html.js`
-2. Update JSON-LD `softwareVersion` in `getSchemaOrg()` in `build_html.js`
-3. Update version references in hand-crafted HTML files
-4. Rebuild: `node build_html.js`
+6. Add pulsing dot `<span class="dot-new"></span>` next to "Community" in nav across all HTML files
 
 ---
 
 ## 7. Important Notes
-- `en/index.html`, `de/index.html`, `ru/index.html` are **generated** — any direct edits will be overwritten on next build.
-- The **root-level `index.html`** is a language-detection redirector only — do not add content.
+- `en/index.html`, `de/index.html`, `ru/index.html` are **generated** — direct edits will be overwritten on next build.
+- The **root-level `index.html`** is a language-detection redirector only — do not add content to it.
+- `node_modules/` is gitignored — run `npm install` after a fresh clone.
 - The `.agent/` and `new_features/` folders are gitignored.
-- `node_modules/` is gitignored — run `npm install` after fresh clone.

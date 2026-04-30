@@ -180,10 +180,10 @@ function navLabels(lang) {
 
 function leftPanel(lang) {
     const labels = {
-        en: ['About',      'S·O·R',  'Practice', 'Example', 'Daily Card'],
-        de: ['Über',       'S·O·R',  'Praxis',   'Beispiel','Tageskarte'],
-        ru: ['О нас',      'С·П·Р',  'Практика', 'Пример',  'Карта дня'],
-    }[lang] || ['About', 'S·O·R', 'Practice', 'Example', 'Daily Card'];
+        en: ['About',      'S·O·R',  'Practice', 'Case Study', 'App'],
+        de: ['Über',       'S·O·R',  'Praxis',   'Fallstudie', 'App'],
+        ru: ['О нас',      'С·П·Р',  'Практика', 'Кейс',       'Приложение'],
+    }[lang] || ['About', 'S·O·R', 'Practice', 'Case Study', 'App'];
 
     const versionLabel = { en: 'New in v1.7.3', de: 'Neu in v1.7.3', ru: 'Новое в v1.7.3' };
     const postTag      = { en: 'New Blog Post', de: 'Neuer Blogbeitrag', ru: 'Новая статья' };
