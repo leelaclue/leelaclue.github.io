@@ -3,3 +3,6 @@ new_features/
 
 # Agent workspace
 .agent/
+
+node_modules/
+package-lock.json
