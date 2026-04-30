@@ -6,7 +6,8 @@
       "Bash(python scripts/google_auth.py --check)",
       "Bash(git *)",
       "Bash(node seo_fix.js)",
-      "Bash(node *)"
+      "Bash(node *)",
+      "Bash(npm install *)"
     ]
   }
 }

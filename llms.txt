@@ -1,0 +1,36 @@
+# LeelaClue — AI & LLM Context
+
+LeelaClue is a free mindfulness and self-discovery mobile app for iOS and Android, inspired by the ancient Indian game of Leela (also known as Snakes and Ladders, or Leela Chakra). It uses 72 symbolic Leela cards and a 3-card spread methodology called S·O·R (State · Obstacle · Resource) to support daily self-reflection.
+
+## Key Pages
+
+- Homepage (EN): https://leelaclue.com/en/
+- Homepage (DE): https://leelaclue.com/de/
+- Homepage (RU): https://leelaclue.com/ru/
+- User Guide: https://leelaclue.com/en/user_guide.html
+- FAQ: https://leelaclue.com/en/faq.html
+- Blog: https://leelaclue.com/en/blog.html
+- Release News: https://leelaclue.com/en/whats_new.html
+- Offline Game: https://leelaclue.com/en/offline-game.html
+
+## Download
+
+- iOS (App Store): https://apps.apple.com/us/app/leelaclue-mindfulness/id6757707003
+- Android (Google Play): https://play.google.com/store/apps/details?id=com.ikaengel.leelaclue
+
+## About the App
+
+LeelaClue is free. No account required. Available in English, German, and Russian.
+
+The S·O·R Framework uses three Leela cards per session:
+- S (State): reflects the user's current inner condition
+- O (Obstacle): names the hidden influence or blind spot
+- R (Resource): points to an available inner quality or energy
+
+Each of the 72 Leela cards represents a state of consciousness from the ancient Vedic tradition. The app is designed for one deliberate session per day — not addictive, not predictive.
+
+Features: Daily Guidance Ritual (S·O·R spread), Reflection Diary, 72 Leela States, Personal Evolution Map, Voice Dictation, Slow Tech Philosophy.
+
+## Full Content
+
+Full aggregated documentation: https://leelaclue.com/llms-full.txt

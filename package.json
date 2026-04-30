@@ -1,0 +1,12 @@
+{
+  "name": "leelaclue-site",
+  "version": "1.0.0",
+  "description": "Static site builder for leelaclue.com",
+  "scripts": {
+    "build": "node build_html.js"
+  },
+  "devDependencies": {
+    "marked": "^18.0.0",
+    "marked-gfm-heading-id": "^4.1.4"
+  }
+}

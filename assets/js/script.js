@@ -33,7 +33,9 @@ document.addEventListener('DOMContentLoaded', () => {
     loadUserGuide(currentLang);
     handleVoting(currentLang);
     initPrivacyBanner(currentLang);
-    startCarousel();
+    startCarousels();
+    initScrollAnimations();
+    initSectionNav();
 
     // Check if URL has #user-guide hash and show the section
     const guideSection = document.getElementById('user-guide');
@@ -239,19 +241,85 @@ function updateLangButtons(activeLang) {
     });
 }
 
-// Simple Carousel Logic
+// Legacy single-carousel (kept for non-landing pages)
 function startCarousel() {
     const slides = document.querySelectorAll('.carousel-slide');
     if (slides.length === 0) return;
-
     let currentSlide = 0;
-    const intervalTime = 4000; // 4 seconds
-
     setInterval(() => {
         slides[currentSlide].classList.remove('active');
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
-    }, intervalTime);
+    }, 4000);
+}
+
+// Multi-instance carousel — one independent rotator per .section-carousel
+function startCarousels() {
+    document.querySelectorAll('.section-carousel').forEach(carousel => {
+        const slides = carousel.querySelectorAll('.section-slide');
+        const dots = carousel.querySelectorAll('.carousel-dot');
+        if (slides.length === 0) return;
+
+        let current = 0;
+
+        function goTo(n) {
+            slides[current].classList.remove('active');
+            dots[current] && dots[current].classList.remove('active');
+            current = (n + slides.length) % slides.length;
+            slides[current].classList.add('active');
+            dots[current] && dots[current].classList.add('active');
+        }
+
+        dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+        setInterval(() => goTo(current + 1), 4000);
+    });
+}
+
+// Scroll-triggered fade-up via IntersectionObserver (SEO-safe)
+function initScrollAnimations() {
+    document.body.classList.add('js-anim');
+
+    const items = document.querySelectorAll('.animate-on-scroll');
+    if (items.length === 0) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    items.forEach(el => observer.observe(el));
+}
+
+// Left-panel section dot navigation scroll-spy
+function initSectionNav() {
+    const navItems = document.querySelectorAll('.section-nav-item[data-section]');
+    if (navItems.length === 0) return;
+
+    const map = {};
+    navItems.forEach(item => {
+        const id = item.getAttribute('data-section');
+        const el = document.getElementById(id);
+        if (el) map[id] = { el, item };
+    });
+
+    const ids = Object.keys(map);
+    if (ids.length === 0) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                navItems.forEach(i => i.classList.remove('active'));
+                map[entry.target.id] && map[entry.target.id].item.classList.add('active');
+            }
+        });
+    }, { threshold: 0.4 });
+
+    ids.forEach(id => observer.observe(map[id].el));
 }
 
 // Simple Markdown Parser (Fallback)
