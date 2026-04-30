@@ -37,15 +37,15 @@ function processHtml(lang, postId, postTitleKey, postDate, contentHtml, htmlTemp
     html = html.replace(/<title>.*?<\/title>/, `<title>${postTitle} - LeelaClue Blog</title>`);
     
     // Replace old canonical links
-    html = html.replace(/<link rel="canonical" href="https:\/\/leelaclue\.github\.io\/(en|de|ru)\/[^"]+" \/>/g, '');
+    html = html.replace(/<link rel="canonical" href="https:\/\/leelaclue\.com\/(en|de|ru)\/[^"]+" \/>/g, '');
     
     // Set canonical link for indexing
-    const canonicalHtml = `<link rel="canonical" href="https://leelaclue.github.io/${lang}/${postId}.html" />`;
+    const canonicalHtml = `<link rel="canonical" href="https://leelaclue.com/${lang}/${postId}.html" />`;
     html = html.replace(/<\/title>/, `</title>\n    ${canonicalHtml}`);
 
     // Replace URL in hreflang alternate links
-    html = html.replace(/hreflang="(en|de|ru|x-default)" href="https:\/\/leelaclue\.github\.io\/(en|de|ru)\/[^"]+\.html"/g, (match, hlang, urlLang) => {
-        return `hreflang="${hlang}" href="https://leelaclue.github.io/${urlLang}/${postId}.html"`;
+    html = html.replace(/hreflang="(en|de|ru|x-default)" href="https:\/\/leelaclue\.com\/(en|de|ru)\/[^"]+\.html"/g, (match, hlang, urlLang) => {
+        return `hreflang="${hlang}" href="https://leelaclue.com/${urlLang}/${postId}.html"`;
     });
 
     // We can pre-render the sidebar

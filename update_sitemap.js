@@ -19,14 +19,10 @@ if (!sitemap.includes('how-leelaclue-was-born.html')) {
             urlBlocks += `
   <!-- ${urlName} -->
   <url>
-    <loc>https://leelaclue.github.io/${lang}/${urlName}</loc>
+    <loc>https://leelaclue.com/${lang}/${urlName}</loc>
     <lastmod>2026-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://leelaclue.github.io/en/${urlName}"/>
-    <xhtml:link rel="alternate" hreflang="de" href="https://leelaclue.github.io/de/${urlName}"/>
-    <xhtml:link rel="alternate" hreflang="ru" href="https://leelaclue.github.io/ru/${urlName}"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://leelaclue.github.io/en/${urlName}"/>
   </url>`;
         });
     });
