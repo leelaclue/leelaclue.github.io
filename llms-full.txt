@@ -8,7 +8,7 @@ App: iOS & Android | Free
 We often get caught in endless mental loops—replaying "what-ifs," over-analyzing choices until they lose meaning, or feeling a deep resistance we can't quite name. When a situation keeps you awake at night, it usually isn't a lack of facts holding you back; it’s that your intuition is buried under mental noise. Without a way to see clearly, we end up running on autopilot and making daily choices blindly.
 
 ## Our Mission
-LeelaClue is a unique bridge between **psychological shadow work** and the ancient **Game of Leela**. Our mission is to help you stop the noise and start crystallizing your true internal feelings. We provide a structure for deep self-reflection that frees your intuition, allowing you to understand your honest wishes and turn them into a path for genuine self-improvement.
+LeelaClue is a unique bridge between [**psychological shadow work**](https://en.wikipedia.org/wiki/Shadow_(psychology)) and the ancient [**Game of Leela**](offline-game.html). Our mission is to help you stop the noise and start crystallizing your true internal feelings. We provide a structure for deep self-reflection that frees your intuition, allowing you to understand your honest wishes and turn them into a path for genuine self-improvement.
 
 ## Who is this for?
 This is for anyone standing at a crossroads—whether you are questioning your career, navigating a change in a relationship, or feeling a gap between who you are and who you want to be. It is for the person who is tired of looking for answers in the opinions of others and is ready to take real responsibility by looking inward.
@@ -41,7 +41,7 @@ By analyzing your situation from these three angles, you gain deep clarity into 
 
 The St·O·R spread only works when you follow the full cycle - from asking the honest question all the way to a daily micro-action you can actually do.
 
-1. **Self-Clarification · The Query** - Distill your real question. Not "Should I do X?" but "What am I afraid of if I don't?" Turn outward questions inward.
+1. **[Self-Clarification](https://en.wikipedia.org/wiki/Self-knowledge_(psychology)) · The Query** - Distill your real question. Not "Should I do X?" but "What am I afraid of if I don't?" Turn outward questions inward.
 
 2. **Synchronicity · The Draw** - Draw three cards representing the St·O·R perspectives. Randomness bypasses the ego's defenses - the 72 Leela states force a perspective your rational mind would never choose.
 
@@ -52,6 +52,8 @@ The St·O·R spread only works when you follow the full cycle - from asking the 
 5. **Self-Analysis · Reflective Practice** - Engage in what researcher [Donald Schön](https://en.wikipedia.org/wiki/Reflective_practice) called "Reflective Practice." Analyze your journaled reflections for each card in the St·O·R spread to extract the core insight. Experience alone doesn't lead to learning - only purposeful reflection creates growth.
 
 6. **Personal Discipline · The Practice** - Translate the core insight from your analysis into one hyper-specific micro-action. The practice must directly ground your discovery into daily life. Not "be calmer" - "three minutes of slow breathing before opening email."
+
+For a deeper dive into this methodology, read our [User Guide](user_guide.html).
 
 
 ---
@@ -72,6 +74,8 @@ By analyzing her reflections, it became clear that "confusion" was just a protec
 
 **Her Daily Discipline**: Anna didn't quit her job immediately. Instead, her micro-action was to spend 15 minutes every morning outlining her business plan *before* checking her corporate email. This small boundary helped her transition from the person she was to the person she was becoming.
 
+Explore more insights and case studies in our [Blog](blog.html).
+
 
 ---
 
@@ -89,6 +93,8 @@ The implementation of the St·O·R framework and the reflection practice is call
 *   **Reflection Diary** - A dedicated space to write down and analyze your reflections. Your past spreads are saved and reviewable, allowing you to track recurring patterns in your psyche.
 *   **The Leela Field** - Explore all 72 states of consciousness from the ancient Vedic system. It provides the full map of self-knowledge, helping you see the "whole story" of your inner journey.
 *   **Slow Tech Philosophy** - One guidance spread and one wisdom card per day. No endless feeds. Deep integration before the next insight arrives.
+*   Curious about recent updates? See [What's New](whats_new.html).
+*   Still have questions? Check our [FAQ](faq.html).
 
 
 

@@ -13,3 +13,5 @@ To understand how the St·O·R framework untangles a real human problem, take th
 By analyzing her reflections, it became clear that "confusion" was just a protective shield to avoid the discomfort of stepping out of a familiar role.
 
 **Her Daily Discipline**: Anna didn't quit her job immediately. Instead, her micro-action was to spend 15 minutes every morning outlining her business plan *before* checking her corporate email. This small boundary helped her transition from the person she was to the person she was becoming.
+
+Explore more insights and case studies in our [Blog](blog.html).

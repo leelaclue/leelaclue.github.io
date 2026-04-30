@@ -12,3 +12,5 @@ Die Umsetzung des St·O·R-Modells und der Reflexionspraxis nennen wir **Täglic
 *   **Reflexions-Tagebuch** – Ein dedizierter Raum, um deine Gedanken aufzuschreiben und zu analysieren. Deine vergangenen Legungen werden gespeichert und sind jederzeit einsehbar, sodass du wiederkehrende Muster in deiner Psyche verfolgen kannst.
 *   **Das Leela-Feld** – Erkunde alle 72 Bewusstseinszustände des alten vedischen Systems. Es bietet die vollständige Karte der Selbsterkenntnis und hilft dir, die „ganze Geschichte“ deiner inneren Reise zu sehen.
 *   **Slow-Tech-Philosophie** – Nur ein Hinweis und eine Weisheitskarte pro Tag. Kein endloses Scrollen. Tiefe Integration, bevor die nächste Erkenntnis kommt.
+*   Neugierig auf die neuesten Updates? Siehe [Was ist neu](whats_new.html).
+*   Hast du noch Fragen? Schau in unsere [FAQ](faq.html).

@@ -12,4 +12,6 @@ The implementation of the St·O·R framework and the reflection practice is call
 *   **Reflection Diary** - A dedicated space to write down and analyze your reflections. Your past spreads are saved and reviewable, allowing you to track recurring patterns in your psyche.
 *   **The Leela Field** - Explore all 72 states of consciousness from the ancient Vedic system. It provides the full map of self-knowledge, helping you see the "whole story" of your inner journey.
 *   **Slow Tech Philosophy** - One guidance spread and one wisdom card per day. No endless feeds. Deep integration before the next insight arrives.
+*   Curious about recent updates? See [What's New](whats_new.html).
+*   Still have questions? Check our [FAQ](faq.html).
 

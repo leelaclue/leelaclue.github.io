@@ -2,7 +2,7 @@
 
 Die St·O·R-Legung funktioniert nur, wenn du den vollständigen Zyklus durchläufst – von der ehrlichen Frage bis hin zu einer täglichen Mikro-Handlung, die du tatsächlich umsetzen kannst.
 
-1. **Selbstklärung · Der Fokus** – Destilliere deine eigentliche Frage. Nicht „Soll ich X tun?“, sondern „Wovor habe ich Angst, wenn ich es nicht tue?“ Verwandle äußere Fragen in innere.
+1. **[Selbstklärung](https://de.wikipedia.org/wiki/Selbsterkenntnis) · Der Fokus** – Destilliere deine eigentliche Frage. Nicht „Soll ich X tun?“, sondern „Wovor habe ich Angst, wenn ich es nicht tue?“ Verwandle äußere Fragen in innere.
 
 2. **Synchronizität · Das Ziehen** – Ziehe drei Karten, die die St·O·R-Perspektiven repräsentieren. Zufall umgeht die Verteidigungsmechanismen des Egos – die 72 Leela-Zustände erzwingen einen Blickwinkel, den dein rationaler Verstand niemals wählen würde.
 
@@ -13,3 +13,5 @@ Die St·O·R-Legung funktioniert nur, wenn du den vollständigen Zyklus durchlä
 5. **Selbstanalyse · Reflektierende Praxis** – Widme dich dem, was der Forscher [Donald Schön](https://en.wikipedia.org/wiki/Reflective_practice) „Reflektierende Praxis“ nannte. Analysiere deine notierten Reflexionen für jede Karte in der St·O·R-Legung, um den Kern der Erkenntnis zu extrahieren. Erfahrung allein führt nicht zu Lernen – nur gezielte Reflexion schafft Wachstum.
 
 6. **Persönliche Disziplin · Die Übung** – Übersetze die Kernbotschaft deiner Analyse in eine hyper-spezifische Mikro-Handlung. Die Übung muss deine Entdeckung direkt im täglichen Leben verankern. Nicht „ruhiger sein“ – sondern „drei Minuten langsames Atmen, bevor ich meine E-Mails öffne.“
+
+Für einen tieferen Einblick in diese Methodik lies unser [Benutzerhandbuch](user_guide.html).

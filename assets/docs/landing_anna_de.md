@@ -13,3 +13,5 @@ Um zu verstehen, wie das St·O·R-Modell ein echtes menschliches Problem entwirr
 Durch die Analyse ihrer Reflexionen wurde klar, dass „Verwirrung“ nur ein Schutzschild war, um das Unbehagen zu vermeiden, aus einer vertrauten Rolle herauszutreten.
 
 **Ihre tägliche Disziplin**: Anna kündigte nicht sofort. Stattdessen bestand ihre Mikro-Handlung darin, jeden Morgen 15 Minuten lang an ihrem Businessplan zu arbeiten, *bevor* sie ihre geschäftlichen E-Mails las. Diese kleine Grenze half her beim Übergang von der Person, die sie war, zu der Person, die sie wurde.
+
+Entdecke weitere Erkenntnisse und Fallstudien in unserem [Blog](blog.html).
