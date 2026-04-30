@@ -1,6 +1,6 @@
 ## Das St·O·R-Modell
 
-Das Herzstück von LeelaClue ist das **St·O·R-Modell** – ein Werkzeug zur **Schattenarbeit**, mit dem du jede Situation aus drei Perspektiven analysieren kannst: **St**ate, **O**bstacle (Hindernis) und **R**esource. Um zu verhindern, dass die Analyse vorhersehbar wird, nutzen wir [**Synchronizität**](blog.html?post=psychology-of-choice), indem wir zufällige Karten aus den 72 Leela-Zuständen ziehen. Diese unerwarteten Blickwinkel erzwingen eine ehrliche Reflexion aus Winkeln, die dein Ego von sich aus niemals wählen würde.
+Das Herzstück von LeelaClue ist das **St·O·R-Modell** – ein Werkzeug zur **Schattenarbeit**, mit dem du jede Situation aus drei Perspektiven analysieren kannst: **St**ate, **O**bstacle (Hindernis) und **R**esource. Um zu verhindern, dass die Analyse vorhersehbar wird, nutzen wir [**Synchronizität**](https://de.wikipedia.org/wiki/Synchronizität), indem wir zufällige Karten aus den 72 Leela-Zuständen ziehen. Diese unerwarteten Blickwinkel erzwingen eine ehrliche Reflexion aus Winkeln, die dein Ego von sich aus niemals wählen würde.
 
 ### St — State: Wo stehe ich gerade?
 

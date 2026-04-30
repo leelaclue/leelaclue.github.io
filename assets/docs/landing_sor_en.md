@@ -1,6 +1,6 @@
 ## The St·O·R Framework
 
-At the heart of LeelaClue is the **St·O·R framework** - a **shadow work** tool that lets you analyze any situation through three perspectives: **St**ate, **O**bstacle, and **R**esource. To keep the analysis from becoming predictable, we use [**Synchronicity**](blog.html?post=psychology-of-choice) by drawing random cards from the 72 Leela states. These unexpected viewpoints force an honest reflection from angles your ego would never choose on its own.
+At the heart of LeelaClue is the **St·O·R framework** - a **shadow work** tool that lets you analyze any situation through three perspectives: **St**ate, **O**bstacle, and **R**esource. To keep the analysis from becoming predictable, we use [**Synchronicity**](https://en.wikipedia.org/wiki/Synchronicity) by drawing random cards from the 72 Leela states. These unexpected viewpoints force an honest reflection from angles your ego would never choose on its own.
 
 ### St — State: Where am I right now?
 
