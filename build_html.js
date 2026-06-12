@@ -142,7 +142,7 @@ function getSchemaOrg(lang) {
       "operatingSystem": "iOS, Android",
       "applicationCategory": "LifestyleApplication",
       "applicationSubCategory": "Mindfulness & Self-Discovery",
-      "softwareVersion": "1.7.3",
+      "softwareVersion": "2.0.0",
       "inLanguage": ["en", "de", "ru"],
       "downloadUrl": [
         "${IOS_URL}",
@@ -185,7 +185,7 @@ function leftPanel(lang) {
         ru: ['О нас',      'С·П·Р',  'Практика', 'Пример',     'Приложение'],
     }[lang] || ['About', 'S·O·R', 'Practice', 'Case Study', 'App'];
 
-    const versionLabel = { en: 'New in v1.7.3', de: 'Neu in v1.7.3', ru: 'Новое в v1.7.3' };
+    const versionLabel = { en: 'v2.0.0 Coming Soon', de: 'v2.0.0 Demnächst', ru: 'v2.0.0 Скоро' };
     const postTag      = { en: 'New Blog Post', de: 'Neuer Blogbeitrag', ru: 'Новая статья' };
 
     const dots = sectionDefs.map((def, i) => `
@@ -207,6 +207,31 @@ ${dots}
 }
 
 // ─── Full page template ──────────────────────────────────────────────────────
+
+function newVersionBanner(lang) {
+    const texts = {
+        en: {
+            text: 'Ancient wisdom for the modern mind. Coming soon: Meet the Leela Guru — your AI companion for deep shadow work: from intention to insight - and on to a daily practice.',
+            btn: "Preview v2.0.0"
+        },
+        de: {
+            text: 'Uralte Weisheit für den modernen Geist. Demnächst: Der Leela-Guru — dein KI-Begleiter für tiefe Schattenarbeit: von der Absicht zur Erkenntnis — und hin zur täglichen Praktik.',
+            btn: 'Vorschau v2.0.0'
+        },
+        ru: {
+            text: 'Древняя мудрость для современного ума. Скоро: Гуру Лилы — твой ИИ-помощник в глубокой работе с тенью: от намерения к инсайту — и дальше к ежедневной практике.',
+            btn: 'Предпросмотр v2.0.0'
+        }
+    };
+    const t = texts[lang] || texts.en;
+    return `
+        <div class="new-version-banner-container" style="max-width: 1400px; margin: 0 auto; padding: 1rem 2rem 0 2rem;">
+            <div class="new-version-banner">
+                <p>${t.text}</p>
+                <a href="whats_new.html" class="banner-cta">${t.btn}</a>
+            </div>
+        </div>`;
+}
 
 function getTemplate(lang, sectionsHtml) {
     const n = navLabels(lang);
@@ -233,7 +258,7 @@ ${getHreflang('index')}
     <meta property="og:type" content="website">
     <link rel="alternate" type="text/plain" title="LLM Context" href="../llms.txt">
     <link rel="icon" type="image/png" href="../assets/app_icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=11">
+    <link rel="stylesheet" href="../assets/css/style.css?v=12">
     <link rel="preload" as="image" href="../assets/images/ADharma.webp">
 ${getSchemaOrg(lang)}
 </head>
@@ -285,6 +310,7 @@ ${getSchemaOrg(lang)}
     ${leftPanel(lang)}
 
     <main class="landing-main">
+${newVersionBanner(lang)}
 ${sectionsHtml}
     </main>
 
