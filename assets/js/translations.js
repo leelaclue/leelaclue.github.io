@@ -2,6 +2,7 @@ const translations = {
     "en": {
         "appTitle": "LeelaClue",
         "disclaimerTitle": "Disclaimer",
+        "termsOfUseTitle": "Terms of Use",
         "impressumTitle": "Impressum",
         "contactTitle": "Support",
         "readManualBtn": "Read User Guide",
@@ -33,6 +34,7 @@ const translations = {
     "de": {
         "appTitle": "LeelaClue",
         "disclaimerTitle": "Haftungsausschluss",
+        "termsOfUseTitle": "Nutzungsbedingungen",
         "impressumTitle": "Impressum",
         "contactTitle": "Support",
         "userGuideTitle": "Benutzerhandbuch",
@@ -64,6 +66,7 @@ const translations = {
     "ru": {
         "appTitle": "LeelaClue",
         "disclaimerTitle": "Отказ от ответственности",
+        "termsOfUseTitle": "Условия использования",
         "impressumTitle": "Импрессум",
         "contactTitle": "Поддержка",
         "userGuideTitle": "Руководство пользователя",

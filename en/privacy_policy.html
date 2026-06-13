@@ -55,87 +55,81 @@
     <main>
         <h1 data-i18n="privacyPolicyTitle">Privacy Policy</h1>
         <div class="content-card markdown-body">
-            <p><strong>Effective Date:</strong> December 11, 2025</p>
+            <h1 id="privacy-policy">Privacy Policy</h1>
+<p><strong>Last updated: June 13, 2026</strong></p>
+<h2 id="1-introduction">1. Introduction</h2>
+<p>This Privacy Policy explains how LeelaClue (&quot;the App&quot;, &quot;we&quot;, &quot;us&quot;) handles your data. Your privacy is important to us. LeelaClue is designed with a privacy-first approach — the application works without a user account, and the only identifier linked to your usage is a randomly generated, anonymous UUID stored on your device. An optional sign-in with your Apple or Google account exists solely to protect in-app purchases; it is never required and does not create a user profile (see Section 3).</p>
+<h2 id="2-data-collection-and-storage">2. Data Collection and Storage</h2>
+<p>LeelaClue does <strong>not</strong> collect your name, email address, phone number, postal address, contacts, location, photos, or any government identifier. The application works without registration.</p>
+<ul>
+<li><strong>Local Data</strong>: All card spreads, reflection text, daily practices, reminder settings, and your chosen display name are stored exclusively on your device using the system&#39;s standard preferences storage (<code>SharedPreferences</code>). They are removed when you uninstall the application.</li>
+<li><strong>Anonymous UUID</strong>: On first launch, the application generates a random UUID and stores it in the system&#39;s standard preferences storage on your device. This storage is included in your device&#39;s operating-system backup (Android Auto Backup / iCloud backup), so the UUID — and with it your Clues balance — can survive a device migration when you restore from a backup. The UUID cannot be linked to your personal identity; access to the associated server record is protected by server-side security checks, not by keeping the identifier secret.</li>
+<li><strong>Server-Side Ledger</strong>: To support the in-app Clues virtual currency, the UUID is paired server-side with a Clues balance, a one-time welcome-gift flag, and (if you have opted in) an analytics-consent timestamp. If you use the optional sign-in (Section 3), the ledger record additionally stores the opaque account identifier that links your balance to your Apple or Google account. No other data is stored against the UUID.</li>
+<li><strong>No Account Required</strong>: LeelaClue does not require user registration or account creation.</li>
+</ul>
+<h2 id="3-optional-sign-in-with-apple-or-google">3. Optional Sign-In with Apple or Google</h2>
+<p>LeelaClue has no user accounts of its own. To still let you recover purchased Clues after a reinstall or on a new device, the App offers an <strong>optional</strong> sign-in with the Apple or Google account you already use for app-store purchases.</p>
+<ul>
+<li><strong>Entirely Optional</strong>: Sign-in is offered only on the purchase (Dakshina) screen. Every feature of the App works without it. The only consequence of not signing in is that purchased Clues remain tied to the current installation and cannot be restored on another device.</li>
+<li><strong>Purpose Limitation</strong>: Sign-in is used exclusively to protect purchased Clues and to restore them on a new device (one Clues balance per account). It is not used for marketing, profiling, or any other purpose.</li>
+<li><strong>What We Receive</strong>: The sign-in is processed by Firebase Authentication and yields a cryptographically signed token. Our server verifies this token and stores only: an opaque account identifier (a random string issued by Firebase — not your email address), its link to your anonymous UUID, the sign-in provider (Apple or Google), the platform, the app version, and timestamps.</li>
+<li><strong>What We Never Store</strong>: Your email address and your name are <strong>not</strong> stored, displayed, or transmitted to our backend — even though the Apple or Google sign-in dialog may mention them.</li>
+<li><strong>Sign-Out</strong>: You can sign out at any time on the Dakshina screen. To have the server-side account link deleted, contact us (see Section 7).</li>
+</ul>
+<h2 id="4-data-you-provide">4. Data You Provide</h2>
+<p>The App allows you to enter the following types of data, all stored locally on your device:</p>
+<ul>
+<li>Reflection text and notes attached to card spreads</li>
+<li>Daily-practice tasks and reminder settings</li>
+<li>A display name (optional, used only for in-app greetings)</li>
+</ul>
+<p>The text of your intent and your card selection are transmitted to our Cloud Functions only when you explicitly invoke an AI feature — see Section 6.</p>
+<h2 id="5-third-party-services">5. Third-Party Services</h2>
+<p>LeelaClue uses the following third-party services:</p>
+<ul>
+<li><strong>Google Firebase</strong>: Cloud Functions and Firestore (hosted in EU-Frankfurt, <code>europe-west3</code>) host the Clues balance ledger and route AI requests. Google Firebase&#39;s privacy policy applies: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+<li><strong>Firebase Authentication</strong> <em>(only if you use the optional sign-in)</em>: Verifies your Apple or Google sign-in and issues the opaque account identifier described in Section 3. Google&#39;s privacy policy applies: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a>.</li>
+<li><strong>Firebase App Check</strong>: Every request from the App to our backend carries a device-integrity attestation (Play Integrity on Android, App Attest on iOS). It confirms that the request comes from an unmodified app on a genuine device and is used solely to block bots and abuse. The attestation is performed by Google (and, on iOS, Apple) and contains no personal data.</li>
+<li><strong>Google Gemini</strong>: AI processing for intent refinement, personalized guidance questions, generated practices, and spread summaries. See Section 6 for the specific data handling.</li>
+<li><strong>Google Analytics for Firebase</strong> <em>(optional, opt-in)</em>: When you explicitly enable analytics in Settings, anonymous usage events (screens visited, rituals completed) are sent to Firebase Analytics. No reflection text or personal content is ever transmitted. Personalized advertising is disabled (<code>allow_personalized_ads = false</code>); the Android Advertising ID permission is stripped from the build. You can turn analytics off at any time in Settings.</li>
+<li><strong>RevenueCat</strong>: Manages in-app purchases of Clues on top of the Apple App Store and Google Play. RevenueCat receives your anonymous UUID (used as its App User ID — no name or email) and the platform receipt / transaction metadata returned by Apple or Google. RevenueCat&#39;s privacy policy: <a href="https://www.revenuecat.com/privacy">https://www.revenuecat.com/privacy</a>.</li>
+<li><strong>Apple App Store / Google Play Store</strong>: Clue purchases are processed through the respective platform. Their privacy policies apply to those transactions.</li>
+</ul>
+<p>No personal data from the App is shared with these services beyond what is required for the function described.</p>
+<h2 id="6-ai-data-processing">6. AI Data Processing</h2>
+<h3 id="leela-guru--ai-features">Leela Guru — AI Features</h3>
+<p>LeelaClue includes optional AI features (&quot;Leela Guru&quot;) that send specific request data to our Cloud Functions, which then call Google Gemini. The features are: intent refinement, personalized guidance questions, generated practice suggestions, and spread summaries.</p>
+<ul>
+<li><strong>Data Minimization</strong>: We do not send any personally identifiable information (PII). The data sent per request is limited to: the intent text you typed, the names and standard questions of the cards you drew, your active reflection text (only when requesting a summary), and the active interface language (<code>en</code>, <code>de</code>, or <code>ru</code>).</li>
+<li><strong>No Data Retention</strong>: AI requests are processed in real-time. Neither LeelaClue nor Google stores these requests on external servers after the result is returned to your device.</li>
+<li><strong>No Model Training</strong>: Per our Google Cloud configuration, Google does not use your input to train or improve the Gemini models.</li>
+<li><strong>Local Finality</strong>: Once the AI response is returned, it is saved exclusively on your device alongside the corresponding spread.</li>
+</ul>
+<h2 id="deletion">7. Account and Data Deletion</h2>
+<p>You can request deletion of your optional account and the associated data at any time:</p>
+<ol>
+<li>Send an email to <strong><a href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a></strong> with the subject &quot;Data deletion&quot;.</li>
+<li>If you used the optional sign-in, name the Apple or Google account you signed in with — this is the only way we can uniquely locate your server-side record.</li>
+</ol>
+<p><strong>What gets deleted:</strong> the server-side ledger entry (your Clues balance, the one-time welcome-gift flag, and any analytics-consent timestamp) together with the link to your Apple/Google account (the opaque <code>authUid</code>).</p>
+<p><strong>Local data</strong> (card spreads, reflections, display name) is removed entirely when you uninstall the application or clear the app data in your device&#39;s system settings. Note that uninstalling destroys the UUID locally — after that, an unsigned server record can no longer be associated with you, which is why signed-in users should provide their account as described above.</p>
+<p><strong>Processing time:</strong> We process deletion requests within 30 days. No data is retained for other purposes.</p>
+<h2 id="8-your-rights-gdpr">8. Your Rights (GDPR)</h2>
+<p>You have the right to access, correct, delete, and obtain a copy of any personal data we process, to object to processing, and to lodge a complaint with the data-protection supervisory authority responsible for the operator (LfDI Baden-Württemberg, <a href="https://www.baden-wuerttemberg.datenschutz.de">https://www.baden-wuerttemberg.datenschutz.de</a>). To exercise these rights, contact us at the email below.</p>
+<h2 id="9-childrens-privacy">9. Children&#39;s Privacy</h2>
+<p>LeelaClue is not intended for use by children under 16. We do not knowingly collect data from minors.</p>
+<h2 id="10-changes-to-this-policy">10. Changes to This Policy</h2>
+<p>We may update this Privacy Policy from time to time. Any changes will be reflected in the application with an updated &quot;Last updated&quot; date.</p>
+<h2 id="11-contact">11. Contact</h2>
+<p>If you have questions about this Privacy Policy, please contact:<br>Irene Engelko | <a href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a></p>
 
-            <p>This Privacy Policy informs you about the processing of personal data in connection with the LeelaClue
-                mobile application. The protection of your personal data is important to the developer. Below you will
-                find all relevant information about data collection, processing, and your rights.</p>
-
-            <h2>Responsible Party</h2>
-            <p><strong>Responsible:</strong> Irene Engelko<br>
-                <strong>Address:</strong> Bad Schönborn, Germany<br>
-                <strong>Email:</strong> <a href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a>
-            </p>
-
-            <h2>Brief Description of the App</h2>
-            <p>LeelaClue is an entertainment app that makes the knowledge of the Leela map accessible. "The 72 fields of
-                the Leela map are the keys to the states of your consciousness. But the map itself is often too complex.
-                LeelaClue distills this ancient knowledge and transforms each state into a clear, intuitive message for
-                your here and now."</p>
-
-            <h2>What Data is Collected?</h2>
-            <p><strong>None.</strong> The app does not collect, gather, store, or transmit any personal data from users.
-                In particular, no names, email addresses, usage data, location data, contacts, photos, audio recordings,
-                or other personal information is transmitted to the developer or third parties.</p>
-
-            <h2>Permissions and Access</h2>
-            <p>The app does not require any special system permissions (e.g., camera, microphone, location, or
-                contacts). Should a permission be required in a future version, this will be clearly communicated in the
-                app and in this Privacy Policy.</p>
-
-            <h2>Third Parties and Third-Party Services</h2>
-            <p>Currently, LeelaClue does not use any third-party SDKs, analytics tools, advertising networks, crash
-                reporting services, or cloud services that collect or transmit user data. Should this change in the
-                future, the Privacy Policy will be updated accordingly and users will be informed.</p>
-
-            <h2>Storage and Transmission</h2>
-            <p>Since no data is collected, there is also no storage on remote servers and no transmission to third
-                parties.</p>
-
-            <h2>Children</h2>
-            <p>The app is not intended for children under 13 years of age. No personal data from children is collected.
-                Parents and guardians who have concerns may contact the developer at the email address above.</p>
-
-            <h2>Rights of Data Subjects</h2>
-            <p>Because LeelaClue does not process personal data, there are currently no circumstances that would require
-                a request for information or deletion under Articles 15-17 GDPR. Should data processing change in the
-                future, the statutory rights of data subjects apply (information, correction, deletion, restriction of
-                processing, data portability, and objection). Please direct inquiries by email to <a
-                    href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a>.</p>
-
-            <h2>Changes to this Privacy Policy</h2>
-            <p>Changes or additions to this Privacy Policy will be published here. It is recommended to review the
-                policy regularly. In case of significant changes, users will be informed in the app or via update
-                notice.</p>
-
-            <h2>Note for Google Play Store – Data Safety</h2>
-            <p>The following information is relevant for the Google Play "Data Safety" form. Please use this summary
-                when filling out the Play Console form:</p>
-            <ul>
-                <li>Data collection: No — the app does not collect personal data.</li>
-                <li>Data sharing with third parties: No.</li>
-                <li>Data storage on servers: No.</li>
-                <li>Third-party SDKs (Analytics, Advertising, Crash Reporting): None currently.</li>
-                <li>Persons under 13 years: App not for children under 13.</li>
-            </ul>
-
-            <h2>Contact</h2>
-            <p>For questions about the Privacy Policy or data handling, you can reach the developer at:<br>
-                <strong>Irene Engelko</strong><br>
-                Bad Schönborn, Germany<br>
-                Email: <a href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a>
-            </p>
-
-            <p><strong>Date:</strong> December 11, 2025</p>
-
-            <p>This Privacy Policy was created specifically for the LeelaClue app. It serves as guidance for users and
-                for submission to app stores (e.g., Google Play).</p>
         </div>
     </main>
     <footer>
         <div class="footer-links" style="margin-bottom: 1rem;">
             <a href="privacy.html" data-i18n="disclaimerTitle">Disclaimer</a>
             <a href="privacy_policy.html" class="active" data-i18n="privacyPolicyTitle">Privacy Policy</a>
+            <a href="terms_of_use.html" data-i18n="termsOfUseTitle">Terms of Use</a>
             <a href="privacy_web.html" data-i18n="webPrivacyTitle">Website Privacy</a>
             <a href="impressum.html" data-i18n="impressumTitle">Impressum</a>
             <a href="support.html" data-i18n="contactTitle">Support</a>
