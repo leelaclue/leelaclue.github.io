@@ -56,7 +56,7 @@
         <h1 data-i18n="privacyPolicyTitle">Privacy Policy</h1>
         <div class="content-card markdown-body">
             <h1 id="privacy-policy">Privacy Policy</h1>
-<p><strong>Last updated: June 13, 2026</strong></p>
+<p><strong>Last updated: June 14, 2026</strong></p>
 <h2 id="1-introduction">1. Introduction</h2>
 <p>This Privacy Policy explains how LeelaClue (&quot;the App&quot;, &quot;we&quot;, &quot;us&quot;) handles your data. Your privacy is important to us. LeelaClue is designed with a privacy-first approach — the application works without a user account, and the only identifier linked to your usage is a randomly generated, anonymous UUID stored on your device. An optional sign-in with your Apple or Google account exists solely to protect in-app purchases; it is never required and does not create a user profile (see Section 3).</p>
 <h2 id="2-data-collection-and-storage">2. Data Collection and Storage</h2>
@@ -106,14 +106,18 @@
 <li><strong>Local Finality</strong>: Once the AI response is returned, it is saved exclusively on your device alongside the corresponding spread.</li>
 </ul>
 <h2 id="deletion">7. Account and Data Deletion</h2>
-<p>You can request deletion of your optional account and the associated data at any time:</p>
-<ol>
-<li>Send an email to <strong><a href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a></strong> with the subject &quot;Data deletion&quot;.</li>
-<li>If you used the optional sign-in, name the Apple or Google account you signed in with — this is the only way we can uniquely locate your server-side record.</li>
-</ol>
-<p><strong>What gets deleted:</strong> the server-side ledger entry (your Clues balance, the one-time welcome-gift flag, and any analytics-consent timestamp) together with the link to your Apple/Google account (the opaque <code>authUid</code>).</p>
-<p><strong>Local data</strong> (card spreads, reflections, display name) is removed entirely when you uninstall the application or clear the app data in your device&#39;s system settings. Note that uninstalling destroys the UUID locally — after that, an unsigned server record can no longer be associated with you, which is why signed-in users should provide their account as described above.</p>
-<p><strong>Processing time:</strong> We process deletion requests within 30 days. No data is retained for other purposes.</p>
+<p>Deletion is available <strong>inside the app</strong> and is the primary method. Open <strong>Settings → Delete Account &amp; Data</strong> and confirm. This permanently and immediately:</p>
+<ul>
+<li>deletes the server-side ledger entry (your Clues balance, purchase history, the one-time welcome-gift flag, and any analytics-consent timestamp);</li>
+<li>deletes the link to your Apple/Google account and the associated authentication account (the opaque <code>authUid</code>), if you used the optional sign-in;</li>
+<li>deletes your subscriber record at RevenueCat (our purchase processor); and</li>
+<li>erases all on-device data (card spreads, reflections, settings) and the anonymous UUID, returning the app to first-run onboarding.</li>
+</ul>
+<p>The Apple App Store / Google Play transaction receipts are retained by Apple/Google for legal and accounting reasons and cannot be removed by us or RevenueCat.</p>
+<p><strong>If you already removed the app:</strong> reinstall it, sign in with the same Apple/Google account, then run Settings → Delete Account &amp; Data.</p>
+<p><strong>Multiple devices:</strong> if you use the same Apple/Google account on more than one device, run Delete Account &amp; Data on <strong>each</strong> of them. After deletion on one device the others lose access — their Clues balance reads 0 and correct operation is not guaranteed until they are also reset or reinstalled.</p>
+<p><strong>Email fallback:</strong> you can also request deletion by emailing <strong><a href="mailto:leelaclue@gmail.com">leelaclue@gmail.com</a></strong> with the subject &quot;Data deletion&quot;. If you used the optional sign-in, name the Apple or Google account you signed in with. Note that for Apple &quot;Hide My Email&quot; users the address we receive is an anonymous relay, so we may be unable to match an email request to your record — in-app deletion is the reliable route.</p>
+<p><strong>Processing time:</strong> in-app deletion is immediate; emailed requests are processed within 30 days. No data is retained for other purposes.</p>
 <h2 id="8-your-rights-gdpr">8. Your Rights (GDPR)</h2>
 <p>You have the right to access, correct, delete, and obtain a copy of any personal data we process, to object to processing, and to lodge a complaint with the data-protection supervisory authority responsible for the operator (LfDI Baden-Württemberg, <a href="https://www.baden-wuerttemberg.datenschutz.de">https://www.baden-wuerttemberg.datenschutz.de</a>). To exercise these rights, contact us at the email below.</p>
 <h2 id="9-childrens-privacy">9. Children&#39;s Privacy</h2>
