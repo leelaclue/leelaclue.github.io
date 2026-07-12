@@ -150,7 +150,7 @@ async function loadUserGuide(lang) {
         'ru': 'USER_GUIDE_RU.md'
     };
     const fileName = langMap[lang] || 'USER_GUIDE_EN.md';
-    const url = `https://raw.githubusercontent.com/leelaclue/helps/main/${fileName}`;
+    const url = `https://raw.githubusercontent.com/leelaclue/helps/main/v2/${fileName}`;
 
     try {
         const response = await fetch(url);
