@@ -1,4 +1,8 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Enable GitHub-flavored heading IDs in marked.js if available
+    if (typeof marked !== 'undefined' && typeof markedGfmHeadingId !== 'undefined') {
+        marked.use(markedGfmHeadingId.gfmHeadingId());
+    }
     const defaultLang = 'en';
 
     // 1. Get Language from Path or URL (SEO friendly)
