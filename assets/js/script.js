@@ -141,38 +141,14 @@ function loadTranslations(lang) {
     }
 }
 
-// Fetch and display User Guide from GitHub
-async function loadUserGuide(lang) {
+// User Guide content is baked into the HTML at build time (see build_guide.js,
+// source: leelaclue/helps repo, v201/). This only wires up smooth scrolling
+// for the guide's internal anchor links.
+function loadUserGuide(lang) {
     const guideContainer = document.getElementById('guide-content');
     if (!guideContainer) return;
 
-    guideContainer.innerHTML = '<p class="loading-text">Loading guide...</p>';
-
-    const langMap = {
-        'en': 'USER_GUIDE_EN.md',
-        'de': 'USER_GUIDE_DE.md',
-        'ru': 'USER_GUIDE_RU.md'
-    };
-    const fileName = langMap[lang] || 'USER_GUIDE_EN.md';
-    const url = `https://raw.githubusercontent.com/leelaclue/helps/main/v2/${fileName}`;
-
-    try {
-        const response = await fetch(url);
-        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-        const text = await response.text();
-
-        if (typeof marked !== 'undefined') {
-            guideContainer.innerHTML = marked.parse(text);
-        } else {
-            guideContainer.innerHTML = parseMarkdown(text);
-        }
-
-        fixInternalLinks(guideContainer);
-
-    } catch (error) {
-        console.error('Error loading user guide:', error);
-        guideContainer.innerHTML = '<p class="loading-text">Failed to load User Guide. Please try again later.</p>';
-    }
+    fixInternalLinks(guideContainer);
 }
 
 // Fix internal anchor links to work with marked.js generated IDs

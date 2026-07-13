@@ -4,5 +4,8 @@ new_features/
 # Agent workspace
 .agent/
 
+# Internal SEO audit reports (not for publishing)
+seo-audit/
+
 node_modules/
 package-lock.json

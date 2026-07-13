@@ -726,6 +726,17 @@ footer {
   margin-top: 0.5rem;
 }
 
+.blog-byline {
+  display: block;
+  color: var(--primary-color, #d4af37);
+  font-size: 0.9rem;
+  margin-top: 0.75rem;
+}
+
+.blog-index-item h2 a {
+  text-decoration: none;
+}
+
 /* Highlight Menu Item (if needed specific stress beyond standard gold) */
 /* Currently links turn gold on hover or if active class. 
    We will ensure the Blog link stands out if requested. */

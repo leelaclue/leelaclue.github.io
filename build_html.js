@@ -114,21 +114,26 @@ function buildSection(def, markdownHtml) {
 // ─── Metadata ────────────────────────────────────────────────────────────────
 
 function getTitle(lang) {
-    if (lang === 'de') return 'LeelaClue — Offizielle Achtsamkeits- &amp; Selbsterkenntnis-App | iOS &amp; Android';
-    if (lang === 'ru') return 'LeelaClue — Официальное приложение для осознанности и самопознания | iOS и Android';
-    return 'LeelaClue — Official Mindfulness &amp; Self-Discovery App | iOS &amp; Android';
+    if (lang === 'de') return 'LeelaClue — Achtsamkeit, Schattenarbeit &amp; Selbsterkenntnis-App | iOS &amp; Android';
+    if (lang === 'ru') return 'LeelaClue — осознанность, работа с тенью и самопознание | iOS и Android';
+    return 'LeelaClue — Mindfulness, Shadow Work &amp; Self-Discovery App | iOS &amp; Android';
 }
 
 function getDescription(lang) {
-    if (lang === 'de') return 'LeelaClue ist eine kostenlose Achtsamkeits-App, inspiriert vom antiken Leela-Spiel. Täglicher S·O·R-Spread, Reflexionstagebuch und 72 einzigartige Karten. Kostenlos für iOS &amp; Android.';
-    if (lang === 'ru') return 'LeelaClue — бесплатное приложение для осознанности, вдохновлённое древней игрой Лила. Ежедневный расклад С·П·Р, Дневник размышлений и 72 уникальных карты. Бесплатно для iOS и Android.';
-    return 'LeelaClue is a free mindfulness and self-discovery app inspired by the ancient Indian game of Leela. Daily S·O·R Guidance Spread, Reflection Diary, and 72 unique Leela cards. Free for iOS &amp; Android.';
+    if (lang === 'de') return 'LeelaClue ist eine kostenlose App für Achtsamkeit, Schattenarbeit und Selbsterkenntnis, inspiriert vom antiken Leela-Spiel. Täglicher S·O·R-Spread, Reflexionstagebuch und 72 einzigartige Karten. Kostenlos für iOS &amp; Android.';
+    if (lang === 'ru') return 'LeelaClue — бесплатное приложение для осознанности, работы с тенью и глубокой проработки, вдохновлённое древней игрой Лила. Ежедневный расклад С·П·Р, Дневник размышлений и 72 карты. Бесплатно для iOS и Android.';
+    return 'LeelaClue is a free mindfulness, shadow work and self-discovery app inspired by the ancient Indian game of Leela. Daily S·O·R Guidance Spread, Reflection Diary, and 72 unique Leela cards. Free for iOS &amp; Android.';
 }
 
 function getHreflang(pageName) {
+    // Homepages must use the trailing-slash form to match their canonical
+    // (https://leelaclue.com/en/), not /en/index.html.
+    const href = (l) => pageName === 'index'
+        ? `https://leelaclue.com/${l}/`
+        : `https://leelaclue.com/${l}/${pageName}.html`;
     return langs.map(l =>
-        `    <link rel="alternate" hreflang="${l}" href="https://leelaclue.com/${l}/${pageName}.html">`
-    ).join('\n') + `\n    <link rel="alternate" hreflang="x-default" href="https://leelaclue.com/en/${pageName}.html">`;
+        `    <link rel="alternate" hreflang="${l}" href="${href(l)}">`
+    ).join('\n') + `\n    <link rel="alternate" hreflang="x-default" href="${href('en')}">`;
 }
 
 function getSchemaOrg(lang) {
@@ -142,7 +147,7 @@ function getSchemaOrg(lang) {
       "operatingSystem": "iOS, Android",
       "applicationCategory": "LifestyleApplication",
       "applicationSubCategory": "Mindfulness & Self-Discovery",
-      "softwareVersion": "2.0.0",
+      "softwareVersion": "2.0.2",
       "inLanguage": ["en", "de", "ru"],
       "downloadUrl": [
         "${IOS_URL}",
@@ -152,7 +157,7 @@ function getSchemaOrg(lang) {
       "author": { "@type": "Organization", "name": "LeelaClue", "url": "https://leelaclue.com" },
       "image": "https://leelaclue.com/assets/app_icon.png",
       "screenshot": "https://leelaclue.com/assets/images/ADharma.webp",
-      "description": "LeelaClue is a free mindfulness and self-discovery mobile app inspired by the ancient Indian game of Leela. Features Daily Wisdom rituals, a meditative 3-Card S·O·R Guidance Spread, a Personal Reflection Diary, and 72 unique cards representing states of consciousness."
+      "description": "LeelaClue is a free mindfulness, shadow work and self-discovery mobile app inspired by the ancient Indian game of Leela. Features Daily Wisdom rituals, a meditative 3-Card S·O·R Guidance Spread, a Personal Reflection Diary, and 72 unique cards representing states of consciousness."
     }
     </script>
     <script type="application/ld+json">
@@ -185,7 +190,7 @@ function leftPanel(lang) {
         ru: ['О нас',      'С·П·Р',  'Практика', 'Пример',     'Приложение'],
     }[lang] || ['About', 'S·O·R', 'Practice', 'Case Study', 'App'];
 
-    const versionLabel = { en: 'New in v2.0.0', de: 'Neu in v2.0.0', ru: 'Новое в v2.0.0' };
+    const versionLabel = { en: 'New in v2.0.2', de: 'Neu in v2.0.2', ru: 'Новое в v2.0.2' };
     const postTag      = { en: 'New Blog Post', de: 'Neuer Blogbeitrag', ru: 'Новая статья' };
 
     const dots = sectionDefs.map((def, i) => `
@@ -212,15 +217,15 @@ function newVersionBanner(lang) {
     const texts = {
         en: {
             text: 'Ancient wisdom for the modern mind. Meet the Leela Guru — your AI companion for deep shadow work: from intention to insight - and on to a daily practice.',
-            btn: "What's New in v2.0.0"
+            btn: "What's New in v2.0.2"
         },
         de: {
             text: 'Uralte Weisheit für den modernen Geist. Der Leela-Guru — dein KI-Begleiter für tiefe Schattenarbeit: von der Absicht zur Erkenntnis — und hin zur täglichen Praktik.',
-            btn: 'Was ist neu in v2.0.0'
+            btn: 'Was ist neu in v2.0.2'
         },
         ru: {
             text: 'Древняя мудрость для современного ума. Гуру Лилы — твой ИИ-помощник в глубокой работе с тенью: от намерения к инсайту — и дальше к ежедневной практике.',
-            btn: 'Что нового в v2.0.0'
+            btn: 'Что нового в v2.0.2'
         }
     };
     const t = texts[lang] || texts.en;
@@ -257,7 +262,7 @@ ${getHreflang('index')}
     <meta property="og:url" content="${canon}">
     <meta property="og:type" content="website">
     <link rel="alternate" type="text/plain" title="LLM Context" href="../llms.txt">
-    <link rel="icon" type="image/png" href="../assets/app_icon.png">
+    <link rel="icon" type="image/png" href="../assets/app_icon_small.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=13">
     <link rel="preload" as="image" href="../assets/images/ADharma.webp">
 ${getSchemaOrg(lang)}
@@ -268,7 +273,7 @@ ${getSchemaOrg(lang)}
         <div class="header-container">
             <div class="logo-container">
                 <a href="index.html" class="logo-link">
-                    <img src="../assets/app_icon.png" alt="LeelaClue Icon" class="logo-img">
+                    <img src="../assets/app_icon_small.png" alt="LeelaClue Icon" class="logo-img">
                     <span class="brand-name">LeelaClue</span>
                 </a>
             </div>
