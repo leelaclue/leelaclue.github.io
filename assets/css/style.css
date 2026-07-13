@@ -733,6 +733,14 @@ footer {
   margin-top: 0.75rem;
 }
 
+.store-rating {
+  text-align: center;
+  color: var(--primary-color, #d4af37);
+  font-size: 0.85rem;
+  margin: 0.35rem 0 0.75rem 0;
+  letter-spacing: 0.02em;
+}
+
 .blog-index-item h2 a {
   text-decoration: none;
 }

@@ -39,6 +39,38 @@ function getCarouselImages(key) {
 
 // ─── Store badges ────────────────────────────────────────────────────────────
 
+// App store ratings — cached by build_ratings.js (run it first to refresh)
+let ratings = null;
+const ratingsPath = path.join(root, 'assets', 'data', 'ratings.json');
+if (fs.existsSync(ratingsPath)) {
+    ratings = JSON.parse(fs.readFileSync(ratingsPath, 'utf8'));
+} else {
+    console.warn('  WARNING: assets/data/ratings.json missing — run `node build_ratings.js`. Building without aggregateRating.');
+}
+
+// "21 ratings" with correct plural per language
+function ratingCountLabel(lang, n) {
+    if (lang === 'de') return n === 1 ? `${n} Bewertung` : `${n} Bewertungen`;
+    if (lang === 'ru') {
+        const m10 = n % 10, m100 = n % 100;
+        const word = (m10 === 1 && m100 !== 11) ? 'оценка'
+            : (m10 >= 2 && m10 <= 4 && (m100 < 12 || m100 > 14)) ? 'оценки'
+            : 'оценок';
+        return `${n} ${word}`;
+    }
+    return n === 1 ? `${n} rating` : `${n} ratings`;
+}
+
+function ratingBadge(lang) {
+    if (!ratings) return '';
+    const value = (lang === 'de' || lang === 'ru')
+        ? ratings.value.toFixed(1).replace('.', ',')
+        : ratings.value.toFixed(1);
+    const src = { en: 'on the App Store &amp; Google Play', de: 'im App Store &amp; bei Google Play', ru: 'в App Store и Google Play' }[lang];
+    return `
+                    <div class="store-rating">★ ${value} · ${ratingCountLabel(lang, ratings.count)} ${src}</div>`;
+}
+
 const IOS_URL    = 'https://apps.apple.com/us/app/leelaclue-mindfulness/id6757707003';
 const ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.ikaengel.leelaclue';
 const IOS_BADGE  = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg';
@@ -58,13 +90,14 @@ function storeBadges(eager) {
 
 // ─── Carousel HTML ───────────────────────────────────────────────────────────
 
-function buildCarousel(def) {
+function buildCarousel(def, lang) {
     const files = getCarouselImages(def.key);
+    const badgeExtra = def.isHero ? ratingBadge(lang) : '';
 
     if (files.length === 0) {
         console.warn(`  WARNING: no images in assets/images/carousel/${def.key}/`);
         return `<div class="carousel-wrapper">
-                    ${storeBadges(def.isHero)}
+                    ${storeBadges(def.isHero)}${badgeExtra}
                     <div class="section-carousel" style="display:flex;align-items:center;justify-content:center;">
                         <p style="color:var(--text-color);opacity:0.4;font-size:0.9rem;padding:2rem;text-align:center;">
                             Drop .webp images into<br>assets/images/carousel/${def.key}/
@@ -85,7 +118,7 @@ function buildCarousel(def) {
     ).join('\n');
 
     return `<div class="carousel-wrapper">
-                    ${storeBadges(def.isHero)}
+                    ${storeBadges(def.isHero)}${badgeExtra}
                     <div class="section-carousel">
 ${slides}
                         <div class="carousel-dots">
@@ -97,12 +130,12 @@ ${dots}
 
 // ─── Landing section HTML ────────────────────────────────────────────────────
 
-function buildSection(def, markdownHtml) {
+function buildSection(def, markdownHtml, lang) {
     return `
         <section class="landing-section${def.extraClass}" id="${def.id}">
             <div class="section-container">
                 <div class="animate-on-scroll">
-                    ${buildCarousel(def)}
+                    ${buildCarousel(def, lang)}
                 </div>
                 <div class="section-text markdown-body animate-on-scroll delay-1">
                     ${markdownHtml}
@@ -153,7 +186,8 @@ function getSchemaOrg(lang) {
         "${IOS_URL}",
         "${ANDROID_URL}"
       ],
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },${ratings ? `
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "${ratings.value.toFixed(1)}", "ratingCount": "${ratings.count}", "bestRating": "${ratings.bestRating}" },` : ''}
       "author": { "@type": "Organization", "name": "LeelaClue", "url": "https://leelaclue.com" },
       "image": "https://leelaclue.com/assets/app_icon.png",
       "screenshot": "https://leelaclue.com/assets/images/ADharma.webp",
@@ -352,7 +386,7 @@ function readMd(filename) {
 langs.forEach(lang => {
     const sectionsHtml = sectionDefs.map(def => {
         const html = readMd(`landing_${def.key}_${lang}.md`);
-        return buildSection(def, html);
+        return buildSection(def, html, lang);
     }).join('\n');
 
     const output = getTemplate(lang, sectionsHtml);
