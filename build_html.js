@@ -68,7 +68,7 @@ function ratingBadge(lang) {
         : ratings.value.toFixed(1);
     const src = { en: 'on the App Store &amp; Google Play', de: 'im App Store &amp; bei Google Play', ru: 'в App Store и Google Play' }[lang];
     return `
-                    <div class="store-rating">★ ${value} · ${ratingCountLabel(lang, ratings.count)} ${src}</div>`;
+                        <div class="store-rating">★ ${value} · ${ratingCountLabel(lang, ratings.count)} ${src}</div>`;
 }
 
 const IOS_URL    = 'https://apps.apple.com/us/app/leelaclue-mindfulness/id6757707003';
@@ -76,7 +76,7 @@ const ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.ikaengel.
 const IOS_BADGE  = 'https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg';
 const GP_BADGE   = 'https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png';
 
-function storeBadges(eager) {
+function storeBadges(eager, extra) {
     const la = eager ? '' : ' loading="lazy"';
     return `<div class="carousel-cta">
                         <a href="${IOS_URL}" target="_blank" rel="noopener">
@@ -84,7 +84,7 @@ function storeBadges(eager) {
                         </a>
                         <a href="${ANDROID_URL}" target="_blank" rel="noopener">
                             <img alt="Get it on Google Play" src="${GP_BADGE}" class="store-badge-sm google"${la}>
-                        </a>
+                        </a>${extra || ''}
                     </div>`;
 }
 
@@ -97,7 +97,7 @@ function buildCarousel(def, lang) {
     if (files.length === 0) {
         console.warn(`  WARNING: no images in assets/images/carousel/${def.key}/`);
         return `<div class="carousel-wrapper">
-                    ${storeBadges(def.isHero)}${badgeExtra}
+                    ${storeBadges(def.isHero, badgeExtra)}
                     <div class="section-carousel" style="display:flex;align-items:center;justify-content:center;">
                         <p style="color:var(--text-color);opacity:0.4;font-size:0.9rem;padding:2rem;text-align:center;">
                             Drop .webp images into<br>assets/images/carousel/${def.key}/
@@ -118,7 +118,7 @@ function buildCarousel(def, lang) {
     ).join('\n');
 
     return `<div class="carousel-wrapper">
-                    ${storeBadges(def.isHero)}${badgeExtra}
+                    ${storeBadges(def.isHero, badgeExtra)}
                     <div class="section-carousel">
 ${slides}
                         <div class="carousel-dots">
@@ -297,7 +297,7 @@ ${getHreflang('index')}
     <meta property="og:type" content="website">
     <link rel="alternate" type="text/plain" title="LLM Context" href="../llms.txt">
     <link rel="icon" type="image/png" href="../assets/app_icon_small.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=13">
+    <link rel="stylesheet" href="../assets/css/style.css?v=14">
     <link rel="preload" as="image" href="../assets/images/ADharma.webp">
 ${getSchemaOrg(lang)}
 </head>
