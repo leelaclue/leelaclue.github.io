@@ -30,9 +30,9 @@ const KEYWORDS = {
 };
 
 const pageTitle = {
-    en: 'User Guide - LeelaClue',
-    de: 'Benutzerhandbuch - LeelaClue',
-    ru: 'Руководство пользователя - LeelaClue',
+    en: 'LeelaClue User Guide — Daily Guidance, StOR Spread &amp; Leela Guru',
+    de: 'LeelaClue Benutzerhandbuch — Daily Guidance, StOR &amp; Leela-Guru',
+    ru: 'Руководство LeelaClue — Ежедневное Озарение, StOR и Гуру Лилы',
 };
 const pageHeading = {
     en: 'User Guide',
