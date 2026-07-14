@@ -3,7 +3,7 @@ const https = require('https');
 const path = require('path');
 
 const HOST = 'leelaclue.com';
-const KEY = 'fc38d9d20c354e60b094b8e051d9bb09';
+const KEY = '9af1bf821f92425581f583527c52a80d';
 const KEY_LOCATION = `https://${HOST}/${KEY}.txt`;
 const SITEMAP_PATH = path.join(__dirname, 'sitemap.xml');
 
