@@ -1,28 +1,28 @@
 {
   "value": 5,
-  "count": 21,
+  "count": 26,
   "bestRating": 5,
   "apple": {
     "value": 5,
-    "count": 8,
+    "count": 12,
     "perStore": {
       "us": {
         "value": 5,
-        "count": 1
+        "count": 2
       },
       "de": {
         "value": 5,
-        "count": 5
+        "count": 7
       },
       "ru": {
         "value": 5,
-        "count": 2
+        "count": 3
       }
     }
   },
   "play": {
     "value": 5,
-    "count": 13
+    "count": 14
   },
-  "fetchedAt": "2026-07-13"
+  "fetchedAt": "2026-09-03"
 }

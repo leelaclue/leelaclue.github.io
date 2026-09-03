@@ -102,7 +102,7 @@ function getTemplate(lang, contentHtml) {
     <meta name="description" content="${attrEscape(pageDesc[lang])}">
     <meta name="keywords" content="${KEYWORDS[lang]}">
     <link rel="icon" type="image/png" href="../assets/app_icon_small.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=14">
+    <link rel="stylesheet" href="../assets/css/style.css?v=15">
 
     <!-- Hreflang Tags -->
 ${hreflangTags()}
