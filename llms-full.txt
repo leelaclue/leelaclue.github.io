@@ -172,7 +172,7 @@ Your three cards represent key squares of the Leela field and form a frame we ca
 1.  **Set Your Intention**: Type your intention (min. 5 words). Avoid simple Yes/No questions; ask "What..." or "How...". Once you have typed at least 5 words, a glowing **Guru icon** appears — tap it to let the Leela Guru refine your intention before the draw (costs 1 Clue).
 2.  **Focus & Hold**: Hold the button until the circle completes its cycle while Leela draws your three StOR cards.
 3.  **Receive the Frame**: Tap each card to meet its perspective — first your **Starting Point**, then your **Shadow Zone**, then your **Key to the Solution**. Each card carries reflective questions through its StOR lens. If you refined your intention with the Guru, these questions are personalized to your situation. To contemplate the artwork on its own, tap the **hide-text icon** next to the question, or press and hold anywhere on the card — only the card's name stays. A tap brings the text back.
-4.  **Reflect**: Write a reflection on each of the three cards. This is the core of the method — the cards only point; your written reflections do the work.
+4.  **Reflect**: Write a reflection on each of the three cards. This is the core of the method — the cards only point; your written reflections do the work. If you feel stuck, jot down a few initial thoughts and tap the **Guru icon** in the reflection window (costs 1 Clue) — the Guru will suggest three tailored reflections based on your notes that you can adopt or edit.
 5.  **My Insight**: Distill your three reflections into a single conclusion — yourself, or with the Guru's help.
 6.  **My Practice**: Translate your insight into one concrete micro-action you can live today. The Guru can suggest one, and offer alternatives if the first doesn't fit.
 
@@ -181,7 +181,7 @@ The ritual is complete when the insight is found and the practice is set. That i
 ### The Leela Guru & Clues
 The **Leela Guru** is the AI presence that assists each step of the Leela Reflections Model. It does not replace your intuition — it sharpens your questions and helps anchor your insights in daily life.
 
-*   Every Guru consultation costs **1 Clue**: refining your intention, personalizing the three StOR questions (Starting Point, Shadow Zone, Key), distilling your insight, suggesting a practice, or offering alternative practices.
+*   Every Guru consultation costs **1 Clue**: refining your intention, personalizing the three StOR questions (Starting Point, Shadow Zone, Key), suggesting reflections on a card, distilling your insight, suggesting a practice, or offering alternative practices.
 *   If a Guru call fails for technical reasons, the Clue is **refunded automatically**.
 *   The Guru is consulted on demand only — nothing is generated unless you ask.
 *   The Guru is entirely optional: **every ritual can still be completed in full without him, free of charge, just as before**. We do warmly recommend his guidance, though — it significantly helps you go deeper in your shadow work and self-reflection.
@@ -217,6 +217,7 @@ Capture your insights directly on any card.
 *   Tap the **My Reflection** section or the **Edit** icon on a card's detail page.
 *   Store your thoughts, feelings, or "aha!" moments.
 *   These reflections are stored with the card in your history, creating a map of your soul's evolution.
+*   **Guru Assistance**: Need inspiration? Write down rough notes and tap the **Guru icon** (1 Clue). The Leela Guru suggests three reflections built on your thoughts — tap one to insert it into the field, where you can still polish it before saving.
 
 ---
 
