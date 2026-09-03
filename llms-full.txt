@@ -171,7 +171,7 @@ Your three cards represent key squares of the Leela field and form a frame we ca
 #### The Journey, Step by Step
 1.  **Set Your Intention**: Type your intention (min. 5 words). Avoid simple Yes/No questions; ask "What..." or "How...". Once you have typed at least 5 words, a glowing **Guru icon** appears — tap it to let the Leela Guru refine your intention before the draw (costs 1 Clue).
 2.  **Focus & Hold**: Hold the button until the circle completes its cycle while Leela draws your three StOR cards.
-3.  **Receive the Frame**: Tap each card to meet its perspective — first your **Starting Point**, then your **Shadow Zone**, then your **Key to the Solution**. Each card carries reflective questions through its StOR lens. If you refined your intention with the Guru, these questions are personalized to your situation.
+3.  **Receive the Frame**: Tap each card to meet its perspective — first your **Starting Point**, then your **Shadow Zone**, then your **Key to the Solution**. Each card carries reflective questions through its StOR lens. If you refined your intention with the Guru, these questions are personalized to your situation. To contemplate the artwork on its own, tap the **hide-text icon** next to the question, or press and hold anywhere on the card — only the card's name stays. A tap brings the text back.
 4.  **Reflect**: Write a reflection on each of the three cards. This is the core of the method — the cards only point; your written reflections do the work.
 5.  **My Insight**: Distill your three reflections into a single conclusion — yourself, or with the Guru's help.
 6.  **My Practice**: Translate your insight into one concrete micro-action you can live today. The Guru can suggest one, and offer alternatives if the first doesn't fit.
