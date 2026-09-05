@@ -237,7 +237,7 @@ function leftPanel(lang) {
     <aside class="left-panel">
         <div class="panel-badges">
             <a href="whats_new.html" class="ann-version">${versionLabel[lang] || versionLabel.en}</a>
-            <a href="language-of-the-field.html" class="ann-tag">${postTag[lang] || postTag.en}</a>
+            <a href="the-stor-framework.html" class="ann-tag">${postTag[lang] || postTag.en}</a>
         </div>
         <nav class="section-nav" aria-label="Page sections">
 ${dots}

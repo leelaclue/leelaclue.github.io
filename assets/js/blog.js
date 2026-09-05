@@ -1,6 +1,11 @@
 // Blog Posts Metadata (Shared)
 const blogPosts = [
     {
+        id: 'the-stor-framework',
+        titleKey: 'blog_post_6_title',
+        date: '2026-09-05'
+    },
+    {
         id: 'language-of-the-field',
         titleKey: 'blog_post_5_title',
         date: '2026-03-30'
