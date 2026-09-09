@@ -8,7 +8,7 @@ Das eigentliche Dilemma beginnt dort, wo sich die Dinge nicht mehr in Zeilen und
 
 In solchen Momenten könnte man fast eine Münze werfen.
 
-Es gibt diesen bekannten psychologischen Trick mit dem Münzwurf. Du weist Option A dem Kopf zu und Option B der Zahl, und wirfst die Münze in die Luft. Aber die eigentliche Erkenntnis passiert nicht dort, wo die Münze landet. Sie trifft dich in der Millisekunde, während die Münze noch fliegt. Wenn sie auf Kopf landet und dir schlagartig der Magen absackt, weißt du plötzlich haargenau, was du eigentlich wolltest: Zahl.
+Es gibt diesen bekannten psychologischen Trick mit dem Münzwurf (den wir ausführlich in [Die Psychologie der Entscheidung](psychology-of-choice.html) beleuchtet haben). Du weist Option A dem Kopf zu und Option B der Zahl, und wirfst die Münze in die Luft. Aber die eigentliche Erkenntnis passiert nicht dort, wo die Münze landet. Sie trifft dich in der Millisekunde, während die Münze noch fliegt. Wenn sie auf Kopf landet und dir schlagartig der Magen absackt, weißt du plötzlich haargenau, was du eigentlich wolltest: Zahl.
 
 Tief in unserem Inneren hat die Intuition die Risiken längst kalkuliert. Sie weiß genau, welche Wahrheiten wir meiden wollen und welche Konsequenzen wir insgeheim bereit sind zu tragen. Das Problem: Unser Gehirn ist zu schlau. Wirf einmal absichtlich eine Münze, um "deine Gefühle zu testen", und der Trick verpufft. Der Einsatz ist nicht echt, und dein Verstand weiß das. Man kann sich eben nicht zweimal austricksen.
 
@@ -18,7 +18,7 @@ Um den Lärm eines panischen Verstandes zu durchbrechen, brauchst du keine Münz
 
 ## Der Schatten in der Tabelle
 
-In der Psychologie bezeichnet Schattenarbeit die Praxis, genau dorthin zu schauen, wo wir sonst gerne weggucken. Es bedeutet, die verborgenen Ängste, vergrabenen Kränkungen und unbewussten Schutzmechanismen anzuschauen, die wir im Alltag so gern als "objektive Logik" tarnen.
+In der Psychologie bezeichnet [Schattenarbeit](https://de.wikipedia.org/wiki/Schatten_(Archetyp)) die Praxis, genau dorthin zu schauen, wo wir sonst gerne weggucken. Es bedeutet, die verborgenen Ängste, vergrabenen Kränkungen und unbewussten Schutzmechanismen anzuschauen, die wir im Alltag so gern als "objektive Logik" tarnen.
 
 Wenn wir sagen: "Ich muss mich da erst noch ein bisschen einlesen", meinen wir oft: "Ich habe panische Angst vor Ablehnung." Wenn wir sagen: "Das Timing passt gerade einfach nicht", verschleiern wir meist: "Ich will mir nicht eingestehen, dass ich diesem Job längst entwachsen bin." Wenn wir diese verborgenen Motive nie ans Licht holen, schalten wir auf Autopilot. Wir lassen unsere Ängste die Entscheidungen treffen und reden uns ein, wir wären einfach nur vernünftig.
 
@@ -34,7 +34,7 @@ Auf der Suche nach einem solchen Spiegel stieß ich auf *Leela* - ein vedisches 
 
 Auf den ersten Blick wirkt Leela wie ein simples Brettspiel mit Würfeln, Pfeilen und Schlangen. Doch seine 72 Felder sind in Wahrheit eine detaillierte Landkarte des menschlichen Bewusstseins. Es bildet seelische Zustände ab - von *Illusion* und *Zorn* über *Hingabe* bis hin zu *Kosmischem Bewusstsein*. Wer über das Brett zieht, erlebt, wie jeder Aufstieg und jeder Rückschlag die eigene innere Welt mit verblüffender Präzision spiegelt.
 
-Jahrelang habe ich Menschen durch vollständige Leela-Sitzungen begleitet. Was auf diesem Brett passiert, geht oft unter die Haut. Menschen lachen, weinen und sprechen Themen aus, die sie jahrelang heruntergeschluckt haben. Da ein komplettes Spiel drei bis sechs Stunden dauert, haben wir fast immer an Wochenenden gespielt.
+Jahrelang habe ich [Menschen durch vollständige Leela-Sitzungen begleitet](how-leelaclue-was-born.html). Was auf diesem Brett passiert, geht oft unter die Haut. Menschen lachen, weinen und sprechen Themen aus, die sie jahrelang heruntergeschluckt haben. Da ein komplettes Spiel drei bis sechs Stunden dauert, haben wir fast immer an Wochenenden gespielt.
 
 Und dann erlebte ich immer wieder dieselbe Geschichte:
 
@@ -86,8 +86,9 @@ Sobald die Frage steht, ziehst du drei Karten nach dem Zufallsprinzip.
 
 Warum blind ziehen? Weil dein bewusstes Ego sonst sofort zuschlägt. Wenn du dir Karten aussuchen dürftest, würdest du instinktiv das wählen, was bequem, schmeichelhaft und schmerzfrei ist.
 
-Carl Gustav Jung nannte dieses Phänomen *Synchronizität* - das Zusammentreffen von zwei Ereignissen, die zwar nicht ursächlich miteinander verknüpft sind, aber einen tiefen inneren Sinn ergeben. Wenn du blind eine Karte ziehst und genau auf jenen Seelenzustand triffst, den du seit Wochen verdrängst, fühlt sich das unheimlich an. Das ist keine Zauberei. Es ist schlicht eine Abkürzung an den Schutzwällen deines Egos vorbei.
+Carl Gustav Jung nannte dieses Phänomen [*Synchronizität*](https://de.wikipedia.org/wiki/Synchronizit%C3%A4t) - das Zusammentreffen von zwei Ereignissen, die zwar nicht ursächlich miteinander verknüpft sind, aber einen tiefen inneren Sinn ergeben. Wenn du blind eine Karte ziehst und genau auf jenen Seelenzustand triffst, den du seit Wochen verdrängst, fühlt sich das unheimlich an. Das ist keine Zauberei. Es ist schlicht eine Abkürzung an den Schutzwällen deines Egos vorbei.
 
 Da die 72 Zustände von Leela messerscharf definiert sind - wie *Gier*, *Stolz*, *Eifersucht* oder *Rechtes Handeln* - gibt es keinen Raum für unverbindliches Horoskop-Geschwafel. Die Karte zwingt deinen Verstand dazu, eine Brücke zwischen einem uralten Konzept und deinem aktuellen Chaos zu schlagen. Sie schiebt einen Keil zwischen deine Panik und deinen nächsten Schritt.
 
-Was du aus dieser Einsicht machst - wie du aus drei Karten einen echten Tagebucheintrag und eine greifbare Gewohnheit für deinen Alltag formst -, genau dort fängt die eigentliche Arbeit an.
+Was du aus dieser Einsicht machst - wie du aus drei Karten einen echten Tagebucheintrag und eine greifbare Gewohnheit für deinen Alltag formst -, genau dort fängt die eigentliche Arbeit an. Wie du das Schritt für Schritt in deine tägliche Praxis übernimmst, erfährst du in unserem [Benutzerhandbuch](user_guide.html) und in der sechsstufigen Routine auf unserer [Praxis-Seite](index.html#practice).
+

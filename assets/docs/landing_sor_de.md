@@ -8,10 +8,13 @@ Deine erste Karte spiegelt deinen aktuellen inneren Ausgangspunkt wider – was 
 
 ### O — Obstacle (Hindernis): Was übersehe ich?
 
-Die zweite Karte identifiziert deinen verborgenen Schatten oder blinden Fleck. Dies ist der schwierigste Schritt, da unser natürlicher istinkt darin besteht, die unbequeme Ehrlichkeit zu vermeiden, die nötig ist, um zu sehen, was uns wirklich zurückhält.
+Die zweite Karte identifiziert deinen verborgenen Schatten oder blinden Fleck. Dies ist der schwierigste Schritt, da unser natürlicher Instinkt darin besteht, die unbequeme Ehrlichkeit zu vermeiden, die nötig ist, um zu sehen, was uns wirklich zurückhält.
 
 ### R — Resource: Was wird helfen?
 
 Die dritte Karte weist auf die eine Qualität oder Handlung hin, der du tatsächlich vertraust. Es ist kein Rat von außen, sondern dein eigener innerer Kompass, der lesbar gemacht wurde und einen klaren Weg nach vorne aufzeigt.
 
 Durch die Analyse deiner Situation aus diesen drei Blickwinkeln gewinnst du tiefe Klarheit über die verborgenen Gefühle rund um deine Frage. Dieser Prozess führt oft zu einem Moment unerwarteter Erkenntnis und offenbart eine Wahrheit, die dein rationaler Verstand möglicherweise übersehen hätte.
+
+Erfahre mehr über die Entstehung dieser Methode in unserem Beitrag: [Das St-O-R-Modell: Deine Intuition kennt die Antwort](the-stor-framework.html).
+

@@ -15,3 +15,6 @@ The second card identifies your hidden shadow or blind spot. This is the hardest
 The third card points toward the one quality or action you actually trust. It is not external advice, but your own inner compass made legible, providing a clear path forward.
 
 By analyzing your situation from these three angles, you gain deep clarity into the hidden feelings surrounding your inquiry. This process often leads to a moment of unexpected enlightenment, revealing a truth your rational mind might have overlooked.
+
+Read the full story of how this method was developed in our article: [The St-O-R Framework: Your Intuition Has the Answer](the-stor-framework.html).
+
