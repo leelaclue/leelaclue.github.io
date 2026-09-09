@@ -217,7 +217,7 @@ a:hover {
 }
 
 /* Header */
-header {
+body > header {
   padding: 0;
   background-color: rgba(10, 10, 18, 0.85);
   position: sticky;
@@ -1620,4 +1620,448 @@ html {
 
   .store-badge-sm        { height: 34px; }
   .store-badge-sm.google { height: 44px; }
+}
+
+/* ─── 72 Squares Directory ─────────────────────────────────────────────────── */
+
+.squares-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 5rem;
+}
+
+.squares-hero {
+  text-align: center;
+  max-width: 860px;
+  margin: 0 auto 2.5rem;
+}
+
+.squares-breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 1.25rem;
+}
+
+.squares-breadcrumb a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.squares-breadcrumb a:hover {
+  color: var(--primary-color);
+}
+
+.squares-hero h1 {
+  font-family: var(--font-main);
+  font-size: 2.8rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.squares-hero .squares-subtitle {
+  font-size: 1.15rem;
+  color: #bbb;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.squares-stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.2rem;
+}
+
+.squares-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.squares-stat-val {
+  font-family: var(--font-main);
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+.squares-stat-lbl {
+  font-size: 0.8rem;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Toolbar & Filter */
+.squares-toolbar {
+  position: relative;
+  background: rgba(21, 21, 32, 0.5);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  border-radius: 12px;
+  padding: 1.25rem 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.squares-search-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 720px;
+  margin: 0 auto 0.75rem;
+  position: relative;
+}
+
+.squares-search-input {
+  flex: 1;
+  background: rgba(21, 21, 32, 0.85);
+  border: 1px solid rgba(212, 175, 55, 0.25);
+  border-radius: 8px;
+  padding: 0.75rem 1rem 0.75rem 2.6rem;
+  color: #fff;
+  font-size: 0.95rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.squares-search-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+}
+
+.squares-search-icon {
+  position: absolute;
+  left: 0.85rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #777;
+  pointer-events: none;
+  font-size: 1rem;
+}
+
+.squares-clear-btn {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #aaa;
+  border-radius: 6px;
+  padding: 0.5rem 0.8rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.squares-clear-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #fff;
+}
+
+.squares-counter {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 0.75rem;
+}
+
+/* Chakra Navigation Chips */
+.chakra-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.chakra-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(21, 21, 32, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #ccc;
+  text-decoration: none;
+  padding: 0.35rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.82rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.chakra-chip:hover {
+  background: rgba(212, 175, 55, 0.12);
+  border-color: var(--primary-color);
+  color: #fff;
+  transform: translateY(-1px);
+}
+
+.chakra-chip-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Chakra Plane Section */
+.chakra-section {
+  margin-bottom: 3.5rem;
+  scroll-margin-top: 80px;
+}
+
+.chakra-section.is-hidden {
+  display: none !important;
+}
+
+.chakra-section-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background: rgba(21, 21, 32, 0.45);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid var(--plane-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.chakra-symbol-box {
+  width: 54px;
+  height: 54px;
+  border-radius: 12px;
+  background: rgba(10, 10, 18, 0.8);
+  border: 1px solid var(--plane-color);
+  box-shadow: 0 0 15px rgba(var(--plane-rgb), 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  color: var(--plane-color);
+  flex-shrink: 0;
+  font-weight: bold;
+}
+
+.chakra-header-text {
+  flex: 1;
+}
+
+.chakra-header-top {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+}
+
+.chakra-header-title {
+  font-family: var(--font-main);
+  font-size: 1.5rem;
+  color: #fff;
+  margin: 0;
+}
+
+.chakra-plane-name {
+  color: var(--plane-color);
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.chakra-plane-desc {
+  color: #bbb;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  margin-bottom: 0.5rem;
+}
+
+.chakra-meta-pills {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 0.6rem;
+}
+
+.chakra-meta-pill {
+  font-size: 0.78rem;
+  color: #999;
+  background: rgba(0, 0, 0, 0.35);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.chakra-meta-pill strong {
+  color: #ccc;
+}
+
+/* Squares Grid */
+.squares-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+/* Individual Square Card */
+.square-card {
+  background: rgba(21, 21, 32, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 1.25rem;
+  position: relative;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  scroll-margin-top: 80px;
+}
+
+.square-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(212, 175, 55, 0.4);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+.square-card.is-hidden {
+  display: none !important;
+}
+
+.square-card:target {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 20px rgba(212, 175, 55, 0.35);
+}
+
+.anchor-target {
+  position: absolute;
+  top: -80px;
+  visibility: hidden;
+}
+
+.square-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.6rem;
+}
+
+.square-num-badge {
+  font-family: var(--font-main);
+  font-weight: bold;
+  font-size: 0.95rem;
+  color: var(--primary-color);
+  background: rgba(212, 175, 55, 0.1);
+  padding: 0.2rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+}
+
+.square-card-top-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.square-chakra-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.75rem;
+  color: #aaa;
+}
+
+.square-chakra-badge .chakra-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: var(--chakra-color);
+}
+
+.square-anchor-link {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 4px;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.square-anchor-link:hover {
+  color: var(--primary-color);
+  background: rgba(212, 175, 55, 0.1);
+}
+
+.square-title {
+  font-family: var(--font-main);
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.square-desc {
+  color: #ccc;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  flex: 1;
+}
+
+/* Bottom CTA Banner */
+.squares-app-cta {
+  margin-top: 4rem;
+  background: linear-gradient(135deg, rgba(21, 21, 32, 0.85), rgba(10, 10, 18, 0.95));
+  border: 1px solid rgba(212, 175, 55, 0.3);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.squares-app-cta::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(212, 175, 55, 0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.squares-app-cta h2 {
+  font-family: var(--font-main);
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 0.8rem;
+}
+
+.squares-app-cta p {
+  max-width: 680px;
+  margin: 0 auto 1.5rem;
+  color: #bbb;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.squares-cta-badges {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .squares-container { padding: 2rem 1rem 4rem; }
+  .squares-hero h1 { font-size: 2.2rem; }
+  .squares-toolbar { top: 60px; padding: 0.75rem 0; }
+  .squares-grid { grid-template-columns: 1fr; }
+  .chakra-section-header { flex-direction: column; gap: 0.75rem; }
+  .chakra-symbol-box { width: 44px; height: 44px; font-size: 1.3rem; }
 }

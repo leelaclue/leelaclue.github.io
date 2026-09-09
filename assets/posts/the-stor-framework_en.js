@@ -28,7 +28,7 @@ window.blogContent['the-stor-framework'] = `
 
 <p>That search for an honest mirror led me to <em>Leela</em>, an ancient Vedic system dating back more than two thousand years.</p>
 
-<p>To an outsider, Leela looks like a board game with dice, arrows, and snakes. But its 72 squares actually form a detailed map of human consciousness, charting states from <em>Illusion</em> and <em>Anger</em> up to <em>Right Action</em> and <em>Cosmic Consciousness</em>. As a player navigates the board, every ascent and fall mirrors their internal state with uncanny accuracy.</p>
+<p>To an outsider, Leela looks like a board game with dice, arrows, and snakes. But its 72 squares actually form a detailed <a href="leela-72-squares.html">map of human consciousness</a>, charting states from <em>Illusion</em> and <em>Anger</em> up to <em>Right Action</em> and <em>Cosmic Consciousness</em>. As a player navigates the board, every ascent and fall mirrors their internal state with uncanny accuracy.</p>
 
 <p>For years, I <a href="how-leelaclue-was-born.html">guided people through full Leela sessions</a>. The experience on the board can be extraordinary. People laugh, cry, and confront themes they haven't spoken aloud in years. Because a full game takes anywhere from three to six hours, we almost always played on weekends.</p>
 

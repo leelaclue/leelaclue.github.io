@@ -2,7 +2,7 @@ if (!window.blogContent) window.blogContent = {};
 window.blogContent['the-soul-map'] = `
 <p>Vielleicht hast du schon von diesem „Spiel der Selbsterkenntnis“ gehört, aber du fragst dich: Wie genau läuft das eigentlich ab?</p>
 
-<p>Leela ist kein gewöhnliches Brettspiel. Es ist ein 2.000 Jahre altes vedisches System, das dein Leben auf 72 Feldern abbildet.</p>
+<p>Leela ist kein gewöhnliches Brettspiel. Es ist ein 2.000 Jahre altes vedisches System, das dein Leben auf <a href="leela-72-squares.html">72 Feldern</a> abbildet.</p>
 
 <p>Hier erkläre ich dir die wichtigsten Regeln und die tiefe Symbolik dahinter.</p>
 

@@ -47,9 +47,9 @@ const pageDesc = {
 
 function navLabels(lang) {
     const labels = {
-        en: { offlineGame: 'Offline Game', community: 'Community', blog: 'Blog', releaseNews: 'Release News', featureVotes: 'Feature Votes', guide: 'Guide', userGuide: 'User Guide', faq: 'FAQ' },
-        de: { offlineGame: 'Offline-Spiel', community: 'Community', blog: 'Blog', releaseNews: 'Release-News', featureVotes: 'Feature-Abstimmung', guide: 'Anleitung', userGuide: 'Benutzerhandbuch', faq: 'FAQ' },
-        ru: { offlineGame: 'Офлайн-игра', community: 'Сообщество', blog: 'Блог', releaseNews: 'Новости обновлений', featureVotes: 'Голосование', guide: 'Руководство', userGuide: 'Руководство пользователя', faq: 'FAQ' },
+        en: { offlineGame: 'Offline Game', community: 'Community', blog: 'Blog', releaseNews: 'Release News', featureVotes: 'Feature Votes', guide: 'Guide', userGuide: 'User Guide', squares: '72 Squares of Leela', faq: 'FAQ' },
+        de: { offlineGame: 'Offline-Spiel', community: 'Community', blog: 'Blog', releaseNews: 'Release-News', featureVotes: 'Feature-Abstimmung', guide: 'Anleitung', userGuide: 'Benutzerhandbuch', squares: '72 Felder der Leela', faq: 'FAQ' },
+        ru: { offlineGame: 'Офлайн-игра', community: 'Сообщество', blog: 'Блог', releaseNews: 'Новости обновлений', featureVotes: 'Голосование', guide: 'Руководство', userGuide: 'Руководство пользователя', squares: '72 клетки Лилы', faq: 'FAQ' },
     };
     return labels[lang] || labels.en;
 }
@@ -102,7 +102,7 @@ function getTemplate(lang, contentHtml) {
     <meta name="description" content="${attrEscape(pageDesc[lang])}">
     <meta name="keywords" content="${KEYWORDS[lang]}">
     <link rel="icon" type="image/png" href="../assets/app_icon_small.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=15">
+    <link rel="stylesheet" href="../assets/css/style.css?v=17">
 
     <!-- Hreflang Tags -->
 ${hreflangTags()}
@@ -132,6 +132,7 @@ ${techArticleSchema(lang)}
                     <a href="user_guide.html">${n.guide}</a>
                     <div class="dropdown-menu">
                         <a href="user_guide.html">${n.userGuide}</a>
+                        <a href="leela-72-squares.html">${n.squares}</a>
                         <a href="faq.html">${n.faq}</a>
                     </div>
                 </div>

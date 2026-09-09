@@ -2,7 +2,7 @@ if (!window.blogContent) window.blogContent = {};
 window.blogContent['the-soul-map'] = `
 <p>Perhaps you've heard of this "game of self-discovery," but you're wondering: how does it actually work?</p>
 
-<p>Leela is no ordinary board game. It is a 2,000-year-old Vedic system that maps your life across 72 squares.</p>
+<p>Leela is no ordinary board game. It is a 2,000-year-old Vedic system that maps your life across <a href="leela-72-squares.html">72 squares</a>.</p>
 
 <p>Here, I explain the most important rules and the deep symbolism behind them.</p>
 

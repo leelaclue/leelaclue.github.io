@@ -210,9 +210,9 @@ function getSchemaOrg(lang) {
 
 function navLabels(lang) {
     const labels = {
-        en: { offlineGame: 'Offline Game', community: 'Community', blog: 'Blog', releaseNews: 'Release News', featureVotes: 'Feature Votes', guide: 'Guide', userGuide: 'User Guide', faq: 'FAQ' },
-        de: { offlineGame: 'Offline-Spiel', community: 'Community', blog: 'Blog', releaseNews: 'Release-News', featureVotes: 'Feature-Abstimmung', guide: 'Anleitung', userGuide: 'Benutzerhandbuch', faq: 'FAQ' },
-        ru: { offlineGame: 'Офлайн-игра', community: 'Сообщество', blog: 'Блог', releaseNews: 'Новости обновлений', featureVotes: 'Голосование', guide: 'Руководство', userGuide: 'Руководство пользователя', faq: 'FAQ' },
+        en: { offlineGame: 'Offline Game', community: 'Community', blog: 'Blog', releaseNews: 'Release News', featureVotes: 'Feature Votes', guide: 'Guide', userGuide: 'User Guide', squares: '72 Squares of Leela', faq: 'FAQ' },
+        de: { offlineGame: 'Offline-Spiel', community: 'Community', blog: 'Blog', releaseNews: 'Release-News', featureVotes: 'Feature-Abstimmung', guide: 'Anleitung', userGuide: 'Benutzerhandbuch', squares: '72 Felder der Leela', faq: 'FAQ' },
+        ru: { offlineGame: 'Офлайн-игра', community: 'Сообщество', blog: 'Блог', releaseNews: 'Новости обновлений', featureVotes: 'Голосование', guide: 'Руководство', userGuide: 'Руководство пользователя', squares: '72 клетки Лилы', faq: 'FAQ' },
     };
     return labels[lang] || labels.en;
 }
@@ -297,7 +297,7 @@ ${getHreflang('index')}
     <meta property="og:type" content="website">
     <link rel="alternate" type="text/plain" title="LLM Context" href="../llms.txt">
     <link rel="icon" type="image/png" href="../assets/app_icon_small.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=15">
+    <link rel="stylesheet" href="../assets/css/style.css?v=17">
     <link rel="preload" as="image" href="../assets/images/ADharma.webp">
 ${getSchemaOrg(lang)}
 </head>
@@ -326,6 +326,7 @@ ${getSchemaOrg(lang)}
                     <a href="user_guide.html">${n.guide}</a>
                     <div class="dropdown-menu">
                         <a href="user_guide.html">${n.userGuide}</a>
+                        <a href="leela-72-squares.html">${n.squares}</a>
                         <a href="faq.html">${n.faq}</a>
                     </div>
                 </div>
@@ -409,6 +410,18 @@ let llmsFull = `# LeelaClue — Full Content\n\nURL: https://leelaclue.com\nApp:
 const guideEn = path.join(root, 'new_features', 'USER_GUIDE_EN.md');
 if (fs.existsSync(guideEn)) {
     llmsFull += '## User Guide\n\n' + fs.readFileSync(guideEn, 'utf8') + '\n\n---\n\n';
+}
+
+// Append 72 Squares of Leela overview if available
+const cardsEnPath = path.join('c:/GitHub/leelaclue', 'assets', 'cards_en.json');
+if (fs.existsSync(cardsEnPath)) {
+    const cardsEn = JSON.parse(fs.readFileSync(cardsEnPath, 'utf8'));
+    llmsFull += '## The 72 Squares of Leela (Map of Consciousness)\n\n';
+    llmsFull += 'URL: https://leelaclue.com/en/leela-72-squares.html\n\n';
+    cardsEn.forEach(c => {
+        llmsFull += `### Square ${c.id}: ${c.title}\n${c.description}\n\n`;
+    });
+    llmsFull += '---\n\n';
 }
 
 fs.writeFileSync(path.join(root, 'llms-full.txt'), llmsFull, 'utf8');

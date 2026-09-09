@@ -8,6 +8,7 @@ LeelaClue is a free mindfulness and self-discovery mobile app for iOS and Androi
 - Homepage (DE): https://leelaclue.com/de/
 - Homepage (RU): https://leelaclue.com/ru/
 - User Guide: https://leelaclue.com/en/user_guide.html
+- 72 Squares of Leela: https://leelaclue.com/en/leela-72-squares.html
 - FAQ: https://leelaclue.com/en/faq.html
 - Blog: https://leelaclue.com/en/blog.html
 - Release News: https://leelaclue.com/en/whats_new.html

@@ -28,7 +28,7 @@ window.blogContent['the-stor-framework'] = `
 
 <p>Auf der Suche nach einem solchen Spiegel stieß ich auf <em>Leela</em> - ein vedisches System, das über zweitausend Jahre alt ist.</p>
 
-<p>Auf den ersten Blick wirkt Leela wie ein simples Brettspiel mit Würfeln, Pfeilen und Schlangen. Doch seine 72 Felder sind in Wahrheit eine detaillierte Landkarte des menschlichen Bewusstseins. Es bildet seelische Zustände ab - von <em>Illusion</em> und <em>Zorn</em> über <em>Hingabe</em> bis hin zu <em>Kosmischem Bewusstsein</em>. Wer über das Brett zieht, erlebt, wie jeder Aufstieg und jeder Rückschlag die eigene innere Welt mit verblüffender Präzision spiegelt.</p>
+<p>Auf den ersten Blick wirkt Leela wie ein simples Brettspiel mit Würfeln, Pfeilen und Schlangen. Doch seine 72 Felder sind in Wahrheit eine detaillierte <a href="leela-72-squares.html">Landkarte des menschlichen Bewusstseins</a>. Es bildet seelische Zustände ab - von <em>Illusion</em> und <em>Zorn</em> über <em>Hingabe</em> bis hin zu <em>Kosmischem Bewusstsein</em>. Wer über das Brett zieht, erlebt, wie jeder Aufstieg und jeder Rückschlag die eigene innere Welt mit verblüffender Präzision spiegelt.</p>
 
 <p>Jahrelang habe ich <a href="how-leelaclue-was-born.html">Menschen durch vollständige Leela-Sitzungen begleitet</a>. Was auf diesem Brett passiert, geht oft unter die Haut. Menschen lachen, weinen und sprechen Themen aus, die sie jahrelang heruntergeschluckt haben. Da ein komplettes Spiel drei bis sechs Stunden dauert, haben wir fast immer an Wochenenden gespielt.</p>
 
