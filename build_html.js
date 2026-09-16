@@ -180,7 +180,7 @@ function getSchemaOrg(lang) {
       "operatingSystem": "iOS, Android",
       "applicationCategory": "LifestyleApplication",
       "applicationSubCategory": "Mindfulness & Self-Discovery",
-      "softwareVersion": "2.0.3",
+      "softwareVersion": "2.1.0",
       "inLanguage": ["en", "de", "ru"],
       "downloadUrl": [
         "${IOS_URL}",
@@ -224,7 +224,7 @@ function leftPanel(lang) {
         ru: ['О нас',      'С·П·Р',  'Практика', 'Пример',     'Приложение'],
     }[lang] || ['About', 'S·O·R', 'Practice', 'Case Study', 'App'];
 
-    const versionLabel = { en: 'New in v2.0.3', de: 'Neu in v2.0.3', ru: 'Новое в v2.0.3' };
+    const versionLabel = { en: 'New in v2.1.0', de: 'Neu in v2.1.0', ru: 'Новое в v2.1.0' };
     const postTag      = { en: 'New Blog Post', de: 'Neuer Blogbeitrag', ru: 'Новая статья' };
 
     const dots = sectionDefs.map((def, i) => `
@@ -250,16 +250,16 @@ ${dots}
 function newVersionBanner(lang) {
     const texts = {
         en: {
-            text: 'Ancient wisdom for the modern mind. Meet the Leela Guru — your AI companion for deep shadow work: from intention to insight - and on to a daily practice.',
-            btn: "What's New in v2.0.3"
+            text: 'The Leela Field now breathes. Open any card and it becomes a short meditation — every plane with its own breathing rhythm and its own healing tone.',
+            btn: "What's New in v2.1.0"
         },
         de: {
-            text: 'Uralte Weisheit für den modernen Geist. Der Leela-Guru — dein KI-Begleiter für tiefe Schattenarbeit: von der Absicht zur Erkenntnis — und hin zur täglichen Praktik.',
-            btn: 'Was ist neu in v2.0.3'
+            text: 'Das Leela-Feld atmet jetzt. Öffne eine Karte, und sie wird zur kurzen Meditation — jede Ebene mit eigenem Atemrhythmus und eigenem heilsamen Ton.',
+            btn: 'Was ist neu in v2.1.0'
         },
         ru: {
-            text: 'Древняя мудрость для современного ума. Гуру Лилы — твой ИИ-помощник в глубокой работе с тенью: от намерения к инсайту — и дальше к ежедневной практике.',
-            btn: 'Что нового в v2.0.3'
+            text: 'Поле Лилы теперь дышит. Открой любую клетку — и карта станет короткой медитацией: у каждого уровня свой ритм дыхания и своя исцеляющая частота.',
+            btn: 'Что нового в v2.1.0'
         }
     };
     const t = texts[lang] || texts.en;

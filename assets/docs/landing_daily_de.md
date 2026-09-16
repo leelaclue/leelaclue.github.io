@@ -4,13 +4,13 @@ LeelaClue wandelt das theoretische St·O·R-Modell in ein praktisches Werkzeug f
 
 ### Der Kern: Täglicher Hinweis
 
-Die Umsetzung des St·O·R-Modells und der Reflexionspraxis nennen wir **Täglicher Hinweis**. Diese Funktion ist direkt über den Hauptbildschirm zugänglich und führt dich durch die 3-Karten-Legung – State, Obstacle und Resource – wodurch der gesamte Sechs-Schritte-Zyklus leicht nachvollziehbar wird.
+Die Umsetzung des St·O·R-Modells und der Reflexionspraxis nennen wir **Täglicher Hinweis**. Diese Funktion ist direkt über den Hauptbildschirm zugänglich und führt dich durch die 3-Karten-Legung – State, Obstacle und Resource – wodurch der gesamte Sechs-Schritte-Zyklus leicht nachvollziehbar wird. Wenn du nicht weißt, was du fragen sollst, beginne mit dem eingebauten Katalog von Themen und Fragen – und solange keine Reflexion geschrieben ist, kannst du neu ziehen, bis zu dreimal am Tag.
 
 ### Weitere Instrumente
 
 *   **Tägliche Weisheit** – Erhalte eine einzelne Karte aus den 72 Leela-Zuständen, um deine Intention für den Tag zu setzen, inklusive einer spezifischen Achtsamkeitsübung.
 *   **Reflexions-Tagebuch** – Ein dedizierter Raum, um deine Gedanken aufzuschreiben und zu analysieren. Deine vergangenen Legungen werden gespeichert und sind jederzeit einsehbar, sodass du wiederkehrende Muster in deiner Psyche verfolgen kannst.
-*   **Das Leela-Feld** – Erkunde alle 72 Bewusstseinszustände des alten vedischen Systems. Es bietet die vollständige Karte der Selbsterkenntnis und hilft dir, die „ganze Geschichte“ deiner inneren Reise zu sehen.
+*   **Das Leela-Feld** – Erkunde alle 72 Bewusstseinszustände des alten vedischen Systems. Es bietet die vollständige Karte der Selbsterkenntnis und hilft dir, die „ganze Geschichte“ deiner inneren Reise zu sehen. Öffne eine Karte, und sie wird zugleich zur kurzen Meditation: Die Karte atmet, ihr eigener Rand zeichnet den Rhythmus nach, und jede Ebene trägt ihren eigenen heilsamen Ton.
 *   **Slow-Tech-Philosophie** – Nur ein Hinweis und eine Weisheitskarte pro Tag. Kein endloses Scrollen. Tiefe Integration, bevor die nächste Erkenntnis kommt.
 *   Neugierig auf die neuesten Updates? Siehe [Was ist neu](whats_new.html).
 *   Hast du noch Fragen? Schau in unsere [FAQ](faq.html).
