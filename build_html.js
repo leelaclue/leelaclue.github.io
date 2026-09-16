@@ -296,7 +296,9 @@ ${getHreflang('index')}
     <meta property="og:url" content="${canon}">
     <meta property="og:type" content="website">
     <link rel="alternate" type="text/plain" title="LLM Context" href="../llms.txt">
-    <link rel="icon" type="image/png" href="../assets/app_icon_small.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=17">
     <link rel="preload" as="image" href="../assets/images/ADharma.webp">
 ${getSchemaOrg(lang)}

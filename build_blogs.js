@@ -122,7 +122,9 @@ function pageShell({ lang, pageFile, title, description, headExtra, mainHtml }) 
     <link rel="canonical" href="${canon}" />
     <meta name="description" content="${attrEscape(description)}">
     <meta name="keywords" content="${KEYWORDS[lang]}">
-    <link rel="icon" type="image/png" href="../assets/app_icon_small.png">
+    <link rel="icon" href="/favicon.ico" sizes="32x32">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
     <link rel="stylesheet" href="../assets/css/style.css?v=17">
 
     <!-- Hreflang Tags -->
