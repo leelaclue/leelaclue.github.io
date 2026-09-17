@@ -142,7 +142,7 @@ function loadTranslations(lang) {
 }
 
 // User Guide content is baked into the HTML at build time (see build_guide.js,
-// source: leelaclue/helps repo, v201/). This only wires up smooth scrolling
+// source: leelaclue/helps repo, v210/). This only wires up smooth scrolling
 // for the guide's internal anchor links.
 function loadUserGuide(lang) {
     const guideContainer = document.getElementById('guide-content');

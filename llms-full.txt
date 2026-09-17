@@ -107,25 +107,31 @@ The implementation of the St·O·R framework and the reflection practice is call
 
 # LeelaClue User Guide
 
-Welcome to **LeelaClue**, your personal companion for self-reflection and insight through the ancient wisdom of Leela. This app is designed to help you gain clarity on life's questions and integrate mindfulness into your daily routine.
+Welcome to **LeelaClue**, your personal companion for self-reflection and inner clarity through the **timeless wisdom of Leela**.
+
+### What is Leela?
+**Leela** is a 2,000-year-old Vedic game of self-knowledge (originally *Jnana Chaupar* or the "Game of Life"). Created by ancient seers as a mirror of human consciousness, its 72-square board maps the universal principles of life, inner states of being, and planes of human evolution (the chakras).
+
+**LeelaClue** translates this profound wisdom into a mindful digital companion: instead of playing through the hours-long full board game, you receive immediate, focused guidance from the field. The app helps you explore the core of life's questions, illuminate blind spots, and ground deep insights into practical daily micro-actions.
+
+---
 
 ## Table of Contents
 1. [Getting Started](#getting-started)
 2. [How to Use LeelaClue](#how-to-use-leelaclue)
     - [The Main Screen](#the-main-screen)
-    - [Daily Wisdom](#daily-wisdom)
     - [Daily Guidance — The Leela Reflections Method](#daily-guidance--the-leela-reflections-method)
+    - [Daily Wisdom](#daily-wisdom)
+    - [The Leela Field — Meditation & Breathwork](#the-leela-field--meditation--breathwork)
     - [The Leela Guru & Clues](#the-leela-guru--clues)
-    - [The Guide (Interactive Tutorial)](#the-guide-interactive-tutorial)
 3. [My Diary](#my-diary)
     - [My Reflections](#my-reflections)
-4. [Additional Functions](#additional-functions)
-    - [The Leela Field](#the-leela-field)
+4. [Additional Features](#additional-features)
     - [Active Practices](#active-practices)
     - [Dakshina — Replenishing Clues](#dakshina--replenishing-clues)
     - [Protecting Your Clues (Sign-In)](#protecting-your-clues-sign-in)
     - [Sharing Your Insights](#sharing-your-insights)
-    - [Daily Limit](#daily-limit)
+    - [Daily Limits](#daily-limits)
     - [Settings & Analytics](#settings--analytics)
 5. [Example Scenarios](#example-scenarios)
 6. [FAQ](#faq)
@@ -134,196 +140,192 @@ Welcome to **LeelaClue**, your personal companion for self-reflection and insigh
 
 ## Getting Started
 
-When you first open LeelaClue, you are greeted by the starry night interface. The app creates a calm, focused atmosphere for your spiritual journey. Deep breathing and mental clarity are key to getting the most out of your readings.
+When you first open LeelaClue, you are welcomed by a serene night-sky interface designed to create a calm, centered space for your inner journey. Taking a few deep, mindful breaths before you begin will help you get the most out of your reflections.
 
-On your first launch you also receive a one-time **welcome gift of Clues** — the energy that powers the Leela Guru (see [The Leela Guru & Clues](#the-leela-guru--clues)).
+On your first launch, you receive a complimentary **welcome gift of Clues** — the energy that powers the Leela Guru (see [The Leela Guru & Clues](#the-leela-guru--clues)).
 
-### Language & Name
-LeelaClue supports English, German, and Russian.
-*   To change the language, **tap the Globe Icon** in the top menu.
-*   To change your greeting name or set a reminder, **tap the Gear Icon** (Settings) in the top menu.
-*   The Home screen greets you with your journey statistics, showing your total completed practices and reflections.
+### Language & Profile
+LeelaClue is available in English, German, and Russian.
+*   To change the language, **tap the Globe icon** in the top navigation bar.
+*   To update your greeting name or set daily reminders, **tap the Gear icon** (Settings).
 
 ---
 
 ## How to Use LeelaClue
 
 ### The Main Screen
-The main screen is your central hub:
-*   **The Carousel**: Swipe through five cards: the two primary rituals — **Daily Wisdom** and **Daily Guidance** — followed by **The Leela Field**, **Active Practices**, and **Dakshina**.
-*   **Activity Indicators**: Icons at the top track your daily progress. A checkmark appears when a ritual is complete.
-*   **Daily Practice Button**: Tap the calendar icon at the bottom to view your active mindfulness task.
-*   **Diary Button**: Tap the book icon to explore your history.
-
-### Daily Wisdom
-A morning alignment to set your intention for the day.
-1.  **Charge Energy**: Tap the Daily Wisdom card in the carousel. Press and **hold** the main button.
-2.  **Focus**: Hold until the countdown completes and the counter turns green. This ensures you are mentally present.
-3.  **Receive**: Read your card's theme, description, and quotes.
-4.  **Embody**: Each card includes a **Daily Practice**. Once you have completed this task in your life, tap **"Mark as Done"** to record your progress in your statistics.
+The main screen is your central sanctuary:
+*   **The Carousel**: Swipe through five main cards: the three core rituals — **Daily Guidance**, **Daily Wisdom**, and **The Leela Field** — followed by **Active Practices** and **Dakshina**.
+*   **Quick Navigation & Progress**: The icons along the top serve as shortcuts — tap any icon to jump directly to that carousel card without swiping. They also track your daily progress, displaying a checkmark once a ritual is completed.
+*   **Help Button**: The question mark icon (`?`) is available across every screen in the app. Tapping it at any time provides you with concise, context-sensitive explanations of the current screen and its features.
+*   **Active Practices Button**: Tap the calendar icon at the bottom to open the Active Practices page.
+*   **Diary Button**: Tap the book icon to explore your reflection history.
 
 ### Daily Guidance — The Leela Reflections Method
-**Daily Guidance** is the heart of LeelaClue. It follows the **Leela Reflections Model** — a method that turns a single question into a small journey toward clarity: from your intention, through three cards, to one insight and one concrete practice you can live today.
+**Daily Guidance** is the heart of LeelaClue. It follows the **Leela Reflections Model** — a process that transforms a question into a journey toward clarity: moving from your intention, through three reflective cards, to a single distilled insight and a practical micro-action for your day.
 
-#### The StOR Frame
-Your three cards represent key squares of the Leela field and form a frame we call **StOR — State, Obstacle, Resource**:
-*   **St — Starting Point** (*Where am I now?*): where you truly stand right now. Your inner sense of self.
-*   **O — Shadow Zone** (*What do I not notice yet?*): what is hindering your movement and remains hidden from you.
-*   **R — Key to the Solution** (*What would carry me further?*): your resource for change. What will help you find a way out.
+#### The StOR Framework
+Your three cards correspond to key squares on the Leela board, forming the **StOR (State, Obstacle, Resource)** framework:
+*   **St — State / Starting Point** (*Where am I now?*): Where you truly stand in this moment — your present inner state and self-awareness.
+*   **O — Obstacle / Shadow Zone** (*What do I not notice yet?*): What hinders your movement and remains hidden in your blind spot.
+*   **R — Resource / Key to Resolution** (*What will carry me forward?*): Your inner catalyst for transformation — the key that unlocks your path forward.
 
 #### The Journey, Step by Step
-1.  **Set Your Intention**: Type your intention (min. 5 words). Avoid simple Yes/No questions; ask "What..." or "How...". Once you have typed at least 5 words, a glowing **Guru icon** appears — tap it to let the Leela Guru refine your intention before the draw (costs 1 Clue).
-2.  **Focus & Hold**: Hold the button until the circle completes its cycle while Leela draws your three StOR cards.
-3.  **Receive the Frame**: Tap each card to meet its perspective — first your **Starting Point**, then your **Shadow Zone**, then your **Key to the Solution**. Each card carries reflective questions through its StOR lens. If you refined your intention with the Guru, these questions are personalized to your situation. To contemplate the artwork on its own, tap the **hide-text icon** next to the question, or press and hold anywhere on the card — only the card's name stays. A tap brings the text back.
-4.  **Reflect**: Write a reflection on each of the three cards. This is the core of the method — the cards only point; your written reflections do the work. If you feel stuck, jot down a few initial thoughts and tap the **Guru icon** in the reflection window (costs 1 Clue) — the Guru will suggest three tailored reflections based on your notes that you can adopt or edit.
-5.  **My Insight**: Distill your three reflections into a single conclusion — yourself, or with the Guru's help.
-6.  **My Practice**: Translate your insight into one concrete micro-action you can live today. The Guru can suggest one, and offer alternatives if the first doesn't fit.
+1.  **Set Your Intention**: Type your question or intention (minimum 5 words). Avoid simple Yes/No questions; frame your inquiry around "What..." or "How...". The button in the upper-right corner of the input field provides immediate support:
+    *   **Gold Wand:** Tap this whenever you need inspiration. Leela provides curated themes, each offering three contemplative questions. Once you have completed several Guidance rituals, **Deepen your insight** appears at the top of the list, offering your own past questions so you can explore them from fresh angles. (These questions remain strictly private on your device.) Tap any question to insert it into your input field.
+    *   **Lilac Guru:** Once you type your own words, the button transforms into a pulsing lilac **Guru icon**. Tap it to invite the Guru's guidance. The Guru helps clarify your inquiry by:
+        - Identifying the core theme underlying your question.
+        - Offering clearer, more resonant rephrasings.
+        - Reframing externally focused inquiries (about others or circumstances) into three deeper personal inquiries.
+        *You are always free to keep your original wording or adopt a suggestion.*
+2.  **Gather Mental Energy & Focus**: Press and hold the **Focus** button. As the screen charges with your mental energy, hold your intention in mind until the countdown completes and the circle turns green, revealing your three StOR cards.
+3.  **Explore the Triad**: Tap each card to reveal its perspective — first your **Starting Point**, then your **Shadow Zone**, and finally your **Key to Resolution**. Each card provides reflective questions tailored to its StOR role. Leela can also personalize these questions specifically to your situation. To contemplate the artwork on its own, tap the **hide-text icon** or press and hold anywhere on the card. Tap again to restore the text.
+4.  **Reflect**: Write a reflection for each of the three cards. This is the heart of the practice: the cards illuminate the theme, but your reflections create the transformation. If you feel stuck, write a few initial notes and tap the **Guru icon** to receive three personalized reflection prompts based on your thoughts.
+5.  **My Insight**: Distill your three reflections into a single unifying conclusion — in your own words, or with the Guru's assistance.
+6.  **My Practice**: Translate your insight into one concrete micro-action for today. The Guru can suggest a tailored practice, or offer alternatives if the first suggestion doesn't resonate.
 
-The ritual is complete when the insight is found and the practice is set. That is the full arc of the Leela Reflections Model: **reflect → distill → act**.
+**The Ritual Page**:
+Your question, the three cards and reflections, your Insight, and your Practice are presented in a unified vertical scroll. You can move sequentially or jump ahead — your Insight can be formulated even before all reflections are finished, though the more reflections you provide, the deeper the Guru's synthesis will be. The **ritual path** at the top displays your progress at a glance, and completing the ritual is celebrated with a gentle visual confirmation.
+
+### Daily Wisdom
+A morning ritual to align your awareness and set a clear intention for the day.
+1.  **Align Your Focus**: Tap the **Daily Wisdom** card in the carousel, then press and hold the center **Focus** button.
+2.  **Gather Mental Energy**: While holding the button, the on-screen animation charges with your energy. Take this moment to breathe deeply, gather your mental focus, and center your awareness on the day ahead. Keep holding until the countdown completes and the circle turns green, revealing your card.
+3.  **Receive**: Contemplate your card's theme, commentary, and reflective quotes.
+4.  **Embody**: Every card initially offers a default standard **Daily Practice**. If you want a more tailored action, you can invite the Guru to suggest alternative practices: simply tap the **pencil icon** on the practice widget. The Guru takes your personal reflections on today's wisdom into account to craft alternative practices that are more concise, focused, and personally resonant. When you have finished your practice, tap **"Mark as done"** directly on the widget. Completed practices feed into your statistics, reflecting your consistency and progress in your inner work.
+
+### The Leela Field — Meditation & Breathwork
+The third carousel card opens **The Leela Field** — a dedicated space for contemplation, breathwork, and meditation built upon the ancient 72-square Leela game board. Its rows correspond to the **chakras**, representing planes of human consciousness.
+*   The Field connects your rituals with your energetic position: after completing your Daily Wisdom ritual, the carousel highlights **today's chakra**, and the Field reveals where today's card resides on the board.
+*   This highlights which energetic plane or life theme invites your conscious attention today.
+*   Tap any square to view its card and explore how the energies within that chakra row relate to one another.
+*   **Resonant Frequencies**: The eight rows of the Field are tuned to an ancient nine-tone harmonic scale (from 174 Hz at the base to 963 Hz at the crown). While a card is open, you hear the resonant frequency of its plane. The frequency is displayed beside the plane name — tap it to learn about its traditional healing qualities and significance.
+*   **Rhythmic Breathwork**: An open Field card breathes in harmony with its energetic plane: the artwork subtly pulses, the aura glows, and golden light travels along the card border — ascending on the inhale and descending on the exhale. A timer guides you through each phase. Each plane features a dedicated breath pattern (such as balanced breathing without retention on the Plane of Balance, or the classic 4-7-8 rhythm on the Astral Plane). No configuration is needed — each card sets its own rhythm. Tapping the frequency also explains the breathing pattern.
+*   **Contemplative Focus**: Press and hold any card to hide all text, leaving only the artwork, glowing border, and breathing guide (Inhale, Hold, Exhale, Rest). A single tap brings the text back.
 
 ### The Leela Guru & Clues
-The **Leela Guru** is the AI presence that assists each step of the Leela Reflections Model. It does not replace your intuition — it sharpens your questions and helps anchor your insights in daily life.
+The **Leela Guru** is an AI presence designed to support each step of the Leela Reflections Model. It does not replace your intuition; rather, it sharpens your inquiries and helps ground your insights into daily action.
 
-*   Every Guru consultation costs **1 Clue**: refining your intention, personalizing the three StOR questions (Starting Point, Shadow Zone, Key), suggesting reflections on a card, distilling your insight, suggesting a practice, or offering alternative practices.
-*   If a Guru call fails for technical reasons, the Clue is **refunded automatically**.
-*   The Guru is consulted on demand only — nothing is generated unless you ask.
-*   The Guru is entirely optional: **every ritual can still be completed in full without him, free of charge, just as before**. We do warmly recommend his guidance, though — it significantly helps you go deeper in your shadow work and self-reflection.
+*   **How Clues Work**: Consultations with the Guru are powered by Clues. A small badge on the Guru button displays the number of Clues required for that request (typically 1 Clue) — whether for refining an intention, personalizing reflective questions, suggesting card reflections, synthesizing an insight, or suggesting daily practices.
+*   The gold wand, theme grids, curated questions, and your past inquiries are always completely free.
+*   If a request fails due to a network or technical issue, your Clue is **automatically refunded**.
+*   The Guru is entirely on-demand — it only responds when you explicitly ask.
+*   The Guru is completely optional: **every ritual can be completed in full for free without it**. However, we warmly recommend trying it to deepen your shadow work and self-inquiry.
 
-For what data the Guru sees (and what it never sees), open **Info menu → About Guru**.
-
-### The Guide (Interactive Tutorial)
-Daily Guidance is a deep practice — and on your first journey it helps to have a companion. The **Guide** is an interactive tutorial built directly into the ritual: while it is active, an aqua **GUIDE** badge is shown at the top or the bottom of the screen — wherever it fits best.
-
-*   **How it works**: The Guide leads you through the whole journey step by step — setting your intention, receiving your three StOR cards, reflecting on each of them, distilling your Insight, and choosing your Practice. At every step a short message shows exactly what to do next; tap **"Why?"** beside it to understand the deeper purpose of that step. You can also have these explanations **read aloud** — and choose among the voices preinstalled on your device under the **Gear Icon → Personalization → Read-aloud voice**.
-*   **The Guru path — on purpose**: The Guide deliberately walks the path *with* the Leela Guru, showing you how and when to use the Guru buttons, so you experience the practice at its full depth. Your **welcome gift of Clues** exists precisely for this — it covers your first accompanied journey, so you can try the Guru freely. (Because the Guide is built around the Guru, it asks for a small reserve of Clues before it begins; if your balance is too low, it will point you to Dakshina first.)
-*   **Not sure what to write?** If you hesitate at the intention step, the Guide offers a ready example question — tap it and continue from there.
-*   **Freedom, always**: You can end the tour at any moment (the ✕ **"End tour"** button). And your very first guided journey does not count toward the daily limit — your real ritual of the day remains yours.
-
-If you leave the **"Show me the Daily Guidance with the Leela Guru"** checkbox selected at the end of onboarding (or on the What's New pages after an upgrade), you are brought straight into the Guide. And you can always start the Guide yourself:
-*   via the **"?" help menu** on the Daily Guidance screen → **"Start tutorial"**;
-*   via the **"Guide me on this page"** button (the aqua graduation-cap icon) at the bottom of the help page;
-*   or simply by pausing on the intention screen — after a moment a hint appears: *"Not sure how to begin? Tap here — I will guide you step by step."*
-
-On these paths the Guide first greets you with an invitation called **"Deep inner work"** — accept it when you have a few unhurried minutes.
+To review privacy details regarding the Guru, visit **Info Menu → About Guru**.
 
 ---
 
 ## My Diary
-All your completed rituals are automatically saved to your Diary for long-term reflection.
-*   Tap the **Diary Button** (book icon) on the main screen.
-*   Use the toggle at the top to filter between **Wisdom** and **Guidance** entries.
-*   Review past cards and questions to reflect on how your situation has evolved.
-*   To keep your diary focused, you can delete an entry by swiping it to the left (previous days only).
+All completed rituals are automatically saved to your Diary for long-term reflection.
+*   Tap the **Diary icon** (book) on the main navigation bar.
+*   Use the filter at the top to toggle between **Wisdom** and **Guidance** entries.
+*   Revisit past cards and entries to see how your life themes have evolved over time.
+*   To remove older entries, swipe them to the left (today's active entry cannot be deleted, allowing you to stay with your insight throughout the day).
 
 ### My Reflections
 Capture your insights directly on any card.
-*   Tap the **My Reflection** section or the **Edit** icon on a card's detail page.
-*   Store your thoughts, feelings, or "aha!" moments.
-*   These reflections are stored with the card in your history, creating a map of your soul's evolution.
-*   **Guru Assistance**: Need inspiration? Write down rough notes and tap the **Guru icon** (1 Clue). The Leela Guru suggests three reflections built on your thoughts — tap one to insert it into the field, where you can still polish it before saving.
+*   Tap the **My Reflection** section or the **Edit icon** on any card detail page.
+*   Record your thoughts, emotions, or moments of realization.
+*   Reflections remain linked to the card in your personal history.
+*   **Guru Assistance**: Need inspiration? Jot down a few thoughts and tap the **Guru icon** to receive three tailored reflections that you can edit and adopt.
 
 ---
 
-## Additional Functions
-
-### The Leela Field
-The third carousel card opens **The Leela Field** — the ancient 72-cell game board from which all cards originate. Its rows correspond to the **chakras**, the energy planes of your inner journey.
-*   The Field connects your drawn cards with your current position on this map: after you draw your Daily Wisdom card, the carousel shows **today's chakra**, and the Field reveals where today's card sits on the board.
-*   This points to which chakra — which inner plane of your life — may be asking for your attention today.
-*   Tap any cell to contemplate its card and sense how the cells of one chakra row speak to each other.
+## Additional Features
 
 ### Active Practices
-The fourth carousel card opens **Active Practices** — the home of all your current practices from both rituals (Daily Wisdom practices in green, Daily Guidance practices in orange). The carousel card shows how many of them you have completed today.
-*   **One-time practices**: a practice born from a ritual is meant to be lived that very day — it becomes inactive automatically at midnight.
-*   **Repeatable practices**: turn a practice into a repeatable one to keep it with you day after day, and set a **daily reminder** so Leela can gently call you back to it.
-*   **Managing your practices**: tick the checkbox once you have lived a practice today; tap a practice to revisit the card it came from; swipe it to the left to deactivate a practice whose work is done.
-*   **Statistics**: the chart icon at the bottom opens your practice statistics, where you can see how each practice has accompanied you over time.
+The fourth carousel card opens **Active Practices** — the home for all your current commitments from both rituals (Daily Wisdom practices in green, Daily Guidance practices in orange).
+*   **Daily Practices**: Practices created during a ritual are intended for that day and automatically archive at midnight.
+*   **Repeatable Practices**: You can convert any practice into a recurring daily habit and set a **daily reminder** to help you stay consistent.
+*   **Managing Practices**: Check the box when you complete a practice today; tap a practice to revisit its source card; swipe left to archive a completed practice.
+*   **Practice Statistics**: The chart icon opens your practice history, showing your consistency and completed practices over time.
 
 ### Dakshina — Replenishing Clues
-The fifth carousel card opens the **Dakshina** screen, where you can replenish your Clues through three packages of different sizes.
-*   Prices are shown in the local currency of your App Store / Google Play account; payment is processed entirely by Apple or Google.
-*   Purchased Clues are added to your balance automatically. If a purchase doesn't arrive immediately, it is credited as soon as the store confirms it.
+The fifth carousel card opens the **Dakshina** screen, where you can replenish your Clues with packages tailored to your journey.
+*   Prices are displayed in your local App Store / Google Play currency, and payments are securely processed by Apple or Google.
+*   Purchased Clues are credited to your balance immediately upon confirmation from the store.
 
 ### Protecting Your Clues (Sign-In)
-LeelaClue needs no account — but without one, purchased Clues are tied to your current installation. The Dakshina screen therefore offers an **optional sign-in** with the Apple or Google account you already use for purchases.
-*   **Why sign in**: Signing in links your purchased Clues to your account, so you can restore them after a reinstall or on a new device. Without signing in, purchased Clues are lost if you uninstall the app or change devices.
-*   **How**: Tap **"Sign in with your Google account"** (on Android) or **"Sign in with your Apple account"** (on iOS) on the Dakshina screen. On a new device, sign in with the same account and your purchased balance is restored.
-*   **One balance per account**: All devices signed in with the same account share one Clues balance.
-*   **Welcome-gift Clues don't transfer**: The welcome gift stays on the installation where it was granted.
-*   **Switching accounts**: Signing in with a different account switches the device to that account's balance; your previous balance stays safe with the previous account.
-*   **Your privacy**: Sign-in shares nothing personal with us — the app never stores or transmits your email address or name. Only an anonymous, opaque identifier links your balance to your account.
+LeelaClue requires no account. However, without an account, purchased Clues remain tied solely to your current installation. The Dakshina screen therefore provides an **optional sign-in** using your existing Apple or Google account.
+*   **Why Sign In**: Signing in links your purchased Clues to your account, allowing you to restore them after reinstalling the app or switching devices.
+*   **How**: Tap **"Sign in with Google"** (Android) or **"Sign in with Apple"** (iOS) on the Dakshina screen.
+*   **Single Balance**: All devices signed in with the same account share one unified Clue balance.
+*   **Welcome Gift**: Welcome-gift Clues remain local to the device where they were originally granted.
+*   **Privacy**: Sign-in is completely anonymous. The app never receives, stores, or transmits your name or email address — only an opaque identifier that links your balance to your account.
 
 ### Sharing Your Insights
-You can share your spread or save it for later.
-*   On any result screen or in the Diary, tap the **Share** button.
-*   The app generates a beautiful image of your spread including your question and the cards.
-*   You can share the spread to the communities under Telegram or Instagram channels found in the **Contact** menu (Mail icon).
+Share your reflections or save them as visual keepsakes:
+*   On any result screen or Diary entry, tap the **Share** button.
+*   The app generates a visual card summary containing your question, cards, and key reflections.
+*   You can share your reflections directly with our community on Telegram or Instagram via the **Contact** menu (mail icon).
 
-### Daily Limit
-LeelaClue is designed for deep reflection, not casual gaming.
-*   **One Ritual Per Day**: You can perform each ritual once per day.
-*   This encourages you to stay with the answer and integrate the insight before asking again.
+### Daily Limits
+LeelaClue is designed for deep reflection and daily integration, not rapid-fire questioning.
+*   **One Completed Ritual per Day**: Each ritual allows one saved entry per calendar day to encourage deep integration.
+*   **Repeating Daily Guidance**: As long as you have not yet written any reflections, you can repeat the ritual up to three times a day. This lets you formulate a new intention and receive fresh cards. Any Clues already spent on previous attempts are not refunded.
+*   **Daily Wisdom Cannot Be Repeated**: Daily Wisdom provides a single card to anchor and guide your awareness for the day.
 
 ### Settings & Analytics
-Tap the **Gear Icon** to open Settings.
-*   Set your greeting name and daily reminders.
-*   **Analytics** is off by default. If you choose to turn it on, only anonymous usage events are shared — never your reflections or any personal content. You can switch it off again at any time.
-*   **Delete Account & Data**: Permanently erases everything — your reflections, settings, purchase history, Clue balance, and any linked Apple/Google account — and returns the app to its first-run state. This cannot be undone. If you use the same account on more than one device, run it on each. (Apple/Google keep their own purchase receipts on their side, which we cannot remove.)
+Tap the **Gear icon** to access Settings:
+*   Set your preferred name and daily reminder times.
+*   **Analytics**: Analytics is disabled by default. If enabled, only anonymous usage events are recorded — never your personal reflections or questions. You can toggle this off at any time.
+*   **Delete Account & Data**: Permanently erases all local and linked cloud data — reflections, settings, purchase history, and Clue balances — restoring the app to its initial state. This action is irreversible. (Platform purchase receipts retained by Apple or Google cannot be altered by third-party apps.)
 
 ---
 
 ## Example Scenarios
 
 ### Scenario 1: Career Decisions
-**Situation**: You have a new job offer but are unsure about leaving your current job.
-**Question**: *"What should I consider regarding the new job offer at TechCorp?"*
-**The StOR Frame**:
-1.  *St — Starting Point (Where am I now?)*: **Insecurity**. You might be feeling anxious about your skills.
-2.  *O — Shadow Zone (What do I not notice yet?)*: **Sudharma (Right Action)**. You are actually aligned with your purpose.
-3.  *R — Key to the Solution (What would carry me further?)*: **Jnana (Knowledge)**. Gather more facts about the new role to calm your fears.
+**Situation**: You received a new job offer but feel hesitant about leaving your current role.  
+**Question**: *"What should I consider regarding the new job offer at TechCorp?"*  
+**The StOR Framework**:
+1.  *St — State / Starting Point (Where am I now?)*: **Insecurity**. You may be experiencing self-doubt regarding your capabilities.
+2.  *O — Obstacle / Shadow Zone (What do I not notice yet?)*: **Sudharma (Right Action)**. You are actually well-aligned with your true path.
+3.  *R — Resource / Key to Resolution (What will carry me forward?)*: **Jnana (Knowledge)**. Clarifying practical details about the new role will dissolve unwarranted fears.
 
-**My Insight**: *"My anxiety comes from doubting my skills, not from the offer itself. The move aligns with my purpose — what I lack is information, not ability."*
-**My Practice**: *Today, write down the three questions that worry me most about the new role and send them to the recruiter.*
+**My Insight**: *"My hesitation stems from self-doubt rather than any flaw in the offer. The opportunity aligns with my values; I simply need clear facts, not more reassurance."*  
+**My Practice**: *Write down the three specific questions concerning the role and discuss them openly with the recruiter today.*
 
-### Scenario 2: Relationship Conflict
-**Situation**: You had a fight with a close friend and don't know how to fix it.
-**Question**: *"How can I resolve the misunderstanding with my friend Sarah?"*
-**The StOR Frame**:
-1.  *St — Starting Point (Where am I now?)*: **Ego**. You might be holding onto pride.
-2.  *O — Shadow Zone (What do I not notice yet?)*: **Attachment**. You are afraid of losing the friendship, making you defensive.
-3.  *R — Key to the Solution (What would carry me further?)*: **Compassion**. Approach Sarah with empathy, dropping the need to be "right".
+### Scenario 2: Relationship Harmony
+**Situation**: A recent disagreement with a close friend left lingering tension.  
+**Question**: *"How can I heal the misunderstanding with Sarah?"*  
+**The StOR Framework**:
+1.  *St — State / Starting Point (Where am I now?)*: **Ego**. Holding onto defensive pride.
+2.  *O — Obstacle / Shadow Zone (What do I not notice yet?)*: **Attachment**. The fear of losing the connection is manifesting as defensiveness.
+3.  *R — Resource / Key to Resolution (What will carry me forward?)*: **Compassion**. Approaching Sarah with genuine empathy and releasing the need to be "right."
 
-**My Insight**: *"My pride is protecting me from the fear of losing Sarah. Being right matters less to me than staying connected."*
-**My Practice**: *Tonight, send Sarah a message asking how she felt during our argument — and only listen, without defending myself.*
+**My Insight**: *"My defensiveness is shielding my fear of losing the friendship. Preserving our connection is far more valuable than defending my pride."*  
+**My Practice**: *Send Sarah a warm message tonight asking how she felt during our conversation, listening with full presence and without defending my position.*
 
 ---
 
 ## FAQ
 
-**Q: Why can't I ask another question today?**
-A: To preserve the quality of your reflection, the app limits rituals to once per day. Take time to meditate on the answer.
+**Q: Why can't I ask another question today?**  
+A: LeelaClue is designed around daily integration. You keep one completed ritual per calendar day so you can stay with the insight rather than constantly asking anew. With Daily Guidance, as long as you have not yet written any reflections, you can repeat the ritual up to three times a day. Once reflections are saved, the ritual is set for the day.
 
-**Q: Why can't I delete today's entry?**
-A: Today's reading is meant to be stayed with. You can delete previous days' entries by swiping them in the Diary.
+**Q: Why can't I delete today's entry?**  
+A: Daily Wisdom is meant to accompany you throughout the entire day. For Daily Guidance, you can repeat the ritual up to three times a day before writing any reflections. Once reflections are recorded, today's entry is locked so you can focus on living the insight. Entries from previous days can be deleted at any time by swiping them to the left in your Diary.
 
-**Q: Where is my Daily Practice?**
-A: Draw your Daily Wisdom card first. Then, tap the calendar icon on the Home screen to see and complete your task.
+**Q: Where can I find my Daily Practice?**  
+A: Complete your Daily Wisdom ritual first. The practice from your card is then activated automatically for the day. Tap the calendar icon on the bottom navigation bar to open your Active Practices page.
 
-**Q: Do I need an account to use LeelaClue?**
-A: No. The app works fully without registration. Signing in with Apple or Google is optional and exists only to protect purchased Clues.
+**Q: Do I need an account to use LeelaClue?**  
+A: No. The app functions completely without registration. Signing in with Apple or Google is optional and serves only to protect your purchased Clues across reinstalls or device changes.
 
-**Q: What happens to my Clues if I change phones?**
-A: Sign in on the Dakshina screen *before* switching. On the new device, sign in with the same account and your purchased Clues are restored. The welcome gift does not transfer.
+**Q: What happens to my Clues if I switch devices?**  
+A: Sign in on the Dakshina screen *before* changing devices. On your new phone, sign in with the same account to automatically restore your purchased Clue balance. (The initial welcome gift remains tied to the original installation.)
 
-**Q: If I sign in, what do you learn about me?**
-A: Nothing personal. The app never stores or transmits your email address or name — only an anonymous identifier that links your Clues balance to your account.
+**Q: What personal data is shared if I sign in?**  
+A: None. The app never collects, stores, or transmits your email address or personal details — only an anonymous token that verifies your purchased balance.
 
-**Q: How do I delete my account and all my data?**
-A: Open Settings (Gear Icon) → **Delete Account & Data** and confirm. This permanently erases your reflections, settings, purchase history, Clue balance and any linked account, and returns the app to its first-run state. It cannot be undone, and no sign-in is required to use it. If you use the same Apple/Google account on several devices, run it on each one. The only thing that remains afterwards is the purchase receipts that Apple/Google keep on their side, which we cannot remove.
+**Q: How do I delete my account and all data?**  
+A: Go to Settings (Gear icon) → **Delete Account & Data** and confirm. This permanently removes all reflections, settings, history, and linked account data, returning the app to its initial state. If you use the app across multiple devices with the same account, repeat this step on each device.
 
 ---
 
-*Enjoy your journey of self-discovery with LeelaClue!*
+*Enjoy your journey of self-discovery with LeelaClue.*
 
 
 ---

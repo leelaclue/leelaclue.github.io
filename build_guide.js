@@ -1,6 +1,6 @@
 // build_guide.js — bakes the User Guide into static HTML for each language.
 //
-// Source of truth: the leelaclue/helps repo (branch main), directory v201/.
+// Source of truth: the leelaclue/helps repo (branch main), directory v210/.
 // When the guide changes there, re-run:  node build_guide.js  and commit.
 //
 // Outputs: {en,de,ru}/user_guide.html with the full guide content server-rendered
@@ -18,7 +18,7 @@ marked.setOptions({ breaks: true, gfm: true });
 const root = 'c:/GitHub/leelaclue.github.io';
 const langs = ['en', 'de', 'ru'];
 
-const GUIDE_BASE = 'https://raw.githubusercontent.com/leelaclue/helps/main/v201';
+const GUIDE_BASE = 'https://raw.githubusercontent.com/leelaclue/helps/main/v210';
 const guideFile = { en: 'USER_GUIDE_EN.md', de: 'USER_GUIDE_DE.md', ru: 'USER_GUIDE_RU.md' };
 
 const SITE = 'https://leelaclue.com';
