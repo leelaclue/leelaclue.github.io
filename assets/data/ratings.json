@@ -1,10 +1,10 @@
 {
   "value": 5,
-  "count": 26,
+  "count": 28,
   "bestRating": 5,
   "apple": {
     "value": 5,
-    "count": 12,
+    "count": 14,
     "perStore": {
       "us": {
         "value": 5,
@@ -12,11 +12,11 @@
       },
       "de": {
         "value": 5,
-        "count": 7
+        "count": 8
       },
       "ru": {
         "value": 5,
-        "count": 3
+        "count": 4
       }
     }
   },
@@ -24,5 +24,5 @@
     "value": 5,
     "count": 14
   },
-  "fetchedAt": "2026-09-03"
+  "fetchedAt": "2026-09-25"
 }

@@ -144,6 +144,90 @@ function buildSection(def, markdownHtml, lang) {
         </section>`;
 }
 
+// ─── Hero (section 1) ────────────────────────────────────────────────────────
+// Full-bleed hero: two-line H1 + store badges on the left, face image on the
+// right. The rest of the hero MD (from the first <h2>) becomes the About block.
+
+const HERO_IMG      = '../assets/images/hero/hero_face.webp';
+const HERO_IMG_SM   = '../assets/images/hero/hero_face_1000.webp';
+const HERO_SRCSET   = `${HERO_IMG_SM} 1000w, ${HERO_IMG} 2752w`;
+const HERO_SIZES    = '(max-width: 950px) 100vw, 65vw';
+
+function heroAlt(lang) {
+    return {
+        en: 'Clay face cracking open to reveal a golden inner light',
+        de: 'Ein Gesicht aus Ton bricht auf und gibt ein goldenes inneres Licht frei',
+        ru: 'Глиняное лицо раскалывается, открывая золотой внутренний свет',
+    }[lang];
+}
+
+// News rows shown above the hero headline (latest release + latest blog post).
+// Update these when announcing a new version or post.
+function heroNews(lang) {
+    const items = {
+        en: [
+            { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'The Leela Field now breathes' },
+            { tag: 'New post',     cls: 'hero-news__tag--post',    href: 'the-stor-framework.html', text: 'Your intuition has the answer' },
+        ],
+        de: [
+            { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Das Leela-Feld atmet jetzt' },
+            { tag: 'Neuer Beitrag', cls: 'hero-news__tag--post',   href: 'the-stor-framework.html', text: 'Deine Intuition kennt die Antwort' },
+        ],
+        ru: [
+            { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Поле Лилы теперь дышит' },
+            { tag: 'Новая статья', cls: 'hero-news__tag--post',    href: 'the-stor-framework.html', text: 'Твоя интуиция знает ответ' },
+        ],
+    }[lang];
+
+    const rows = items.map(it => `
+                    <a href="${it.href}" class="hero-news__item">
+                        <span class="hero-news__tag ${it.cls}">${it.tag}</span>
+                        <span class="hero-news__text">${it.text}</span>
+                        <span class="hero-news__arrow" aria-hidden="true">&rarr;</span>
+                    </a>`).join('');
+
+    return `<div class="hero-news">${rows}
+                </div>`;
+}
+
+// Wrap every visual line of the H1 (split at <br>) in <span class="hl"> so CSS
+// can reveal them one after another. The space between spans keeps the words
+// separated in the text that crawlers extract.
+function splitHeroLines(h1Html) {
+    const m = h1Html.match(/<h1([^>]*)>([\s\S]*?)<span class="hero-line2">([\s\S]*?)<\/span>\s*<\/h1>/);
+    if (!m) return h1Html;
+    let i = 0;
+    const lines = part => part.trim().split(/<br\s*\/?>/)
+        .map(l => `<span class="hl" style="--d:${i++}">${l.trim()}</span>`).join(' ');
+    const line1 = lines(m[2]);
+    const line2 = lines(m[3]);
+    return `<h1><span class="hero-line1">${line1}</span> <span class="hero-line2">${line2}</span></h1>\n`;
+}
+
+function buildHero(def, markdownHtml, lang) {
+    const splitAt = markdownHtml.indexOf('<h2');
+    const headline = splitHeroLines(splitAt === -1 ? markdownHtml : markdownHtml.slice(0, splitAt));
+    const about    = splitAt === -1 ? '' : markdownHtml.slice(splitAt);
+
+    return `
+        <section class="landing-section hero-v2" id="${def.id}">
+            <div class="hero-v2__media">
+                <img src="${HERO_IMG}" srcset="${HERO_SRCSET}" sizes="${HERO_SIZES}" alt="${heroAlt(lang)}" fetchpriority="high" width="2752" height="1536">
+            </div>
+            <div class="hero-v2__text">
+                ${headline}
+                ${heroNews(lang)}
+                ${storeBadges(true, ratingBadge(lang))}
+                <a href="#section-hero-about" class="hero-v2__scroll" aria-label="Scroll down">&#8595;</a>
+            </div>
+        </section>
+        <section class="landing-section hero-about" id="section-hero-about">
+            <div class="section-text markdown-body animate-on-scroll">
+                ${about}
+            </div>
+        </section>`;
+}
+
 // ─── Metadata ────────────────────────────────────────────────────────────────
 
 function getTitle(lang) {
@@ -224,9 +308,6 @@ function leftPanel(lang) {
         ru: ['О нас',      'С·П·Р',  'Практика', 'Пример',     'Приложение'],
     }[lang] || ['About', 'S·O·R', 'Practice', 'Case Study', 'App'];
 
-    const versionLabel = { en: 'New in v2.1.0', de: 'Neu in v2.1.0', ru: 'Новое в v2.1.0' };
-    const postTag      = { en: 'New Blog Post', de: 'Neuer Blogbeitrag', ru: 'Новая статья' };
-
     const dots = sectionDefs.map((def, i) => `
         <a href="#${def.id}" class="section-nav-item${i === 0 ? ' active' : ''}" data-section="${def.id}">
             <span class="section-nav-dot"></span>
@@ -235,10 +316,6 @@ function leftPanel(lang) {
 
     return `
     <aside class="left-panel">
-        <div class="panel-badges">
-            <a href="whats_new.html" class="ann-version">${versionLabel[lang] || versionLabel.en}</a>
-            <a href="the-stor-framework.html" class="ann-tag">${postTag[lang] || postTag.en}</a>
-        </div>
         <nav class="section-nav" aria-label="Page sections">
 ${dots}
         </nav>
@@ -246,31 +323,6 @@ ${dots}
 }
 
 // ─── Full page template ──────────────────────────────────────────────────────
-
-function newVersionBanner(lang) {
-    const texts = {
-        en: {
-            text: 'The Leela Field now breathes. Open any card and it becomes a short meditation — every plane with its own breathing rhythm and its own healing tone.',
-            btn: "What's New in v2.1.0"
-        },
-        de: {
-            text: 'Das Leela-Feld atmet jetzt. Öffne eine Karte, und sie wird zur kurzen Meditation — jede Ebene mit eigenem Atemrhythmus und eigenem heilsamen Ton.',
-            btn: 'Was ist neu in v2.1.0'
-        },
-        ru: {
-            text: 'Поле Лилы теперь дышит. Открой любую клетку — и карта станет короткой медитацией: у каждого уровня свой ритм дыхания и своя исцеляющая частота.',
-            btn: 'Что нового в v2.1.0'
-        }
-    };
-    const t = texts[lang] || texts.en;
-    return `
-        <div class="new-version-banner-container" style="max-width: 1400px; margin: 0 auto; padding: 1rem 2rem 0 2rem;">
-            <div class="new-version-banner">
-                <p>${t.text}</p>
-                <a href="whats_new.html" class="banner-cta">${t.btn}</a>
-            </div>
-        </div>`;
-}
 
 function getTemplate(lang, sectionsHtml) {
     const n = navLabels(lang);
@@ -299,8 +351,8 @@ ${getHreflang('index')}
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=17">
-    <link rel="preload" as="image" href="../assets/images/ADharma.webp">
+    <link rel="stylesheet" href="../assets/css/style.css?v=18">
+    <link rel="preload" as="image" href="${HERO_IMG}" imagesrcset="${HERO_SRCSET}" imagesizes="${HERO_SIZES}" fetchpriority="high">
 ${getSchemaOrg(lang)}
 </head>
 
@@ -352,7 +404,6 @@ ${getSchemaOrg(lang)}
     ${leftPanel(lang)}
 
     <main class="landing-main">
-${newVersionBanner(lang)}
 ${sectionsHtml}
     </main>
 
@@ -389,7 +440,7 @@ function readMd(filename) {
 langs.forEach(lang => {
     const sectionsHtml = sectionDefs.map(def => {
         const html = readMd(`landing_${def.key}_${lang}.md`);
-        return buildSection(def, html, lang);
+        return def.isHero ? buildHero(def, html, lang) : buildSection(def, html, lang);
     }).join('\n');
 
     const output = getTemplate(lang, sectionsHtml);
@@ -404,7 +455,7 @@ let llmsFull = `# LeelaClue — Full Content\n\nURL: https://leelaclue.com\nApp:
 ['hero', 'sor', 'practice', 'anna', 'daily'].forEach(key => {
     const filePath = path.join(root, 'assets', 'docs', `landing_${key}_en.md`);
     if (fs.existsSync(filePath)) {
-        llmsFull += fs.readFileSync(filePath, 'utf8') + '\n\n---\n\n';
+        llmsFull += fs.readFileSync(filePath, 'utf8').replace(/<span class="hero-line2">(.*?)<\/span>/g, '— $1').replace(/<br>/g, ' ') + '\n\n---\n\n';
     }
 });
 

@@ -1334,36 +1334,279 @@ html {
    SECTION 1 — Hero
 ═══════════════════════════════════════════════════════════════ */
 
-.hero-section {
-  background: radial-gradient(circle at 25% 35%, rgba(212, 175, 55, 0.06) 0%, transparent 55%),
-              radial-gradient(circle at 90% 70%, rgba(212, 175, 55, 0.03) 0%, transparent 40%);
+/* Full-bleed hero: headline left, image anchored right, fading into the bg */
+.hero-v2 {
+  min-height: calc(100vh - 70px);
+  display: flex;
   align-items: center;
+  overflow: hidden;
+  padding: 4rem 2rem;
 }
 
-.hero-text {
-  flex: 1;
+.hero-v2__media {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 65%;
+  pointer-events: none;
 }
 
-.hero-section .section-heading {
-  font-size: 3.8rem;
-  margin-bottom: 1.5rem;
+.hero-v2__media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 55% center;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 40%),
+                      linear-gradient(to top, transparent 0%, #000 20%);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent 0%, #000 40%),
+              linear-gradient(to top, transparent 0%, #000 20%);
+  mask-composite: intersect;
 }
 
-.hero-sub {
-  font-size: 1.2rem;
+.hero-v2__text {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* Explicit <br> in the MD gives exactly 2 + 2 lines; nowrap stops extra wraps */
+.hero-v2__text h1 {
+  font-family: var(--font-main);
+  font-size: clamp(3.2rem, 4.8vw, 5rem);
+  line-height: 1.05;
+  font-weight: 400;
+  color: #faf6ec;
+  text-shadow: 0 0 40px rgba(212, 175, 55, 0.18), 0 2px 12px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+  margin: 0 0 3.25rem;
+  padding: 0;
+  border: none;
+  letter-spacing: -0.01em;
+}
+
+.hero-v2__text .hero-line2 {
+  display: block;
+  margin-top: 1.25rem;
+  text-shadow: none;
+  font-size: 0.68em;
+  line-height: 1.25;
   font-style: italic;
-  opacity: 0.8;
-  border-left: 3px solid var(--primary-color);
-  padding-left: 1.25rem;
-  margin-bottom: 1.5rem;
-  line-height: 1.7;
 }
 
-.hero-for {
-  font-size: 1.08rem;
-  line-height: 1.8;
-  opacity: 0.85;
-  margin-bottom: 2rem;
+.hero-v2__text .hl { display: block; }
+
+/* Gradient sits on each line so it survives the per-line reveal transform */
+.hero-v2__text .hero-line2 .hl {
+  background: linear-gradient(135deg, var(--primary-color) 0%, #f9e29b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ─── Hero entrance (pure CSS, so text is in the HTML and visible without JS).
+   Keyframes only define the start state + fill-mode backwards, so each element
+   ends on its normal styles (e.g. the dimmed badges keep opacity 0.6). ─── */
+@keyframes hero-rise {
+  from { opacity: 0; transform: translateY(var(--rise, 18px)); filter: blur(8px); }
+}
+
+@keyframes hero-img-in {
+  from { opacity: 0; transform: scale(1.08); }
+}
+
+@keyframes hero-fade-in {
+  from { opacity: 0; }
+}
+
+.hero-v2__media img {
+  animation: hero-img-in 2.4s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+}
+
+.hero-v2__text .hl {
+  --rise: 0.35em;
+  animation: hero-rise 1.1s cubic-bezier(0.2, 0.7, 0.2, 1) backwards;
+  animation-delay: calc(0.4s + var(--d, 0) * 0.18s);
+}
+
+.hero-v2 .hero-news   { animation: hero-rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) 1.3s backwards; }
+.hero-v2 .carousel-cta { animation: hero-rise 1s cubic-bezier(0.2, 0.7, 0.2, 1) 1.5s backwards; }
+
+/* News rows between the headline and the store badges (replaces the old full-width version banner) */
+.hero-news {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.6rem;
+  margin-bottom: 2.25rem;
+}
+
+.hero-news__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.35rem 0.9rem 0.35rem 0.4rem;
+  border: 1px solid rgba(224, 224, 224, 0.12);
+  border-radius: 999px;
+  background: rgba(10, 10, 18, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--text-color);
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.hero-news__item:hover {
+  border-color: rgba(212, 175, 55, 0.55);
+  background: rgba(212, 175, 55, 0.08);
+  text-decoration: none;
+}
+
+.hero-news__tag {
+  flex-shrink: 0;
+  padding: 0.15rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.hero-news__tag--version {
+  border: 1px solid rgba(212, 175, 55, 0.6);
+  color: var(--primary-color);
+}
+
+.hero-news__tag--post {
+  border: 1px solid rgba(226, 88, 34, 0.7);
+  color: #e8835a;
+}
+
+.hero-news__text { opacity: 0.85; }
+
+.hero-news__arrow {
+  color: var(--primary-color);
+  transition: transform 0.2s;
+}
+
+.hero-news__item:hover .hero-news__arrow { transform: translateX(3px); }
+
+.hero-v2 .carousel-cta {
+  justify-content: flex-start;
+  gap: 0.75rem 1rem;
+  padding: 0;
+  background: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border: none;
+  border-radius: 0;
+}
+
+.hero-v2 .store-rating {
+  flex-basis: 100%;
+  text-align: left;
+  margin-top: 0.25rem;
+  color: #8a8778;
+  font-size: 0.8rem;
+}
+
+/* Hierarchy: the headline leads, everything below it is quieter until hovered */
+.hero-v2 .carousel-cta a,
+.hero-news__item {
+  opacity: 0.6;
+  transition: opacity 0.25s, border-color 0.2s, background 0.2s;
+}
+
+.hero-v2 .carousel-cta a:hover,
+.hero-v2 .carousel-cta a:focus-visible,
+.hero-news__item:hover,
+.hero-news__item:focus-visible {
+  opacity: 1;
+}
+
+.hero-v2 .store-badge-sm        { height: 40px; }
+.hero-v2 .store-badge-sm.google { height: 52px; } /* PNG has built-in padding */
+
+.hero-v2__scroll {
+  display: inline-block;
+  margin-top: 3rem;
+  font-size: 1.4rem;
+  color: var(--primary-color);
+  opacity: 0.6;
+  text-decoration: none;
+  animation: hero-fade-in 1s ease 2s backwards, hero-bob 2.4s ease-in-out 3s infinite;
+}
+
+.hero-v2__scroll:hover { opacity: 1; }
+
+@keyframes hero-bob {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-v2__scroll,
+  .hero-v2__media img,
+  .hero-v2__text .hl,
+  .hero-v2 .hero-news,
+  .hero-v2 .carousel-cta { animation: none; }
+}
+
+/* About block directly under the hero — narrow reading column */
+.hero-about {
+  padding-top: 3rem;
+}
+
+.hero-about .section-text {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+/* Clear the fixed left panel on wide screens */
+@media (min-width: 1201px) {
+  .hero-v2__text { padding-left: max(10rem, calc((100vw - 1280px) / 2)); max-width: none; }
+}
+
+/* Stacked: image on top, text below */
+@media (max-width: 950px) {
+  .hero-v2 {
+    flex-direction: column;
+    align-items: stretch;
+    min-height: auto;
+    padding: 0 1.25rem 3rem;
+  }
+
+  .hero-v2__media {
+    position: relative;
+    width: calc(100% + 2.5rem);
+    margin: 0 -1.25rem;
+    height: 55vh;
+    min-height: 280px;
+  }
+
+  .hero-v2__media img {
+    object-position: 45% center;
+    -webkit-mask-image: linear-gradient(to top, transparent 0%, #000 35%);
+    mask-image: linear-gradient(to top, transparent 0%, #000 35%);
+  }
+
+  .hero-v2__text { margin-top: -3rem; }
+  .hero-v2__text h1 { font-size: 3rem; margin-bottom: 2rem; }
+  .hero-news { margin-bottom: 1.75rem; }
+  .hero-v2__scroll { display: none; }
+}
+
+@media (max-width: 600px) {
+  .hero-v2 { padding: 0 1rem 2.5rem; }
+  .hero-v2__media { width: calc(100% + 2rem); margin: 0 -1rem; height: 45vh; }
+  .hero-v2__text h1 { font-size: 2.4rem; }
+  .hero-news__item { max-width: 100%; gap: 0.5rem; font-size: 0.8rem; padding-right: 0.7rem; }
+  .hero-news__tag  { font-size: 0.62rem; letter-spacing: 0.5px; padding: 0.15rem 0.5rem; }
+  .hero-news__text { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 }
 
 /* ═══════════════════════════════════════════════════════════════
@@ -1556,7 +1799,6 @@ html {
 @media (max-width: 1100px) {
   .carousel-wrapper  { width: 380px; }
   .section-carousel  { height: 460px; }
-  .hero-section .section-heading { font-size: 3.2rem; }
 }
 
 /* Stack sections vertically — viewport-relative carousel width */
@@ -1571,8 +1813,6 @@ html {
     gap: 2.5rem;
   }
 
-  .hero-section { min-height: auto; }
-  .hero-section .section-heading { font-size: 2.4rem; }
   .section-heading { font-size: 2rem; }
 
   /* Scale with viewport so carousel stays proportional to text */
@@ -1605,7 +1845,6 @@ html {
 @media (max-width: 600px) {
   .landing-section { padding: 2.5rem 1rem; }
 
-  .hero-section .section-heading { font-size: 2rem; }
   .section-heading               { font-size: 1.75rem; }
 
   .carousel-wrapper { width: 88vw; max-width: 380px; }
@@ -1620,6 +1859,8 @@ html {
 
   .store-badge-sm        { height: 34px; }
   .store-badge-sm.google { height: 44px; }
+
+  .hero-v2 .carousel-cta { flex-direction: row; padding: 0; }
 }
 
 /* ─── 72 Squares Directory ─────────────────────────────────────────────────── */

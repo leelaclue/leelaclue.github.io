@@ -20,7 +20,7 @@ The website is a **static site served by GitHub Pages**. The landing pages (`ind
 ```
 leelaclue.github.io/
 ├── assets/
-│   ├── css/style.css                  # Single global stylesheet (CSS v15)
+│   ├── css/style.css                  # Single global stylesheet (CSS v18)
 │   ├── docs/                          # ★ SOURCE OF TRUTH for landing page text
 │   │   ├── landing_hero_en.md         # Section 1 — Hero (EN)
 │   │   ├── landing_sor_en.md          # Section 2 — S·O·R Framework (EN)
@@ -111,7 +111,7 @@ The build script:
 - Generates `llms-full.txt` aggregating all EN content for AI discovery
 - Outputs `en/index.html`, `de/index.html`, `ru/index.html`
 
-When changing the build script, also update the **CSS version query string** (currently `?v=15`) to bust browser caches, then rebuild.
+When changing the build script, also update the **CSS version query string** (currently `?v=18`) to bust browser caches, then rebuild.
 
 ```bash
 node build_html.js
@@ -156,11 +156,9 @@ section-container (flex row → flex column on mobile)
 ```
 
 ### Left panel (fixed, desktop only ≥1200px)
+Release/blog announcements are no longer here — they are the `.hero-news` rows between the hero headline and the store badges (see `heroNews()` in `build_html.js`).
 ```
 aside.left-panel (position: fixed, left side, vertically centered)
-├── panel-badges
-│   ├── ann-version   ← "New in v2.1.0"  → links to whats_new.html
-│   └── ann-tag       ← "New Blog Post"  → links to latest blog post
 └── section-nav
     └── 5× section-nav-item (dot + label)
         — scroll-spy (IntersectionObserver) highlights the active section
@@ -234,10 +232,10 @@ git commit -m "assets: update anna carousel images"
 ```
 
 ### Update announcement badges (version / blog post)
-Edit the `leftPanel()` function in `build_html.js` — update `versionLabel`, `postTag`, and `href` values. Then rebuild.
+Edit `heroNews()` in `build_html.js` — update the `tag`, `text` and `href` of each row (EN/DE/RU). Then rebuild.
 
 ### Bump app version
-1. Update `versionLabel` strings in `leftPanel()` in `build_html.js`
+1. Update the version row in `heroNews()` in `build_html.js`
 2. Update `softwareVersion` in `getSchemaOrg()` in `build_html.js`
 3. Update the version string in hand-crafted HTML files as needed
 4. Rebuild: `node build_html.js`
@@ -271,7 +269,7 @@ const root = 'c:/GitHub/leelaclue.github.io';
 1. Create content in `assets/posts/` per language
 2. Update `assets/js/blog.js` and `assets/js/translations.js`
 3. Run `node build_blogs.js` to generate static blog HTML pages
-4. Update `leftPanel()` in `build_html.js` — new `postTag` href and labels — then rebuild
+4. Update the blog row in `heroNews()` in `build_html.js` — new href and teaser text — then rebuild
 5. Run `node update_sitemap.js` — ensure LF-only line endings (**critical**, see §3.7)
 6. Add pulsing dot `<span class="dot-new"></span>` next to "Community" in nav across all HTML files
 

@@ -21,8 +21,8 @@
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=17">
-    <link rel="preload" as="image" href="../assets/images/ADharma.webp">
+    <link rel="stylesheet" href="../assets/css/style.css?v=18">
+    <link rel="preload" as="image" href="../assets/images/hero/hero_face.webp" imagesrcset="../assets/images/hero/hero_face_1000.webp 1000w, ../assets/images/hero/hero_face.webp 2752w" imagesizes="(max-width: 950px) 100vw, 65vw" fetchpriority="high">
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -40,7 +40,7 @@
         "https://play.google.com/store/apps/details?id=com.ikaengel.leelaclue"
       ],
       "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "26", "bestRating": "5" },
+      "aggregateRating": { "@type": "AggregateRating", "ratingValue": "5.0", "ratingCount": "28", "bestRating": "5" },
       "author": { "@type": "Organization", "name": "LeelaClue", "url": "https://leelaclue.com" },
       "image": "https://leelaclue.com/assets/app_icon.png",
       "screenshot": "https://leelaclue.com/assets/images/ADharma.webp",
@@ -106,10 +106,6 @@
 
     
     <aside class="left-panel">
-        <div class="panel-badges">
-            <a href="whats_new.html" class="ann-version">New in v2.1.0</a>
-            <a href="the-stor-framework.html" class="ann-tag">New Blog Post</a>
-        </div>
         <nav class="section-nav" aria-label="Page sections">
 
         <a href="#section-hero" class="section-nav-item active" data-section="section-hero">
@@ -137,47 +133,46 @@
 
     <main class="landing-main">
 
-        <div class="new-version-banner-container" style="max-width: 1400px; margin: 0 auto; padding: 1rem 2rem 0 2rem;">
-            <div class="new-version-banner">
-                <p>The Leela Field now breathes. Open any card and it becomes a short meditation — every plane with its own breathing rhythm and its own healing tone.</p>
-                <a href="whats_new.html" class="banner-cta">What's New in v2.1.0</a>
+        <section class="landing-section hero-v2" id="section-hero">
+            <div class="hero-v2__media">
+                <img src="../assets/images/hero/hero_face.webp" srcset="../assets/images/hero/hero_face_1000.webp 1000w, ../assets/images/hero/hero_face.webp 2752w" sizes="(max-width: 950px) 100vw, 65vw" alt="Clay face cracking open to reveal a golden inner light" fetchpriority="high" width="2752" height="1536">
             </div>
-        </div>
+            <div class="hero-v2__text">
+                <h1><span class="hero-line1"><span class="hl" style="--d:0">Look deep</span> <span class="hl" style="--d:1">inside yourself</span></span> <span class="hero-line2"><span class="hl" style="--d:2">Because no mind</span> <span class="hl" style="--d:3">is like yours</span></span></h1>
 
-        <section class="landing-section hero-section" id="section-hero">
-            <div class="section-container">
-                <div class="animate-on-scroll">
-                    <div class="carousel-wrapper">
-                    <div class="carousel-cta">
+                <div class="hero-news">
+                    <a href="whats_new.html" class="hero-news__item">
+                        <span class="hero-news__tag hero-news__tag--version">v2.1.0</span>
+                        <span class="hero-news__text">The Leela Field now breathes</span>
+                        <span class="hero-news__arrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                    <a href="the-stor-framework.html" class="hero-news__item">
+                        <span class="hero-news__tag hero-news__tag--post">New post</span>
+                        <span class="hero-news__text">Your intuition has the answer</span>
+                        <span class="hero-news__arrow" aria-hidden="true">&rarr;</span>
+                    </a>
+                </div>
+                <div class="carousel-cta">
                         <a href="https://apps.apple.com/us/app/leelaclue-mindfulness/id6757707003" target="_blank" rel="noopener">
                             <img alt="Download on the App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="store-badge-sm">
                         </a>
                         <a href="https://play.google.com/store/apps/details?id=com.ikaengel.leelaclue" target="_blank" rel="noopener">
                             <img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png" class="store-badge-sm google">
                         </a>
-                        <div class="store-rating">★ 5.0 · 26 ratings on the App Store &amp; Google Play</div>
+                        <div class="store-rating">★ 5.0 · 28 ratings on the App Store &amp; Google Play</div>
                     </div>
-                    <div class="section-carousel">
-                        <img src="../assets/images/carousel/hero/ADharma.webp" alt="Leela Card — ADharma" class="section-slide active" fetchpriority="high">
-                        <img src="../assets/images/carousel/hero/Antariksha.webp" alt="Leela Card — Antariksha" class="section-slide" loading="lazy">
-                        <img src="../assets/images/carousel/hero/Irasya.webp" alt="Leela Card — Irasya" class="section-slide" loading="lazy">
-                        <div class="carousel-dots">
-                            <button class="carousel-dot active" aria-label="Show slide 1"></button>
-                            <button class="carousel-dot" aria-label="Show slide 2"></button>
-                            <button class="carousel-dot" aria-label="Show slide 3"></button>
-                        </div>
-                    </div>
-                </div>
-                </div>
-                <div class="section-text markdown-body animate-on-scroll delay-1">
-                    <h1 id="when-you-cant-think-your-way-out">When you can&#39;t think your way out...</h1>
+                <a href="#section-hero-about" class="hero-v2__scroll" aria-label="Scroll down">&#8595;</a>
+            </div>
+        </section>
+        <section class="landing-section hero-about" id="section-hero-about">
+            <div class="section-text markdown-body animate-on-scroll">
+                <h2 id="when-you-cant-think-your-way-out">When you can&#39;t think your way out...</h2>
 <p>We often get caught in endless mental loops—replaying &quot;what-ifs,&quot; over-analyzing choices until they lose meaning, or feeling a deep resistance we can&#39;t quite name. When a situation keeps you awake at night, it usually isn&#39;t a lack of facts holding you back; it’s that your intuition is buried under mental noise. Without a way to see clearly, we end up running on autopilot and making daily choices blindly.</p>
 <h2 id="our-mission">Our Mission</h2>
 <p>LeelaClue is a unique bridge between <a href="https://en.wikipedia.org/wiki/Shadow_(psychology)"><strong>psychological shadow work</strong></a> and the ancient <a href="offline-game.html"><strong>Game of Leela</strong></a>. Our mission is to help you stop the noise and start crystallizing your true internal feelings. We provide a structure for deep self-reflection that frees your intuition, allowing you to understand your honest wishes and turn them into a path for genuine self-improvement.</p>
 <h2 id="who-is-this-for">Who is this for?</h2>
 <p>This is for anyone standing at a crossroads—whether you are questioning your career, navigating a change in a relationship, or feeling a gap between who you are and who you want to be. It is for the person who is tired of looking for answers in the opinions of others and is ready to take real responsibility by looking inward.</p>
 
-                </div>
             </div>
         </section>
 

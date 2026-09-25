@@ -1,4 +1,6 @@
-# Wenn Denken allein nicht mehr weiterhilft...
+# Richte den Blick<br>nach innen <span class="hero-line2">Denn dein Bewusstsein<br>ist einzigartig</span>
+
+## Wenn Denken allein nicht mehr weiterhilft...
 
 Wir verfangen uns oft in endlosen Gedankenschleifen – wir spielen "Was-wäre-wenn"-Szenarien durch, analysieren Entscheidungen so lange, bis sie ihre Bedeutung verlieren, oder spüren einen tiefen Widerstand, den wir nicht benennen können. Wenn dich eine Situation nachts wach hält, liegt das meist nicht an fehlenden Fakten; es liegt daran, dass deine Intuition unter mentalem Lärm begraben ist. Ohne einen Weg, klar zu sehen, laufen wir auf Autopilot und treffen unsere täglichen Entscheidungen blind.
 
