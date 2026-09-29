@@ -2294,6 +2294,35 @@ body.js-anim .animate-on-scroll:not(.visible) .medallion__disc::after {
   background: rgba(212, 175, 55, 0.1);
 }
 
+.square-card-body {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  flex: 1;
+}
+
+/* Card thumbnail: 76×133 display, 152×266 file (2×), ~6 KB, lazy-loaded */
+.square-thumb {
+  flex: 0 0 76px;
+  width: 76px;
+  height: 133px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, var(--chakra-color) 45%, transparent);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.5), 0 0 12px color-mix(in srgb, var(--chakra-color) 18%, transparent);
+  background: #151520;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.square-card:hover .square-thumb {
+  transform: scale(1.04);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.55), 0 0 18px color-mix(in srgb, var(--chakra-color) 35%, transparent);
+}
+
+.square-card-text {
+  min-width: 0;
+}
+
 .square-title {
   font-family: var(--font-main);
   font-size: 1.4rem;
@@ -2306,7 +2335,6 @@ body.js-anim .animate-on-scroll:not(.visible) .medallion__disc::after {
   color: #ccc;
   font-size: 0.92rem;
   line-height: 1.55;
-  flex: 1;
 }
 
 /* Bottom CTA Banner */

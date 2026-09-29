@@ -338,7 +338,7 @@ ${getHreflang('index')}
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=19">
+    <link rel="stylesheet" href="../assets/css/style.css?v=20">
     <link rel="preload" as="image" href="${HERO_IMG}" imagesrcset="${HERO_SRCSET}" imagesizes="${HERO_SIZES}" fetchpriority="high">
 ${getSchemaOrg(lang)}
 </head>

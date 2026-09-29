@@ -11,7 +11,7 @@ const root = 'c:/GitHub/leelaclue.github.io';
 const appRepoRoot = 'c:/GitHub/leelaclue';
 const langs = ['en', 'de', 'ru'];
 const SITE = 'https://leelaclue.com';
-const CSS_VERSION = '19';
+const CSS_VERSION = '20';
 
 const IOS_URL = 'https://apps.apple.com/us/app/leelaclue-mindfulness/id6757707003';
 const ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.ikaengel.leelaclue';
@@ -312,6 +312,8 @@ const chakraPlanes = {
     ]
 };
 
+const CARD_ALT = { en: 'Leela card', de: 'Leela-Karte', ru: 'Карта Лилы' };
+
 function navLabels(lang) {
     const labels = {
         en: {
@@ -415,6 +417,7 @@ function buildJsonLd(lang, cards) {
                 'position': c.id,
                 'name': `${u.squarePrefix} ${c.id}: ${c.title}`,
                 'description': c.description,
+                'image': `${SITE}/assets/images/squares/${c.id}.webp`,
                 'url': `${url}#square-${c.id}`
             }))
         }
@@ -459,8 +462,13 @@ function buildPageHtml(lang, cards) {
                         <a href="#square-${c.id}" class="square-anchor-link" title="${u.squarePrefix} ${c.id}: ${attrEscape(c.title)}">#</a>
                     </div>
                 </div>
-                <h3 class="square-title">${c.title}</h3>
-                <p class="square-desc">${c.description}</p>
+                <div class="square-card-body">
+                    <img class="square-thumb" src="../assets/images/squares/${c.id}.webp" alt="${attrEscape(`${c.title} - ${CARD_ALT[lang]} ${c.id}`)}" width="76" height="133" loading="lazy" decoding="async" style="--chakra-color: ${p.color};">
+                    <div class="square-card-text">
+                        <h3 class="square-title">${c.title}</h3>
+                        <p class="square-desc">${c.description}</p>
+                    </div>
+                </div>
             </article>
         `).join('\n');
 

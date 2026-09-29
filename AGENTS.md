@@ -20,7 +20,7 @@ The website is a **static site served by GitHub Pages**. The landing pages (`ind
 ```
 leelaclue.github.io/
 ├── assets/
-│   ├── css/style.css                  # Single global stylesheet (CSS v19)
+│   ├── css/style.css                  # Single global stylesheet (CSS v20)
 │   ├── docs/                          # ★ SOURCE OF TRUTH for landing page text
 │   │   ├── landing_hero_en.md         # Section 1 — Hero (EN)
 │   │   ├── landing_sor_en.md          # Section 2 — S·O·R Framework (EN)
@@ -108,7 +108,7 @@ The build script:
 - Generates `llms-full.txt` aggregating all EN content for AI discovery
 - Outputs `en/index.html`, `de/index.html`, `ru/index.html`
 
-When changing the build script, also update the **CSS version query string** (currently `?v=19`) to bust browser caches, then rebuild.
+When changing the build script, also update the **CSS version query string** (currently `?v=20`) to bust browser caches, then rebuild.
 
 ```bash
 node build_html.js
