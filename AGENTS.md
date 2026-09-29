@@ -20,7 +20,7 @@ The website is a **static site served by GitHub Pages**. The landing pages (`ind
 ```
 leelaclue.github.io/
 ├── assets/
-│   ├── css/style.css                  # Single global stylesheet (CSS v18)
+│   ├── css/style.css                  # Single global stylesheet (CSS v19)
 │   ├── docs/                          # ★ SOURCE OF TRUTH for landing page text
 │   │   ├── landing_hero_en.md         # Section 1 — Hero (EN)
 │   │   ├── landing_sor_en.md          # Section 2 — S·O·R Framework (EN)
@@ -32,14 +32,11 @@ leelaclue.github.io/
 │   ├── fonts/                         # Philosopher font (Regular + Bold)
 │   ├── images/
 │   │   ├── *.webp / *.png             # Shared card images and app icon
-│   │   └── carousel/                  # ★ Per-section carousel images
-│   │       ├── hero/                  # Section 1 — drop .webp files here
-│   │       ├── sor/                   # Section 2
-│   │       ├── practice/              # Section 3
-│   │       ├── anna/                  # Section 4
-│   │       └── daily/                 # Section 5
+│   │   ├── hero/                      # Hero face image (section 1)
+│   │   └── sections/                  # ★ Medallion icons for sections 2–5
+│   │       └── sor|practice|anna|daily.webp  # 960px, from the app's assets/
 │   ├── js/
-│   │   ├── script.js                  # Main JS: carousels, scroll-spy, animations, hamburger
+│   │   ├── script.js                  # Main JS: scroll-spy, animations, hamburger
 │   │   ├── blog.js                    # Blog post loading logic
 │   │   ├── translations.js            # UI string translations (EN/DE/RU)
 │   │   └── short_descr.json
@@ -90,28 +87,28 @@ leelaclue.github.io/
 
 **The `en/index.html`, `de/index.html`, and `ru/index.html` are generated files — never edit them directly.**
 
-| Section | Text source | Carousel images |
+| Section | Text source | Image |
 |---|---|---|
-| 1 — Hero / About | `assets/docs/landing_hero_[lang].md` | `assets/images/carousel/hero/` |
-| 2 — S·O·R Framework | `assets/docs/landing_sor_[lang].md` | `assets/images/carousel/sor/` |
-| 3 — Six Steps / Practice | `assets/docs/landing_practice_[lang].md` | `assets/images/carousel/practice/` |
-| 4 — Case Study: Anna | `assets/docs/landing_anna_[lang].md` | `assets/images/carousel/anna/` |
-| 5 — Daily Card / App | `assets/docs/landing_daily_[lang].md` | `assets/images/carousel/daily/` |
+| 1 — Hero / About | `assets/docs/landing_hero_[lang].md` | `assets/images/hero/` (hero face; About block has no image) |
+| 2 — S·O·R Framework | `assets/docs/landing_sor_[lang].md` | `assets/images/sections/sor.webp` — tint orange `#FFAB40` |
+| 3 — Six Steps / Practice | `assets/docs/landing_practice_[lang].md` | `assets/images/sections/practice.webp` — tint blue `#448AFF` |
+| 4 — Case Study: Anna | `assets/docs/landing_anna_[lang].md` | `assets/images/sections/anna.webp` — tint gold `#FFD700` |
+| 5 — Daily Card / App | `assets/docs/landing_daily_[lang].md` | `assets/images/sections/daily.webp` (Leela Field icon) — tint purple `#E040FB` |
 
 **To change text:** edit the relevant `.md` file(s), then `node build_html.js`.
 
-**To change carousel images:** drop `.webp` files into the corresponding directory, then `node build_html.js`. The build script reads **all `.webp` files from the directory, sorted alphabetically** — no code changes needed. Name files `01_name.webp`, `02_name.webp`, etc. to control order. If a directory is empty the build shows a placeholder and prints a warning.
+**To change a section image:** replace `assets/images/sections/<key>.webp` (square, ~960px, taken from the app's `assets/` icons). Tint colours are set per section in `sectionDefs` in `build_html.js` (`tint: '#hex'` or `'cycle'`), matching the app home carousel tints in `lib/screens/home_screen.dart`. The tint is applied in CSS (`mix-blend-mode: color`), matching the app's `ColorFilter.mode(tint, BlendMode.color)`.
 
 ### 3.3 Build Script (`build_html.js`)
 
 The build script:
 - Reads 5 MD files per language → converts with `marked` → injects into the full HTML template
-- Scans each `assets/images/carousel/[section]/` directory for `.webp` files
+- Renders one tinted medallion image per section (sections 2–5)
 - Generates the left-panel section navigation with localized dot labels
 - Generates `llms-full.txt` aggregating all EN content for AI discovery
 - Outputs `en/index.html`, `de/index.html`, `ru/index.html`
 
-When changing the build script, also update the **CSS version query string** (currently `?v=18`) to bust browser caches, then rebuild.
+When changing the build script, also update the **CSS version query string** (currently `?v=19`) to bust browser caches, then rebuild.
 
 ```bash
 node build_html.js
@@ -123,7 +120,7 @@ When updating navigation, update the `getTemplate()` function in `build_html.js`
 
 ### 3.5 Shared Assets
 - **One CSS file**: `assets/css/style.css` — all styling is here.
-- **One main JS**: `assets/js/script.js` — carousels, scroll-spy section nav, SEO-safe scroll animations, hamburger menu, privacy banner, voting.
+- **One main JS**: `assets/js/script.js` — scroll-spy section nav, SEO-safe scroll animations, hamburger menu, privacy banner, voting.
 - **Font**: `Philosopher` (from `assets/fonts/`). Used for headings and brand elements.
 - **Body font**: `Segoe UI, Tahoma, Geneva, Verdana, sans-serif`.
 
@@ -144,14 +141,15 @@ When updating navigation, update the `getTemplate()` function in `build_html.js`
 ## 4. Landing Page Architecture
 
 ### Layout per section
-Each of the 5 landing sections uses a two-column layout (desktop) that stacks vertically on mobile:
+Sections 2–5 use a two-column layout (desktop) that stacks vertically on mobile:
 
 ```
 section-container (flex row → flex column on mobile)
 ├── animate-on-scroll wrapper
-│   └── carousel-wrapper (flex column)
-│       ├── carousel-cta        ← Download badges ABOVE the carousel card
-│       └── section-carousel    ← Image slider with dot indicators
+│   └── medallion-wrapper (flex column)
+│       ├── carousel-cta        ← Download badges ABOVE the medallion
+│       └── figure.medallion    ← Round app icon, --tint colour, breathing halo;
+│                                 fades grey → colour on scroll reveal
 └── section-text.markdown-body.animate-on-scroll  ← Rendered from MD file
 ```
 
@@ -178,16 +176,16 @@ Dot labels per language:
 - **After JS runs**: `body.js-anim` class is added → `.animate-on-scroll` elements fade up on scroll.
 - Text content is always indexable; animations are progressive enhancement only.
 
-### Carousel responsive sizes
-| Breakpoint | Width | Height | Notes |
-|---|---|---|---|
-| >1200px | 520px | 600px | Desktop two-column |
-| ≤1200px | 440px | 520px | |
-| ≤1100px | 380px | 460px | |
-| ≤950px | 85vw, max 440px | 460px | Sections stack vertically |
-| ≤600px | 88vw, max 380px | 420px | Badges stack vertically |
+### Medallion responsive sizes
+| Breakpoint | Width (square) | Notes |
+|---|---|---|
+| >1200px | 480px | Desktop two-column |
+| ≤1200px | 420px | |
+| ≤1100px | 360px | |
+| ≤950px | min(80vw, 420px) | Sections stack vertically |
+| ≤600px | min(84vw, 360px) | |
 
-Viewport-relative widths (`vw`) keep the carousel proportional to the text below it on any screen size.
+Viewport-relative widths (`vw`) keep the medallion proportional to the text below it on any screen size.
 
 ---
 
@@ -198,7 +196,7 @@ Viewport-relative widths (`vw`) keep the carousel proportional to the text below
 - `llms-full.txt` — aggregated EN landing content + user guide, regenerated on every build.
 - `SoftwareApplication` + `WebSite` JSON-LD schema on all landing pages.
 - Canonical URLs and hreflang on all pages.
-- LCP preload for the first hero carousel image.
+- LCP preload for the hero face image.
 - Use **GSC → URL Inspection → View Rendered Page** to verify all 5 sections render with visible text.
 
 ---
@@ -218,17 +216,17 @@ git add assets/docs/ en/index.html de/index.html ru/index.html llms-full.txt
 git commit -m "content: update hero section text"
 ```
 
-### Update carousel images for a section
+### Update a section image
 ```bash
-# 1. Drop .webp files into the directory (name as 01_x.webp, 02_x.webp for ordering)
-#    assets/images/carousel/anna/
+# 1. Replace the square .webp (~960px), e.g.
+#    assets/images/sections/anna.webp
 
 # 2. Rebuild
 node build_html.js
 
 # 3. Commit
-git add assets/images/carousel/ en/index.html de/index.html ru/index.html
-git commit -m "assets: update anna carousel images"
+git add assets/images/sections/ en/index.html de/index.html ru/index.html
+git commit -m "assets: update anna section image"
 ```
 
 ### Update announcement badges (version / blog post)

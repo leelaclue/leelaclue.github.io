@@ -9,33 +9,42 @@ marked.setOptions({ breaks: true, gfm: true });
 const root = 'c:/GitHub/leelaclue.github.io';
 const langs = ['en', 'de', 'ru'];
 
-// ─── Carousel image sets per section ────────────────────────────────────────
+// ─── Section medallions ──────────────────────────────────────────────────────
 //
-// To change carousel images: drop .webp files into the relevant directory and
-// run `node build_html.js`. No code changes needed.
-//
-//   assets/images/carousel/hero/      → Section 1 (What is LeelaClue)
-//   assets/images/carousel/sor/       → Section 2 (S·O·R Framework)
-//   assets/images/carousel/practice/  → Section 3 (Six Steps)
-//   assets/images/carousel/anna/      → Section 4 (Case Study: Anna)
-//   assets/images/carousel/daily/     → Section 5 (Daily Card)
+// Sections 2–5 each show one round icon from the app, tinted with the colour
+// the app's home carousel uses for it (lib/screens/home_screen.dart), applied
+// the same way (Flutter BlendMode.color ≈ CSS mix-blend-mode: color).
+// Image: assets/images/sections/<key>.webp.
+// tint: 'cycle' animates through all seven chakra colours (see style.css).
 
 const sectionDefs = [
     { key: 'hero',     id: 'section-hero',     extraClass: ' hero-section', isHero: true },
-    { key: 'sor',      id: 'section-sor',       extraClass: ' alt-bg' },
-    { key: 'practice', id: 'section-practice',  extraClass: '' },
-    { key: 'anna',     id: 'section-anna',      extraClass: ' alt-bg' },
-    { key: 'daily',    id: 'section-daily',     extraClass: '' },
+    { key: 'sor',      id: 'section-sor',       extraClass: ' alt-bg', tint: '#FFAB40' }, // Colors.orangeAccent
+    { key: 'practice', id: 'section-practice',  extraClass: '',        tint: '#448AFF' }, // Colors.blueAccent (its colour when it was on the app carousel)
+    { key: 'anna',     id: 'section-anna',      extraClass: ' alt-bg', tint: '#FFD700' }, // gold
+    { key: 'daily',    id: 'section-daily',     extraClass: '',        tint: '#E040FB' }, // Colors.purpleAccent — Leela Field icon
 ];
 
-// Read all .webp files from a carousel directory, sorted alphabetically
-function getCarouselImages(key) {
-    const dir = path.join(root, 'assets', 'images', 'carousel', key);
-    if (!fs.existsSync(dir)) return [];
-    return fs.readdirSync(dir)
-        .filter(f => /\.webp$/i.test(f))
-        .sort();
-}
+const MEDALLION_ALT = {
+    en: {
+        sor:      'Three LeelaClue question cards — State, Obstacle, Resource',
+        practice: 'Lotus mandala — active practices in LeelaClue',
+        anna:     'Meditating Buddha — the Dakshina gratitude ritual in LeelaClue',
+        daily:    'The Leela Field — arrow and snake in the LeelaClue app',
+    },
+    de: {
+        sor:      'Drei LeelaClue-Fragekarten — State, Obstacle, Resource',
+        practice: 'Lotus-Mandala — aktive Praktiken in LeelaClue',
+        anna:     'Meditierender Buddha — das Dakshina-Dankbarkeitsritual in LeelaClue',
+        daily:    'Das Leela-Feld — Pfeil und Schlange in der LeelaClue-App',
+    },
+    ru: {
+        sor:      'Три карты-вопроса LeelaClue — Состояние, Препятствие, Ресурс',
+        practice: 'Мандала лотоса — активные практики в LeelaClue',
+        anna:     'Медитирующий Будда — ритуал благодарности Дакшина в LeelaClue',
+        daily:    'Поле Лилы — стрела и змея в приложении LeelaClue',
+    },
+};
 
 // ─── Store badges ────────────────────────────────────────────────────────────
 
@@ -88,43 +97,19 @@ function storeBadges(eager, extra) {
                     </div>`;
 }
 
-// ─── Carousel HTML ───────────────────────────────────────────────────────────
+// ─── Medallion HTML ──────────────────────────────────────────────────────────
 
-function buildCarousel(def, lang) {
-    const files = getCarouselImages(def.key);
-    const badgeExtra = def.isHero ? ratingBadge(lang) : '';
-
-    if (files.length === 0) {
-        console.warn(`  WARNING: no images in assets/images/carousel/${def.key}/`);
-        return `<div class="carousel-wrapper">
-                    ${storeBadges(def.isHero, badgeExtra)}
-                    <div class="section-carousel" style="display:flex;align-items:center;justify-content:center;">
-                        <p style="color:var(--text-color);opacity:0.4;font-size:0.9rem;padding:2rem;text-align:center;">
-                            Drop .webp images into<br>assets/images/carousel/${def.key}/
-                        </p>
-                    </div>
-                </div>`;
-    }
-
-    const slides = files.map((file, i) => {
-        const name = path.basename(file, '.webp');
-        const isFirst = i === 0;
-        const loading = (def.isHero && isFirst) ? ' fetchpriority="high"' : ' loading="lazy"';
-        return `                        <img src="../assets/images/carousel/${def.key}/${file}" alt="Leela Card — ${name}" class="section-slide${isFirst ? ' active' : ''}"${loading}>`;
-    }).join('\n');
-
-    const dots = files.map((_, i) =>
-        `                            <button class="carousel-dot${i === 0 ? ' active' : ''}" aria-label="Show slide ${i + 1}"></button>`
-    ).join('\n');
-
-    return `<div class="carousel-wrapper">
-                    ${storeBadges(def.isHero, badgeExtra)}
-                    <div class="section-carousel">
-${slides}
-                        <div class="carousel-dots">
-${dots}
+function buildMedallion(def, lang) {
+    const cycle = def.tint === 'cycle';
+    const cls   = cycle ? 'medallion medallion--cycle' : 'medallion';
+    const style = cycle ? '' : ` style="--tint: ${def.tint}"`;
+    return `<div class="medallion-wrapper">
+                    ${storeBadges(false)}
+                    <figure class="${cls}"${style}>
+                        <div class="medallion__disc">
+                            <img src="../assets/images/sections/${def.key}.webp" alt="${MEDALLION_ALT[lang][def.key]}" width="960" height="960" loading="lazy">
                         </div>
-                    </div>
+                    </figure>
                 </div>`;
 }
 
@@ -135,7 +120,7 @@ function buildSection(def, markdownHtml, lang) {
         <section class="landing-section${def.extraClass}" id="${def.id}">
             <div class="section-container">
                 <div class="animate-on-scroll">
-                    ${buildCarousel(def, lang)}
+                    ${buildMedallion(def, lang)}
                 </div>
                 <div class="section-text markdown-body animate-on-scroll delay-1">
                     ${markdownHtml}
@@ -351,7 +336,7 @@ ${getHreflang('index')}
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=18">
+    <link rel="stylesheet" href="../assets/css/style.css?v=19">
     <link rel="preload" as="image" href="${HERO_IMG}" imagesrcset="${HERO_SRCSET}" imagesizes="${HERO_SIZES}" fetchpriority="high">
 ${getSchemaOrg(lang)}
 </head>

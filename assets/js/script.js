@@ -37,7 +37,6 @@ document.addEventListener('DOMContentLoaded', () => {
     loadUserGuide(currentLang);
     handleVoting(currentLang);
     initPrivacyBanner(currentLang);
-    startCarousels();
     initScrollAnimations();
     initSectionNav();
     initHeroPanelToggle();
@@ -232,29 +231,6 @@ function startCarousel() {
         currentSlide = (currentSlide + 1) % slides.length;
         slides[currentSlide].classList.add('active');
     }, 4000);
-}
-
-// Multi-instance carousel — one independent rotator per .section-carousel
-function startCarousels() {
-    document.querySelectorAll('.section-carousel').forEach(carousel => {
-        const slides = carousel.querySelectorAll('.section-slide');
-        const dots = carousel.querySelectorAll('.carousel-dot');
-        if (slides.length === 0) return;
-
-        let current = 0;
-
-        function goTo(n) {
-            slides[current].classList.remove('active');
-            dots[current] && dots[current].classList.remove('active');
-            current = (n + slides.length) % slides.length;
-            slides[current].classList.add('active');
-            dots[current] && dots[current].classList.add('active');
-        }
-
-        dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
-
-        setInterval(() => goTo(current + 1), 4000);
-    });
 }
 
 // Scroll-triggered fade-up via IntersectionObserver (SEO-safe)
