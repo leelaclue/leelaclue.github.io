@@ -161,7 +161,7 @@ function heroAlt(lang) {
     }[lang];
 }
 
-// News rows shown above the hero headline (latest release + latest blog post).
+// News rows shown between the hero headline and the store badges (latest release + latest blog post).
 // Update these when announcing a new version or post.
 function heroNews(lang) {
     const items = {
@@ -356,7 +356,7 @@ ${getHreflang('index')}
 ${getSchemaOrg(lang)}
 </head>
 
-<body>
+<body class="hero-in-view">
     <header>
         <div class="header-container">
             <div class="logo-container">

@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startCarousels();
     initScrollAnimations();
     initSectionNav();
+    initHeroPanelToggle();
 
     // Check if URL has #user-guide hash and show the section
     const guideSection = document.getElementById('user-guide');
@@ -300,6 +301,19 @@ function initSectionNav() {
     }, { threshold: 0.4 });
 
     ids.forEach(id => observer.observe(map[id].el));
+}
+
+// Landing page: keep the left panel hidden while the hero is on screen
+// (body starts with .hero-in-view in the generated HTML, so there is no flash)
+function initHeroPanelToggle() {
+    const hero = document.querySelector('.hero-v2');
+    if (!hero) return;
+
+    const observer = new IntersectionObserver(([entry]) => {
+        document.body.classList.toggle('hero-in-view', entry.intersectionRatio >= 0.35);
+    }, { threshold: [0, 0.35, 1] });
+
+    observer.observe(hero);
 }
 
 // Simple Markdown Parser (Fallback)
