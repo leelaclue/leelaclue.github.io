@@ -14,4 +14,4 @@ Die St·O·R-Legung funktioniert nur, wenn du den vollständigen Zyklus durchlä
 
 6. **Persönliche Disziplin · Die Übung** – Übersetze die Kernbotschaft deiner Analyse in eine hyper-spezifische Mikro-Handlung. Die Übung muss deine Entdeckung direkt im täglichen Leben verankern. Nicht „ruhiger sein“ – sondern „drei Minuten langsames Atmen, bevor ich meine E-Mails öffne.“
 
-Für einen tieferen Einblick in diese Methodik lies unser [Benutzerhandbuch](user_guide.html).
+Wie jeder Schritt im ganz normalen Alltag funktioniert, liest du in unserem Beitrag: [Die Sechs-Schritte-Disziplin: Vom flüchtigen Geistesblitz zur täglichen Praxis](the-six-step-discipline.html). Wie dich die App dabei begleitet, zeigt unser [Benutzerhandbuch](user_guide.html).

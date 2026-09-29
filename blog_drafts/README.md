@@ -1,10 +1,10 @@
 # Blog Post Drafts — Option A (3-Part Arc)
 
-These drafts are stored here in `blog_drafts/` for review and editing before being published to the website. **None of these files are integrated into the live site yet.**
+These drafts are stored here in `blog_drafts/` for review and editing before being published to the website. Posts 1 and 2 are published (`assets/posts/`); post 3 is still a draft.
 
 ---
 
-## Post 1: The St-O-R Framework
+## Post 1: The St-O-R Framework (published 2026-09-05)
 
 * **English:** [`01_the_stor_framework_en.md`](01_the_stor_framework_en.md) — *The St-O-R Framework: Your Intuition Has the Answer. Your Brain Won't Quit.* (~920 words)
 * **German:** [`01_the_stor_framework_de.md`](01_the_stor_framework_de.md) — *Das St-O-R-Modell: Deine Intuition kennt die Antwort. Dein Verstand gibt einfach keine Ruhe.* (~920 words)
@@ -15,10 +15,19 @@ These drafts are stored here in `blog_drafts/` for review and editing before bei
 
 ---
 
-## Remaining Posts (English Drafts)
+## Post 2: The 6-Step Discipline (published 2026-09-29)
 
-* **Post 2:** [`02_the_six_step_discipline.md`](02_the_six_step_discipline.md) — *The 6-Step Discipline: From a Fleeting Flash of Insight to Daily Practice* (~870 words)
-  * *Landing page pairing:* Section 3 (**The Six Steps Practice** / `landing_practice_[lang].md`).
+* **English:** [`02_the_six_step_discipline_en.md`](02_the_six_step_discipline_en.md) — *The 6-Step Discipline: From a Fleeting Flash of Insight to Daily Practice*
+* **German:** [`02_the_six_step_discipline_de.md`](02_the_six_step_discipline_de.md) — *Die Sechs-Schritte-Disziplin: Vom flüchtigen Geistesblitz zur täglichen Praxis*
+* **Russian:** [`02_the_six_step_discipline_ru.md`](02_the_six_step_discipline_ru.md) — *Дисциплина в шесть шагов: от мимолётного озарения к ежедневной практике*
+
+> **Theme / Role:** Why insight fades by lunchtime, and the six steps (query, draw, interpretation, journal, root conclusion, micro-action) that carry it into an ordinary weekday.  
+> **Landing page pairing:** Section 3 (**The Six Steps Practice** / `landing_practice_[lang].md`).  
+> **Translation note:** DE/RU are adapted, not literal. English idioms are replaced with native expressions, and the author writes in the feminine first person in Russian.
+
+---
+
+## Remaining Post (English Draft)
 * **Post 3:** [`03_annas_breakthrough.md`](03_annas_breakthrough.md) — *Anna's Breakthrough: How Three Leela Cards Untangled Corporate Paralysis* (~960 words)
   * *Landing page pairing:* Section 4 (**Case Study: Anna** / `landing_anna_[lang].md`).
 

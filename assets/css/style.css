@@ -2104,6 +2104,12 @@ body.js-anim .animate-on-scroll:not(.visible) .medallion__disc::after {
   flex-shrink: 0;
 }
 
+/* Deep links into blog posts and the guide land below the sticky header */
+.blog-post [id],
+#guide-content [id] {
+  scroll-margin-top: 80px;
+}
+
 /* Chakra Plane Section */
 .chakra-section {
   margin-bottom: 3.5rem;

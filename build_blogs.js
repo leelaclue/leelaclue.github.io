@@ -82,10 +82,15 @@ function htmlToText(html) {
         .trim();
 }
 
-// First paragraph of a post as plain text, truncated at a word boundary
+// Opening paragraphs of a post as plain text (enough to fill maxLen, so a
+// one-line opener doesn't make a thin snippet), truncated at a word boundary
 function makeExcerpt(contentHtml, maxLen) {
-    const m = contentHtml.match(/<p>([\s\S]*?)<\/p>/);
-    let text = htmlToText(m ? m[1] : contentHtml);
+    const paras = [...contentHtml.matchAll(/<p>([\s\S]*?)<\/p>/g)].map(m => htmlToText(m[1]));
+    let text = paras.length ? '' : htmlToText(contentHtml);
+    for (const p of paras) {
+        text = text ? `${text} ${p}` : p;
+        if (text.length >= maxLen) break;
+    }
     if (text.length > maxLen) {
         text = text.slice(0, maxLen);
         const cut = text.lastIndexOf(' ');

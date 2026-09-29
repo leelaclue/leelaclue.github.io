@@ -56,7 +56,7 @@ window.blogContent['the-stor-framework'] = `
 
 <p>Why combine an ancient Vedic tradition with psychological shadow work? Because clinical psychology can feel cold and detached, while pure spirituality often drifts into vague platitudes. Using the game's symbolic language takes the grim self-importance out of self-reflection. It turns heavy inner work into something you might actually look forward to doing.</p>
 
-<h4>The Art of the Query</h4>
+<h4 id="the-art-of-the-query">The Art of the Query</h4>
 
 <p>The St-O-R framework only works if you point it in the right direction.</p>
 

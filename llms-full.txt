@@ -58,7 +58,7 @@ The St·O·R spread only works when you follow the full cycle - from asking the 
 
 6. **Personal Discipline · The Practice** - Translate the core insight from your analysis into one hyper-specific micro-action. The practice must directly ground your discovery into daily life. Not "be calmer" - "three minutes of slow breathing before opening email."
 
-For a deeper dive into this methodology, read our [User Guide](user_guide.html).
+How each step holds up on an ordinary weekday: [The 6-Step Discipline: From a Fleeting Flash of Insight to Daily Practice](the-six-step-discipline.html). How the app walks you through it: our [User Guide](user_guide.html).
 
 
 ---

@@ -152,15 +152,15 @@ function heroNews(lang) {
     const items = {
         en: [
             { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'The Leela Field now breathes' },
-            { tag: 'New post',     cls: 'hero-news__tag--post',    href: 'the-stor-framework.html', text: 'Your intuition has the answer' },
+            { tag: 'New post',     cls: 'hero-news__tag--post',    href: 'the-six-step-discipline.html', text: 'Why clarity fades by lunchtime' },
         ],
         de: [
             { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Das Leela-Feld atmet jetzt' },
-            { tag: 'Neuer Beitrag', cls: 'hero-news__tag--post',   href: 'the-stor-framework.html', text: 'Deine Intuition kennt die Antwort' },
+            { tag: 'Neuer Beitrag', cls: 'hero-news__tag--post',   href: 'the-six-step-discipline.html', text: 'Warum Klarheit bis mittags verfliegt' },
         ],
         ru: [
             { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Поле Лилы теперь дышит' },
-            { tag: 'Новая статья', cls: 'hero-news__tag--post',    href: 'the-stor-framework.html', text: 'Твоя интуиция знает ответ' },
+            { tag: 'Новая статья', cls: 'hero-news__tag--post',    href: 'the-six-step-discipline.html', text: 'Почему ясность исчезает к обеду' },
         ],
     }[lang];
 

@@ -56,7 +56,7 @@ window.blogContent['the-stor-framework'] = `
 
 <p>Warum eine alte vedische Tradition mit moderner Schattenarbeit verbinden? Weil reine Psychologie oft steril und verkopft wirkt, während esoterische Spiritualität schnell ins Schwammige abdriftet. Die uralte Symbolik des Spiels nimmt der Selbstreflexion diese krampfhafte Schwere. Sie verwandelt die Begegnung mit den eigenen Schatten in etwas, auf das man sich fast freuen kann.</p>
 
-<h4>Die Kunst der Frage</h4>
+<h4 id="the-art-of-the-query">Die Kunst der Frage</h4>
 
 <p>Das St-O-R-Modell funktioniert nur, wenn du die Frage in die richtige Richtung stellst.</p>
 

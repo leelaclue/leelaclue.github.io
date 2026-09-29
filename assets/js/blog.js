@@ -1,6 +1,11 @@
 // Blog Posts Metadata (Shared)
 const blogPosts = [
     {
+        id: 'the-six-step-discipline',
+        titleKey: 'blog_post_7_title',
+        date: '2026-09-29'
+    },
+    {
         id: 'the-stor-framework',
         titleKey: 'blog_post_6_title',
         date: '2026-09-05'
