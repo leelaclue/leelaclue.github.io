@@ -809,6 +809,11 @@ footer {
     gap: 0.5rem;
   }
 
+  /* A tap counts as :hover — keep the desktop centring transform out */
+  .has-dropdown:hover .dropdown-menu {
+    transform: none;
+  }
+
   .dropdown-menu a {
     padding: 0.5rem 0;
     font-size: 1rem;

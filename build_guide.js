@@ -104,7 +104,7 @@ function getTemplate(lang, contentHtml) {
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=17">
+    <link rel="stylesheet" href="../assets/css/style.css?v=19">
 
     <!-- Hreflang Tags -->
 ${hreflangTags()}
@@ -145,6 +145,11 @@ ${techArticleSchema(lang)}
                     <a href="../de/user_guide.html" class="lang-btn${activeLang('de')}">DE</a>
                     <a href="../ru/user_guide.html" class="lang-btn${activeLang('ru')}">RU</a>
                 </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>

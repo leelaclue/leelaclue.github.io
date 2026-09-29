@@ -125,7 +125,7 @@ function pageShell({ lang, pageFile, title, description, headExtra, mainHtml }) 
     <link rel="icon" href="/favicon.ico" sizes="32x32">
     <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon-96.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <link rel="stylesheet" href="../assets/css/style.css?v=17">
+    <link rel="stylesheet" href="../assets/css/style.css?v=19">
 
     <!-- Hreflang Tags -->
 ${hreflangTags(pageFile)}
@@ -166,6 +166,11 @@ ${headExtra}
                     <a href="../de/${pageFile}" class="lang-btn${activeLang('de')}">DE</a>
                     <a href="../ru/${pageFile}" class="lang-btn${activeLang('ru')}">RU</a>
                 </div>
+                <button class="hamburger" aria-label="Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
             </div>
         </div>
     </header>

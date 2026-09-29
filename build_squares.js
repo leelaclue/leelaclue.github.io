@@ -11,7 +11,7 @@ const root = 'c:/GitHub/leelaclue.github.io';
 const appRepoRoot = 'c:/GitHub/leelaclue';
 const langs = ['en', 'de', 'ru'];
 const SITE = 'https://leelaclue.com';
-const CSS_VERSION = '17';
+const CSS_VERSION = '19';
 
 const IOS_URL = 'https://apps.apple.com/us/app/leelaclue-mindfulness/id6757707003';
 const ANDROID_URL = 'https://play.google.com/store/apps/details?id=com.ikaengel.leelaclue';

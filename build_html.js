@@ -293,8 +293,10 @@ function leftPanel(lang) {
         ru: ['О нас',      'С·П·Р',  'Практика', 'Пример',     'Приложение'],
     }[lang] || ['About', 'S·O·R', 'Practice', 'Case Study', 'App'];
 
+    // The hero sits below the sticky header, so jumping to its id would leave
+    // the header's height still to scroll — "#top" goes to the very top.
     const dots = sectionDefs.map((def, i) => `
-        <a href="#${def.id}" class="section-nav-item${i === 0 ? ' active' : ''}" data-section="${def.id}">
+        <a href="#${def.isHero ? 'top' : def.id}" class="section-nav-item${i === 0 ? ' active' : ''}" data-section="${def.id}">
             <span class="section-nav-dot"></span>
             <span class="section-nav-label">${labels[i]}</span>
         </a>`).join('');
