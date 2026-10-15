@@ -151,15 +151,15 @@ function heroAlt(lang) {
 function heroNews(lang) {
     const items = {
         en: [
-            { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'The Leela Field now breathes' },
+            { tag: 'v2.1.5',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Your Sadhana Tree grows' },
             { tag: 'New post',     cls: 'hero-news__tag--post',    href: 'the-six-step-discipline.html', text: 'Why clarity fades by lunchtime' },
         ],
         de: [
-            { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Das Leela-Feld atmet jetzt' },
+            { tag: 'v2.1.5',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Dein Sadhana-Baum wächst' },
             { tag: 'Neuer Beitrag', cls: 'hero-news__tag--post',   href: 'the-six-step-discipline.html', text: 'Warum Klarheit bis mittags verfliegt' },
         ],
         ru: [
-            { tag: 'v2.1.0',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Поле Лилы теперь дышит' },
+            { tag: 'v2.1.5',       cls: 'hero-news__tag--version', href: 'whats_new.html',         text: 'Твоё Древо Садханы растёт' },
             { tag: 'Новая статья', cls: 'hero-news__tag--post',    href: 'the-six-step-discipline.html', text: 'Почему ясность исчезает к обеду' },
         ],
     }[lang];
@@ -249,7 +249,7 @@ function getSchemaOrg(lang) {
       "operatingSystem": "iOS, Android",
       "applicationCategory": "LifestyleApplication",
       "applicationSubCategory": "Mindfulness & Self-Discovery",
-      "softwareVersion": "2.1.0",
+      "softwareVersion": "2.1.5",
       "inLanguage": ["en", "de", "ru"],
       "downloadUrl": [
         "${IOS_URL}",

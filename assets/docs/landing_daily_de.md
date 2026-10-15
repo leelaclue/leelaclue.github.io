@@ -8,9 +8,10 @@ Die Umsetzung des St·O·R-Modells und der Reflexionspraxis nennen wir **Täglic
 
 ### Weitere Instrumente
 
-*   **Tägliche Weisheit** – Erhalte eine einzelne Karte aus den 72 Leela-Zuständen, um deine Intention für den Tag zu setzen, inklusive einer spezifischen Achtsamkeitsübung.
+*   **Tägliche Weisheit** – Erhalte eine einzelne Karte aus den 72 Leela-Zuständen, um deine Intention für den Tag zu setzen, inklusive einer spezifischen Achtsamkeitsübung. Jede Karte öffnet zugleich ihre eigene Zelle im Leela-Feld.
 *   **Reflexions-Tagebuch** – Ein dedizierter Raum, um deine Gedanken aufzuschreiben und zu analysieren. Deine vergangenen Legungen werden gespeichert und sind jederzeit einsehbar, sodass du wiederkehrende Muster in deiner Psyche verfolgen kannst.
 *   **Das Leela-Feld** – Erkunde alle 72 Bewusstseinszustände des alten vedischen Systems. Es bietet die vollständige Karte der Selbsterkenntnis und hilft dir, die „ganze Geschichte“ deiner inneren Reise zu sehen. Öffne eine Karte, und sie wird zugleich zur kurzen Meditation: Die Karte atmet, ihr eigener Rand zeichnet den Rhythmus nach, und jede Ebene trägt ihren eigenen heilsamen Ton.
+*   **Sadhana-Baum** – Ein lebendiges Bild deines Weges auf dem Startbildschirm. Er wächst und leuchtet mit jedem Ritual, das du vollendest, jeder Reflexion, die du bewahrst, und jeder Praxis, die du erfüllst.
 *   **Slow-Tech-Philosophie** – Nur ein Hinweis und eine Weisheitskarte pro Tag. Kein endloses Scrollen. Tiefe Integration, bevor die nächste Erkenntnis kommt.
 *   Neugierig auf die neuesten Updates? Siehe [Was ist neu](whats_new.html).
 *   Hast du noch Fragen? Schau in unsere [FAQ](faq.html).
