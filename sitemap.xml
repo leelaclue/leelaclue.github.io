@@ -92,24 +92,6 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://leelaclue.com/en/votes.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://leelaclue.com/de/votes.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://leelaclue.com/ru/votes.html</loc>
-    <lastmod>2026-03-25</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
     <loc>https://leelaclue.com/en/support.html</loc>
     <lastmod>2026-03-25</lastmod>
     <changefreq>monthly</changefreq>

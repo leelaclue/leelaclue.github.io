@@ -35,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     updateLangButtons(currentLang);
     loadTranslations(currentLang);
     loadUserGuide(currentLang);
-    handleVoting(currentLang);
     initPrivacyBanner(currentLang);
     initScrollAnimations();
     initSectionNav();
@@ -307,94 +306,6 @@ function parseMarkdown(text) {
         return `<p>${para.replace(/\n/g, '<br>')}</p>`;
     }).join('');
     return text;
-}
-
-// Feature Voting Logic (Google Forms Integration)
-function handleVoting(currentLang) {
-    const voteButtons = document.querySelectorAll('.vote-btn');
-    if (voteButtons.length === 0) return;
-
-    const votedTexts = {
-        'en': 'Voted!',
-        'de': 'Abgestimmt!',
-        'ru': 'Голос принят!'
-    };
-
-    voteButtons.forEach(btn => {
-        const featureId = btn.getAttribute('data-vote-id');
-
-        // Check if already voted
-        if (localStorage.getItem(`voted_${featureId}`)) {
-            btn.innerText = votedTexts[currentLang] || votedTexts['en'];
-            btn.disabled = true;
-            btn.classList.add('voted');
-            btn.style.opacity = '0.6';
-            btn.style.cursor = 'default';
-        }
-
-        btn.addEventListener('click', async function () {
-            if (this.disabled) return;
-
-            const featureId = this.getAttribute('data-vote-id');
-            const originalText = this.innerText;
-
-            // UI Feedback: Immediate change
-            this.innerText = '...';
-            this.disabled = true;
-
-            // Google Form Config (Silent Submission using Iframe Method)
-            const formId = "1FAIpQLSer-_ZoIftgOUJOXVJ8fnfmu81pIGE0wCDIipRHdYYcDdCRsw";
-            const entryId = "entry.342078219";
-            const submissionUrl = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
-
-            try {
-                // Create a hidden iframe to handle the response
-                let iframe = document.getElementById('voted_iframe');
-                if (!iframe) {
-                    iframe = document.createElement('iframe');
-                    iframe.id = 'voted_iframe';
-                    iframe.name = 'voted_iframe';
-                    iframe.style.display = 'none';
-                    document.body.appendChild(iframe);
-                }
-
-                // Create a temporary form to submit the data
-                const form = document.createElement('form');
-                form.action = submissionUrl;
-                form.method = 'POST';
-                form.target = 'voted_iframe';
-
-                const input = document.createElement('input');
-                input.type = 'hidden';
-                input.name = entryId;
-                input.value = featureId;
-                form.appendChild(input);
-
-                // Submit the form
-                document.body.appendChild(form);
-                form.submit();
-
-                // Cleanup
-                setTimeout(() => {
-                    document.body.removeChild(form);
-                }, 500);
-
-                // Positive UI state
-                this.innerText = votedTexts[currentLang] || votedTexts['en'];
-                this.classList.add('voted');
-                this.style.opacity = '0.6';
-                this.style.cursor = 'default';
-
-                // Prevent double voting
-                localStorage.setItem(`voted_${featureId}`, 'true');
-
-            } catch (error) {
-                console.error('Voting submission error:', error);
-                this.innerText = originalText;
-                this.disabled = false;
-            }
-        });
-    });
 }
 
 // Minimal Privacy/Cookie Banner Logic

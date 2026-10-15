@@ -47,9 +47,9 @@ const pageDesc = {
 
 function navLabels(lang) {
     const labels = {
-        en: { offlineGame: 'Offline Game', community: 'Community', blog: 'Blog', releaseNews: 'Release News', featureVotes: 'Feature Votes', guide: 'Guide', userGuide: 'User Guide', squares: '72 Squares of Leela', faq: 'FAQ' },
-        de: { offlineGame: 'Offline-Spiel', community: 'Community', blog: 'Blog', releaseNews: 'Release-News', featureVotes: 'Feature-Abstimmung', guide: 'Anleitung', userGuide: 'Benutzerhandbuch', squares: '72 Felder der Leela', faq: 'FAQ' },
-        ru: { offlineGame: 'Офлайн-игра', community: 'Сообщество', blog: 'Блог', releaseNews: 'Новости обновлений', featureVotes: 'Голосование', guide: 'Руководство', userGuide: 'Руководство пользователя', squares: '72 клетки Лилы', faq: 'FAQ' },
+        en: { offlineGame: 'Offline Game', community: 'Community', blog: 'Blog', releaseNews: 'Release News', guide: 'Guide', userGuide: 'User Guide', squares: '72 Squares of Leela', faq: 'FAQ' },
+        de: { offlineGame: 'Offline-Spiel', community: 'Community', blog: 'Blog', releaseNews: 'Release-News', guide: 'Anleitung', userGuide: 'Benutzerhandbuch', squares: '72 Felder der Leela', faq: 'FAQ' },
+        ru: { offlineGame: 'Офлайн-игра', community: 'Сообщество', blog: 'Блог', releaseNews: 'Новости обновлений', guide: 'Руководство', userGuide: 'Руководство пользователя', squares: '72 клетки Лилы', faq: 'FAQ' },
     };
     return labels[lang] || labels.en;
 }
@@ -127,7 +127,6 @@ ${techArticleSchema(lang)}
                     <div class="dropdown-menu">
                         <a href="blog.html">${n.blog}</a>
                         <a href="whats_new.html">${n.releaseNews}</a>
-                        <a href="votes.html">${n.featureVotes}</a>
                     </div>
                 </div>
                 <div class="nav-item has-dropdown">

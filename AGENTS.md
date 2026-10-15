@@ -51,7 +51,6 @@ leelaclue.github.io/
 │   ├── whats_new.html
 │   ├── offline-game.html
 │   ├── user_guide.html
-│   ├── votes.html
 │   ├── support.html
 │   ├── privacy.html
 │   ├── privacy_policy.html
@@ -120,7 +119,7 @@ When updating navigation, update the `getTemplate()` function in `build_html.js`
 
 ### 3.5 Shared Assets
 - **One CSS file**: `assets/css/style.css` — all styling is here.
-- **One main JS**: `assets/js/script.js` — scroll-spy section nav, SEO-safe scroll animations, hamburger menu, privacy banner, voting.
+- **One main JS**: `assets/js/script.js` — scroll-spy section nav, SEO-safe scroll animations, hamburger menu, privacy banner.
 - **Font**: `Philosopher` (from `assets/fonts/`). Used for headings and brand elements.
 - **Body font**: `Segoe UI, Tahoma, Geneva, Verdana, sans-serif`.
 

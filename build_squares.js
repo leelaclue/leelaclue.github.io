@@ -321,7 +321,7 @@ function navLabels(lang) {
             community: 'Community',
             blog: 'Blog',
             releaseNews: 'Release News',
-            featureVotes: 'Feature Votes',
+           
             guide: 'Guide',
             userGuide: 'User Guide',
             squares: '72 Squares of Leela',
@@ -332,7 +332,7 @@ function navLabels(lang) {
             community: 'Community',
             blog: 'Blog',
             releaseNews: 'Release-News',
-            featureVotes: 'Feature-Abstimmung',
+           
             guide: 'Anleitung',
             userGuide: 'Benutzerhandbuch',
             squares: '72 Felder der Leela',
@@ -343,7 +343,7 @@ function navLabels(lang) {
             community: 'Сообщество',
             blog: 'Блог',
             releaseNews: 'Новости обновлений',
-            featureVotes: 'Голосование',
+           
             guide: 'Руководство',
             userGuide: 'Руководство пользователя',
             squares: '72 клетки Лилы',
@@ -541,7 +541,6 @@ ${buildJsonLd(lang, cards)}
                     <div class="dropdown-menu">
                         <a href="blog.html">${n.blog}</a>
                         <a href="whats_new.html">${n.releaseNews}</a>
-                        <a href="votes.html">${n.featureVotes}</a>
                     </div>
                 </div>
                 <div class="nav-item has-dropdown">
