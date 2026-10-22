@@ -130,6 +130,7 @@ Welcome to **LeelaClue**, your personal companion for self-reflection and inner 
 3. [My Diary](#my-diary)
     - [My Reflections](#my-reflections)
 4. [Additional Features](#additional-features)
+    - [The Sadhana Tree](#the-sadhana-tree)
     - [Active Practices](#active-practices)
     - [Dakshina — Replenishing Clues](#dakshina--replenishing-clues)
     - [Protecting Your Clues (Sign-In)](#protecting-your-clues-sign-in)
@@ -158,10 +159,10 @@ LeelaClue is available in English, German, and Russian.
 
 ### The Main Screen
 The main screen is your central sanctuary:
-*   **The Carousel**: Swipe through five main cards: the three core rituals — **Daily Guidance**, **Daily Wisdom**, and **The Leela Field** — followed by **Active Practices** and **Dakshina**.
+*   **The Carousel**: Swipe through five main cards: the three core rituals — **Daily Guidance**, **Daily Wisdom**, and **The Leela Field** — followed by **Sadhana Tree** and **Dakshina**.
 *   **Quick Navigation & Progress**: The icons along the top serve as shortcuts — tap any icon to jump directly to that carousel card without swiping. They also track your daily progress, displaying a checkmark once a ritual is completed.
 *   **Help Button**: The question mark icon (`?`) is available across every screen in the app. Tapping it at any time provides you with concise, context-sensitive explanations of the current screen and its features.
-*   **Active Practices Button**: Tap the calendar icon at the bottom to open the Active Practices page.
+*   **Active Practices Button**: Tap the lotus icon at the bottom to open Today's Practice Plan (Active Practices).
 *   **Diary Button**: Tap the book icon to explore your reflection history.
 
 ### Daily Guidance — The Leela Reflections Method
@@ -174,7 +175,7 @@ Your three cards correspond to key squares on the Leela board, forming the **StO
 *   **R — Resource / Key to Resolution** (*What will carry me forward?*): Your inner catalyst for transformation — the key that unlocks your path forward.
 
 #### The Journey, Step by Step
-1.  **Set Your Intention**: Type your question or intention (minimum 5 words). Avoid simple Yes/No questions; frame your inquiry around "What..." or "How...". The button in the upper-right corner of the input field provides immediate support:
+1.  **Set Your Intention**: Write your question or intention — or tap the microphone in the upper-left corner of the input field and speak it. Avoid simple Yes/No questions; frame your inquiry around "What..." or "How...". The button in the upper-right corner of the input field provides immediate support:
     *   **Gold Wand:** Tap this whenever you need inspiration. Leela provides curated themes, each offering three contemplative questions. Once you have completed several Guidance rituals, **Deepen your insight** appears at the top of the list, offering your own past questions so you can explore them from fresh angles. (These questions remain strictly private on your device.) Tap any question to insert it into your input field.
     *   **Lilac Guru:** Once you type your own words, the button transforms into a pulsing lilac **Guru icon**. Tap it to invite the Guru's guidance. The Guru helps clarify your inquiry by:
         - Identifying the core theme underlying your question.
@@ -209,7 +210,7 @@ The third carousel card opens **The Leela Field** — a dedicated space for cont
 ### The Leela Guru & Clues
 The **Leela Guru** is an AI presence designed to support each step of the Leela Reflections Model. It does not replace your intuition; rather, it sharpens your inquiries and helps ground your insights into daily action.
 
-*   **How Clues Work**: Consultations with the Guru are powered by Clues. A small badge on the Guru button displays the number of Clues required for that request (typically 1 Clue) — whether for refining an intention, personalizing reflective questions, suggesting card reflections, synthesizing an insight, or suggesting daily practices.
+*   **How Clues Work**: Consultations with the Guru are powered by Clues. Each consultation uses 1 Clue — whether for refining an intention, personalizing reflective questions, suggesting card reflections, synthesizing an insight, or suggesting daily practices.
 *   The gold wand, theme grids, curated questions, and your past inquiries are always completely free.
 *   If a request fails due to a network or technical issue, your Clue is **automatically refunded**.
 *   The Guru is entirely on-demand — it only responds when you explicitly ask.
@@ -237,8 +238,20 @@ Capture your insights directly on any card.
 
 ## Additional Features
 
+### The Sadhana Tree
+The fourth carousel card opens the **Sadhana Tree** (*Sadhana* is the Sanskrit word for a daily spiritual practice) – a living visual image of your inner work, accompanied by gentle forest ambience.
+*   **How It Grows**: Every step of your practice lights up a part of the tree:
+    *   **Roots & Trunk**: Grow each time you receive cards in **Daily Guidance** or **Daily Wisdom**.
+    *   **Branches**: Grow with every reflection you write.
+    *   **Leaves**: Grow with every practice you accomplish.
+    *   **Radiance**: Working with the Leela Guru and carrying rituals all the way through to a practice add extra brightness to the tree's glow.
+*   **Live Growth Reveal**: Your tree reflects your diary right away. Whenever you open the Sadhana Tree, it first builds the tree as you last saw it and then illuminates the new growth you have earned since your previous visit.
+*   **Colors of Maturity**: As your practice deepens over weeks, seasons, and years, the tree evolves through four color tiers – from **soft gold** to **orange**, then **pale lilac**, and finally the deep **lilac of the Leela Guru**.
+*   **Living Weather**: Missed days never shrink or wither your tree. If you step away for a while, a gentle wind rises and the running light stays closer to the trunk; when you return to your rituals, the breeze calms and the light flows back out to the tips.
+*   **Tap to See Your Numbers**: Tap the **roots or trunk** to see how many **Daily Guidance** and **Daily Wisdom** rituals you have completed. Tap the **crown** to see the number of **practices accomplished** and **reflections written**. Tap the same area again to hide the numbers.
+
 ### Active Practices
-The fourth carousel card opens **Active Practices** — the home for all your current commitments from both rituals (Daily Wisdom practices in green, Daily Guidance practices in orange).
+Tap the lotus icon on the bottom navigation bar of the main screen to open **Today's Practice Plan (Active Practices)** — the home for all your current commitments from both rituals (Daily Wisdom practices in green, Daily Guidance practices in orange).
 *   **Daily Practices**: Practices created during a ritual are intended for that day and automatically archive at midnight.
 *   **Repeatable Practices**: You can convert any practice into a recurring daily habit and set a **daily reminder** to help you stay consistent.
 *   **Managing Practices**: Check the box when you complete a practice today; tap a practice to revisit its source card; swipe left to archive a completed practice.
@@ -273,6 +286,7 @@ LeelaClue is designed for deep reflection and daily integration, not rapid-fire 
 Tap the **Gear icon** to access Settings:
 *   Set your preferred name and daily reminder times.
 *   **Analytics**: Analytics is disabled by default. If enabled, only anonymous usage events are recorded — never your personal reflections or questions. You can toggle this off at any time.
+*   **Leela Guru AI**: Shows whether the Leela Guru may send what you share with it to Google Gemini. Switch it off at any time — the Guru then asks for your permission again before its next consultation.
 *   **Delete Account & Data**: Permanently erases all local and linked cloud data — reflections, settings, purchase history, and Clue balances — restoring the app to its initial state. This action is irreversible. (Platform purchase receipts retained by Apple or Google cannot be altered by third-party apps.)
 
 ---
@@ -312,7 +326,7 @@ A: LeelaClue is designed around daily integration. You keep one completed ritual
 A: Daily Wisdom is meant to accompany you throughout the entire day. For Daily Guidance, you can repeat the ritual up to three times a day before writing any reflections. Once reflections are recorded, today's entry is locked so you can focus on living the insight. Entries from previous days can be deleted at any time by swiping them to the left in your Diary.
 
 **Q: Where can I find my Daily Practice?**  
-A: Complete your Daily Wisdom ritual first. The practice from your card is then activated automatically for the day. Tap the calendar icon on the bottom navigation bar to open your Active Practices page.
+A: Complete your Daily Wisdom ritual first. The practice from your card is then activated automatically for the day. Tap the lotus icon on the bottom navigation bar to open Today's Practice Plan (Active Practices).
 
 **Q: Do I need an account to use LeelaClue?**  
 A: No. The app functions completely without registration. Signing in with Apple or Google is optional and serves only to protect your purchased Clues across reinstalls or device changes.
